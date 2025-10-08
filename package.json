@@ -3,6 +3,11 @@
   "displayName": "ProDiMoParam",
   "description": "VS Code tools for ProDiMo",
   "version": "0.0.1",
+  "publisher": "Christian Rab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrab/prodimo-vscode"
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
