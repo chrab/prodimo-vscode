@@ -1,43 +1,39 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "ProDiMo Parameter.in",
+    "scopeName": "text.prodimoparam",
 	"patterns": [
-        {
-            "include": "#keywords"
-        },
-        {
-            "include": "#strings"
-        },
-        {
-            "include": "#comments"
-        }
-    ],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.other",
-				"match": "^(.*?) \\K(! [^\\s]+)"
-			},
-            {
-                "name": "keyword.other.unit",
-                "match": " \\[.*\\] "
-            }
-        ]
-		},
-        "comments": {
-            "patterns": [{
-                "name": "comment.line.prodimoparam",
-                "match": "^---.*"
-            },
             {
                 "name": "comment.line.prodimoparam",
-                "match": "^\\*\\*\\*.*"
+                "match": "^---.*$|^\\*\\*\\*.*$",
+                "captures": {
+                    "0": {
+                        "name": "comment.line.prodimoparam"
+                    }
+                }
+            },
+            { 
+                "meta.line.prodimoparam": "meta.line.prodimoparam",
+                "match": "^(?!---|\\*\\*\\*)(\\S*)(?:\\s*)(! [^\\s]+)\\s*(\\[\\S*\\]|)\\s*(: .*|)",
+                "captures": {
+                    "1": {
+                        "name": "string.unquoted.prodimoparam"
+                    },
+                    "2": {
+                        "name": "keyword.other.param.prodimoparam"
+                    },
+                    "3": {
+                        "name": "keyword.other.unit.prodimoparam"
+                    },
+                    "4": {
+                        "name": "comment.documentation.prodimoparam"
+                    }
+                }
             },
             {
-                "name": "comment.line.percentage.prodimoparam",
-                "match": ":.*"
-            }]
-        },
+                "include": "#strings"
+            }],
+    "repository": { 
 		"strings": {
 			"name": "string.quoted.double.prodimoparam",
 			"begin": "\"",
@@ -49,6 +45,5 @@
 				}
 			]
 		}
-	},
-	"scopeName": "source.prodimoparam"
+	}	
 }

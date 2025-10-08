@@ -12,7 +12,7 @@
     "vscode": "^1.104.0"
   },
   "categories": [
-    "Programming Languages"
+    "Other"
   ],
   "contributes": {
     "languages": [{
@@ -23,7 +23,7 @@
     }],
     "grammars": [{
       "language": "prodimoparam",
-      "scopeName": "source.prodimoparam",
+      "scopeName": "text.prodimoparam",
       "path": "./syntaxes/prodimoparam.tmLanguage.json"
     }]
   }
