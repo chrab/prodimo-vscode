@@ -1,0 +1,25 @@
+{
+  "name": "prodimoparam",
+  "displayName": "ProDiMoParam",
+  "description": "Tools for setting ProDiMo parameters",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "prodimoparam",
+      "aliases": ["ProDiMo Parameter.in", "prodimoparam"],
+      "extensions": [".in"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "prodimoparam",
+      "scopeName": "source.prodimoparam",
+      "path": "./syntaxes/prodimoparam.tmLanguage.json"
+    }]
+  }
+}

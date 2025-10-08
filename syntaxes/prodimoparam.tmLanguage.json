@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ProDiMo Parameter.in",
+	"patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.other",
+				"match": "^(.*?) \\K(! [^\\s]+)"
+			},
+            {
+                "name": "keyword.other.unit",
+                "match": " \\[.*\\] "
+            }
+        ]
+		},
+        "comments": {
+            "patterns": [{
+                "name": "comment.line.prodimoparam",
+                "match": "^---.*"
+            },
+            {
+                "name": "comment.line.prodimoparam",
+                "match": "^\\*\\*\\*.*"
+            },
+            {
+                "name": "comment.line.percentage.prodimoparam",
+                "match": ":.*"
+            }]
+        },
+		"strings": {
+			"name": "string.quoted.double.prodimoparam",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.prodimoparam",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.prodimoparam"
+}
