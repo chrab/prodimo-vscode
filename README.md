@@ -1,4 +1,4 @@
-# ProDiMo - VS Code README
+# ProDiMo - VS Code
 
 Some experiments to provide VS Code support for ProDiMo.
 
