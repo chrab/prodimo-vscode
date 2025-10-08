@@ -1,7 +1,7 @@
 {
-  "name": "prodimoparam",
+  "name": "prodimo-vscode",
   "displayName": "ProDiMoParam",
-  "description": "Tools for setting ProDiMo parameters",
+  "description": "VS Code tools for ProDiMo",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.104.0"
