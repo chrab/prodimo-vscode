@@ -1,0 +1,25 @@
+{
+    "parameters": [
+        {
+            "name": "stop_after_init",
+            "type": null,
+            "description": "If true ProDiMo will stop after the init step.",
+            "default": null,
+            "unit": "-"
+        },
+        {
+            "name": "chemanalysis_fits",
+            "type": null,
+            "description": "",
+            "default": null,
+            "unit": "-"
+        },
+        {
+            "name": "Mdisk",
+            "type": "number",
+            "description": "The mass of the disk.",
+            "default": null,
+            "unit": "Msun"
+        }
+    ]
+}
