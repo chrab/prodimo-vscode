@@ -5,16 +5,11 @@
 	"patterns": [
             {
                 "name": "comment.line.prodimoparam",
-                "match": "^---.*$|^\\*\\*\\*.*$",
-                "captures": {
-                    "0": {
-                        "name": "comment.line.prodimoparam"
-                    }
-                }
-            },
+                "match": "^---.*$|^\\*\\*\\*.*$"
+            },    
             { 
-                "meta.line.prodimoparam": "meta.line.prodimoparam",
-                "match": "^(?!---|\\*\\*\\*)(\\S*)(?:\\s*)(! [^\\s]+)\\s*(\\[\\S*\\]|)\\s*(: .*|)",
+                "name": "meta.line.prodimoparam",
+                "match": "^(?!---|\\*\\*\\*)(\\S*)(?:\\s*) (! [^\\s]+)\\s*(\\[\\S*\\]|)\\s*(: .*|)",
                 "captures": {
                     "1": {
                         "name": "string.unquoted.prodimoparam"
