@@ -2,7 +2,7 @@
   "name": "prodimo-vscode",
   "displayName": "ProDiMo - VS Code",
   "description": "VS Code tools for ProDiMo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "chrab",
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
-  "files": ["./paramlist.json"],
   "contributes": {
     "commands": [
       {
