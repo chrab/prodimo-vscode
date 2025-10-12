@@ -1,13 +1,22 @@
 {
   "name": "prodimo-vscode",
-  "displayName": "ProDiMo - VS Code",
+  "displayName": "ProDiMo - Tools",
   "description": "VS Code tools for ProDiMo",
   "version": "0.1.0",
   "publisher": "chrab",
+  "author" : {
+    "name": "Christian Rab"
+  },
+  "license": "CC0 1.0",  
   "repository": {
     "type": "git",
     "url": "https://github.com/chrab/prodimo-vscode"
   },
+  "icon": "images/P.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },  
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -17,12 +26,6 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "test.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "languages": [{
       "id": "prodimoparam",
       "aliases": ["ProDiMo Parameter.in", "prodimoparam"],
@@ -33,7 +36,17 @@
       "language": "prodimoparam",
       "scopeName": "text.prodimoparam",
       "path": "./syntaxes/prodimoparam.tmLanguage.json"
-    }]
+    }],
+    "configurationDefaults": {
+      "[prodimoparam]": {
+        "editor.wordWrap": "off",
+        "editor.quickSuggestions": {
+          "comments": "off",
+          "strings": "off",
+          "other": "off"
+        }
+      }
+    }
   },
 "scripts": {
     "vscode:prepublish": "npm run package",
@@ -61,5 +74,5 @@
     "typescript": "^5.9.3",
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2"
-  }
+  }  
 }
