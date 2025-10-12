@@ -1,4491 +1,3644 @@
 {
-    "parameters": [
-        {
-            "name": "a1_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a1max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a1min",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a2_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a2max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a2min",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a3_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a3max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a3min",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a4_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a4max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a4min",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a_nosettle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "a_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ABS_CRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "adjustRout",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "adjustRTconv",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "albedoUV_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "alpha_from_Mdot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "alpha_law",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "alpha_mix",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "alpha_vis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "amax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "amin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "analyse_failed_chemistry",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Andersson2008_yield",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "apow",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ArmitageMRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "atol_chem",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "auto_charge_exchange",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "auto_create_barrier",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "auto_grain_endotherm",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "auto_proton_exchange",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Av_C_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Av_CO_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Av_H2_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Av_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "AVmax_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "AVmin_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "BareComp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "BarePos",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "barrier_width",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "basel_filename",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Bell_quantum_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "beta_mag",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "beta_max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Bfield",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "bh_mie",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Bpow",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "branchingFraction",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "bulk_reactions",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C13_C12",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C1toN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C1toO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2H2_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2H2_nonLTE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2H4_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2H6_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2toN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C2toO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C3H4_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C3toN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C3toO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C4H2_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C4toN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C4toO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C6H6_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C_H2_shielding_Bertoldi",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "c_mie",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "C_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "calcSED",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Carbon_ionization_pumping",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CG97",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CH3_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CH3CNrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CH3OHrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CH4_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Chaabouni_stick",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "charge_chemistry_v2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "charge_chemistry_v3",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "check_Mie",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "check_network",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chem_precis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chem_scale",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chem_stability",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chemanalysis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chemanalysis_fits",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CHEMEQ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ChemHeatFac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CHEMSODE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CHI1_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CHI2_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chi_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CHI_ISM",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "chi_logbin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO2_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO2_nonLTE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO_diffusion_Lauck",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO_Emax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO_H_2015",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO_selfshielding_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CO_sticking",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "COA_Nvib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "colour_correct_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "comp_forces",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "compare_photorates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "compute_line_visibilities",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "compute_visibilities",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "computed_CR_DESORB_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "conserve_pressure",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_lmax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_lmin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Ndisk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Nhole",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Npuff",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Nstar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Ntheta",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cont_Rout",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "continuum_cube_fits",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "COphotodesorption_yield2010",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "core_Nlay",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CoreMantle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "COrovib_sensitivity_analysis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "correct_endotherm",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "correct_PAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "COX_Nrot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "COX_Nvib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "cputime_max",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CR_elec_heating",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CR_induced_UV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRCS",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRI_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRP_a",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRP_high",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRP_lim",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRP_low",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CRP_s0",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CSrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CtoN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "CtoO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "custom_13COrovib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "custom_C17Orovib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "custom_C18Orovib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "custom_COrovib",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "custom_hitran_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d2ust_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d2ust_to_gas",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d3ust_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d3ust_to_gas",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d4ust_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "d4ust_to_gas",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "daduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "debug_photorates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "DECO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "deduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "deltaMRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "diffusion_limited",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "diffusion_tunnelling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "diffusion_width",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "DiffusionApprox",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "disk_structure_damp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "disk_structure_error_threshold",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dist",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Draine_sticking",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_bins",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_charge_chemistry",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_nonRE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_opacity_list_file",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_photoelectric_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_settle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_to_gas",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "dust_to_gas_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "duty_cycle",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "DVODE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "DVODEF90",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "DVODPK",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "e2psilon",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "e3psilon",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "e4psilon",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eact_H2_Oueslati",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eads_filename",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eads_from_file",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eads_H_Cazaux",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eads_Minissale",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "el_is_sp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Eley_Rideal",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "endothermic_barrier",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "enhanced_H2form_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_amax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_cav_coef",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_cav_pow",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_Mdot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_method",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_Rcavity",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_Rcent",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "env_structure",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "eps_dJnu",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "eps_dTworst",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "epsilon",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "equil_BURCAT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "equil_chem",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "equil_cond",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "equil_elemadjust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ER_tunnelling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escape_maser",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escape_Radex_slab",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escape_Radex_sphere",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escape_sphere",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escpro_fit",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escpro_lmax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "escpro_lmin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "estimate_13CO_12CO_ratio",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "evap_fac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "f2PAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "f3PAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "f4PAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "f70",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_AD_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_CE_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_DR_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_IN_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_NN_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_NN_prefactor",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_RA_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fake_RR_chemical_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fast_semi_implicit",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Faure_H2_op",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fbinding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Federman_H2_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "first_order_tdesorption",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fixed_surface_density",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fixed_water_op",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "FLiTs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "FLiTs_contsub",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "FLiTsOBS_file",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fPAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fPAH_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "freeze_chemistry",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "freeze_diskstruc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "freeze_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "freeze_Tgas",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "from_hash",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "fUV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "FXray_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "gas_shielded_photodesorption",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "gbar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "GEAR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "grain_H2_op_conversion",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "gtaper",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "gzip",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_Cazaux2010",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_Cazaux2017",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_Jura",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_no_surf_Cazaux",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2_surf_chem_only",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2COrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_addHITRANlines",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_coll_rate_sensitivity_analysis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_Daniel2011",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_Meisner_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_pumping",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_rovib_Lambda",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2O_rovibration",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H2Srovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H_diffusion_Cazaux_ice",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "H_sticking",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "half_same_species",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hall_Lesur",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hall_MRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "handle_UMIST",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hatom_bb",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hatom_bf",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "HCN_nonLTE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "HCNrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "HD_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Heat_per_PhotoDiss",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "high_res_photodata",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "HighTempRateExtrapol",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "hitran2020",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "hitran_min_strength",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "hollow_sphere",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "hot_atom",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hunderi",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Hunderi_CDE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ice_photodesorption_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "icepot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "IcePowPos",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ignore_Tg_midplane",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "image_fov_arcsec",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "immediate_FLiTs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "immediate_lines",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "incl",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "interface1D",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "interface2D",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ion_drift",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ion_H_coll",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "IR_ISRF",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Jback_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "keep_iterations",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "KIDA_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "KIDADB",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "L1",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "L2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Lacc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Lalpha",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "lapack_solver",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Leiden_photoparameters",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_cube",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_cube_analysis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_cube_fits",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_cube_whichside",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_image_side_Npix",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Ndisk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Nhole",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_nobackground",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_nodust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_nostar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_novel",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Npuff",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Nstar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Ntheta",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_overlap",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_Rout",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_transfer",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_vkep",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "line_vkeppgrad",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Lique2015_H2_H_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "LLL",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "lmaxSED",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "lminSED",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "LSODE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "LSODES",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Lstar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "LTEpopulation",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M2disk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M2dot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M2dust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M3disk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M3dot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M3dust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M4disk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M4dot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "M4dust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "match_Cazaux2010",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "max_diff_photorates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "maxit",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "maxtime",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Maxwell_Garnett",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "mc_grid",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "mc_only",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "mc_steady_state",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "mc_thermal_balance",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_B2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_B3",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_B4",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_BETA",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_H0",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_H2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_H3",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_H4",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_LIKE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_R2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_R3",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_R4",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCFOST_RREF",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MCMAX_LIKE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mdisk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mdot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mdust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "mean_dust_photoelectric_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MEBDF",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "memLimitGB",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "merge_reaction_files",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mie_ascii",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "min_Ng_iter",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Minissale_evap",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "model_name",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "molecular_cloud",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "monoSED",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "MRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mstar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Mumma_water_op",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "N1UV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "N2_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "N_age",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "N_age_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NBaregrains",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NDUST",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "new_energetics",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "new_escape",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "new_escape_lineflux",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "new_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NewChemScan",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "newUVphoto",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NH3rovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "nH_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "nH_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "nH_surround",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NHfilter",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Ninner",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NIPL",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NLAM",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NlamSED",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Nlay",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NlayS6",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NMANTLE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NnewWall",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "no_background_pumping",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "no_C_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "noEUV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NOrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Nouter",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Nphi",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Npixel_continuum",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "nprod_file1",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "nprod_file2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NSIZE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NTestColl",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Ntheta",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "num_noerase",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "numerical_jacobian",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NUV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NXratio",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NXray",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NXX",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NZONES",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "NZZ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "O17_O16",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "O18_O16",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "O2rovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "O_diffusion_Congiu",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ode_element_conservation",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OH_ExoMol",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OH_nonLTE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OH_pumping",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OHrovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "old_surface_GG_reactions",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "old_wall_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "openmp_Nlev",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "optimise_phi",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "optimise_theta",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OSU_Alchemic",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "OSU_rates",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "other_PAH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "other_reactions",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_charged",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_in_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_name",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_NC",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAH_NH",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PAobj",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "parallel_chem",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "parallel_debug",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "perfect_ice",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "pg_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "photodesorption",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "photorates_version",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PlanckSpec",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "population_restart",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "precomputed_CO_selfshielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "precomputed_H2_CO_selfshielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "preconditioning",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "previous_mc_model_filename",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ProDiMo2mcfost_version",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "pseudo_aniso_scat",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "pseudo_Voigt",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "PStar",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "pUV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "QIndexTotVol",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "QPosDep",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "qsa",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "QSSA",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "quadp_solver",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "QvisSplit",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r1aduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r1educ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r2aduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r2educ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R2in",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R2out",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r3aduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r3educ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R3in",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R3out",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r4aduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "r4educ",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R4in",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "R4out",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "RADAU",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "radtrans",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "raduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "random_initial_population",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "rayleighgans_limit",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "RDI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "reacfile1",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "reacfile2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "reaction_file",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "read_fits_binary",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "read_reactions_in_csv",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "readMCFOST",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "reduc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "refine_Spitzer",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "refine_zz",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "refinement_fac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "reinit_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "resolve_star",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "restart",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "rho_gr",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "rho_gr_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "RKCK",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "ROSEN",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rout",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rph_generic_shape",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rphoto_bandint",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rphoto_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Rtaper",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "RTitmax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "rtol_chem",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "SDIRK",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "self_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "settle_method",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "SEULEX",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "shielding_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "sizefit_powerindex",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "sizeParam_Mie",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "slab_escape",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "slot_ix",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "slot_iz",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "slot_keep",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "smoothEUV",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "SO2rovib_LTE_cooling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "soft_edges",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "solve_diskstruc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "solve_temp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "sparse_Nlev",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STAND",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STANDfilter",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STANDover",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "start_from_previous_mc_model",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "stateq_min_iter",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRI",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_a",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_b",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_high",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_low",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_method",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STCRP_NHE",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "sticking_coefficient",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "STIFBS",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "stop_after_contRT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "stop_after_init",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "surf_competition",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "surface_benchmark",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "surface_chemistry",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "SVD_improve",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "switch_off_H2form",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "switch_off_photo",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "tau_cutoff",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tback",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Td_from_RT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Td_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tdust_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Teff",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "temp_precis",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tex_subthermal",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Textrapolate",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tg_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tgas_once",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Tgas_PDR",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "thermal_diffusion_only",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "threeReactants",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "time_chem_disk",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "time_chem_disk_ifspecies",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "time_dependent",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "tol_convergence",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "tol_diskstruc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "tunnelling",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UMIST2006",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UMIST2012",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UMIST2022",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "umist_code",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UMISTDB",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "unique_fbinding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "unit_testing",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "use_Alchemic_nsite",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "use_chemsol",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "use_drift_phoenix",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "use_MCFOST_rgrid",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UV_H2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UVgasRT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UVphoto_highres",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "UVpumping",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "v_turb",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "verbose_level",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "vert_pot",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "VHEAT_GAS",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Voigt_escape",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "vturb_from_alpha",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "vturb_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "water_h2_ortho_para",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "water_ice_photodesorption_eff",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_FLITS",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_HEIGHTS",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_IMAGES",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_LINES",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_PHOTO",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_SPITZER",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "weight_VISIB",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Wolcott_Green_shielding",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "write_fits_binary",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "write_pop",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "write_posDep_opac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "write_zdist",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Bg_Flux",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Bg_Temp",
-            "type": "float",
-            "description": "Temperature of the X-ray background field spectrum.",
-            "default": null,
-            "unit": "K"
-        },
-        {
-            "name": "Xray_Bg_XRB",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Emax",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Emin",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_FUVumist",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Lum",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_mc",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_norm",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_Temp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_wlp",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xray_workaround",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT_chem",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT_chem_effion",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT_dust",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT_dust_opac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "XrayRT_opac",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Xrays",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "Zmax_v2",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "zone1_hs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "zone2_hs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "zone3_hs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        },
-        {
-            "name": "zone4_hs",
-            "type": null,
-            "description": "",
-            "default": null,
-            "unit": null
-        }
-    ]
+ "a1_mc": {
+  "unit": "[mic]",
+  "desc": [],
+  "type": "float"
+ },
+ "a1max": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a1min": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a2_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a2max": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "a2min": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a3_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a3max": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a3min": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a4_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a4max": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a4min": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a_nosettle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "a_settle": {
+  "unit": "",
+  "desc": [
+   ": turbulence alpha"
+  ],
+  "type": "str"
+ },
+ "ABS_CRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "adjustRout": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "adjustRTconv": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "albedoUV_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "alpha_from_Mdot": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "alpha_law": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "alpha_mix": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "alpha_vis": {
+  "unit": "[-]",
+  "desc": [
+   ": viscous heating parameter"
+  ],
+  "type": "float"
+ },
+ "amax": {
+  "unit": "[mic]",
+  "desc": [
+   ": maximum dust particle size"
+  ],
+  "type": "float"
+ },
+ "amin": {
+  "unit": "[mic]",
+  "desc": [
+   ": minimum dust particle size"
+  ],
+  "type": "float"
+ },
+ "analyse_failed_chemistry": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Andersson2008_yield": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "apow": {
+  "unit": "[-]",
+  "desc": [
+   ": dust size distr f(a)~a^-apow",
+   ": dust size distr power index f(a)~a^-apow"
+  ],
+  "type": "float"
+ },
+ "ArmitageMRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "atol_chem": {
+  "unit": "",
+  "desc": [
+   ": abs. tolerance for advance_chemistry"
+  ],
+  "type": "float"
+ },
+ "auto_charge_exchange": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "auto_create_barrier": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "auto_grain_endotherm": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "auto_proton_exchange": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Av_C_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Av_CO_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Av_H2_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Av_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "AVmax_PDR": {
+  "unit": "[-]",
+  "desc": [
+   ": maximum A_V"
+  ],
+  "type": "str"
+ },
+ "AVmin_PDR": {
+  "unit": "[-]",
+  "desc": [
+   ": minimum A_V"
+  ],
+  "type": "str"
+ },
+ "BareComp": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "BarePos": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "barrier_width": {
+  "unit": "",
+  "desc": [
+   ": 1A in cm"
+  ],
+  "type": "float"
+ },
+ "basel_filename": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Bell_quantum_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "beta_mag": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "beta_max": {
+  "unit": "[deg]",
+  "desc": [
+   ": maximum half opening angle of resolved disk",
+   ": defines the cavity opening angle (here 20 degree)"
+  ],
+  "type": "float"
+ },
+ "Bfield": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "bh_mie": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Bpow": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "branchingFraction": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "bulk_reactions": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C13_C12": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C1toN": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C1toO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C2H2_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C2H2_nonLTE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C2H4_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C2H6_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C2toN": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C2toO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C3H4_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C3toN": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C3toO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C4H2_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C4toN": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C4toO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C6H6_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "C_H2_shielding_Bertoldi": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "c_mie": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "C_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "calcSED": {
+  "unit": "",
+  "desc": [
+   ": calculate SED and images?"
+  ],
+  "type": "bool"
+ },
+ "Carbon_ionization_pumping": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CG97": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CH3_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CH3CNrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CH3OHrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CH4_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Chaabouni_stick": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "charge_chemistry_v2": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "charge_chemistry_v3": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "check_Mie": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "check_network": {
+  "unit": "",
+  "desc": [
+   ": the osu network fails the checks"
+  ],
+  "type": "bool"
+ },
+ "chem_precis": {
+  "unit": "",
+  "desc": [
+   ": precision in solve_chemistry 1.0E-9",
+   ": precision in solve_chemistry"
+  ],
+  "type": "float"
+ },
+ "chem_scale": {
+  "unit": "",
+  "desc": [
+   ": scale chemical equations to solve?"
+  ],
+  "type": "bool"
+ },
+ "chem_stability": {
+  "unit": "",
+  "desc": [
+   ": extend advance when fast - default=T"
+  ],
+  "type": "bool"
+ },
+ "chemanalysis": {
+  "unit": "",
+  "desc": [
+   ": output for rate network analysis",
+   ": output"
+  ],
+  "type": "bool"
+ },
+ "chemanalysis_fits": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CHEMEQ": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ChemHeatFac": {
+  "unit": "[-]",
+  "desc": [
+   ": efficiency of chemical heating"
+  ],
+  "type": "float"
+ },
+ "CHEMSODE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CHI1_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "CHI2_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "chi_from_RT": {
+  "unit": "",
+  "desc": [
+   ": calculate chi from UV rad. transfer?",
+   ": calculate chi from UV RT?"
+  ],
+  "type": "bool"
+ },
+ "CHI_ISM": {
+  "unit": "[-]",
+  "desc": [
+   ": strength of incident vertical UV",
+   ": strength of incident interstellar UV",
+   ": UV-field strength (Draine units)"
+  ],
+  "type": "float"
+ },
+ "chi_logbin": {
+  "unit": "",
+  "desc": [
+   ": using spectral windows to calc CHI_PHOTO?"
+  ],
+  "type": "bool"
+ },
+ "CO2_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CO2_nonLTE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CO_diffusion_Lauck": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CO_Emax": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CO_H_2015": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CO_selfshielding_from_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CO_sticking": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "COA_Nvib": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "colour_correct_from_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "comp_forces": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "compare_photorates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "compute_line_visibilities": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "compute_visibilities": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "computed_CR_DESORB_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "conserve_pressure": {
+  "unit": "",
+  "desc": [
+   ": conserve pgas instead of n<H>?"
+  ],
+  "type": "bool"
+ },
+ "cont_lmax": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "cont_lmin": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "cont_Ndisk": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cont_Nhole": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cont_Npuff": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cont_Nstar": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cont_Ntheta": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cont_Rout": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "continuum_cube_fits": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "COphotodesorption_yield2010": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "core_Nlay": {
+  "unit": "",
+  "desc": [
+   ": in the silicate core"
+  ],
+  "type": "int"
+ },
+ "CoreMantle": {
+  "unit": "",
+  "desc": [
+   ": ice in mantle or well-mixed?"
+  ],
+  "type": "bool"
+ },
+ "COrovib_sensitivity_analysis": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "correct_endotherm": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "correct_PAH": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "COX_Nrot": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "COX_Nvib": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "cputime_max": {
+  "unit": "[s]",
+  "desc": [
+   ": max. CPU time for advance_chemistry"
+  ],
+  "type": "float"
+ },
+ "CR_elec_heating": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CR_induced_UV": {
+  "unit": "",
+  "desc": [
+   ": use new CR UV field implementation"
+  ],
+  "type": "bool"
+ },
+ "CRCS": {
+  "unit": "[cm^2]",
+  "desc": [
+   ": cosmic rate absorption"
+  ],
+  "type": "float"
+ },
+ "CRI": {
+  "unit": "[1/s]",
+  "desc": [
+   ": cosmic ray ionisation of H2",
+   ": cosmic ray ionisation rate H2",
+   ": cosmic ray ionisation H2 (UMIST:1.36E-17)",
+   ": cosmic ray ionisation of H2 (UMIST:1.36E-17)"
+  ],
+  "type": "float"
+ },
+ "CRI_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CRP_a": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CRP_high": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CRP_lim": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CRP_low": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CRP_s0": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CSrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "CtoN": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "CtoO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "custom_13COrovib": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "custom_C17Orovib": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "custom_C18Orovib": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "custom_COrovib": {
+  "unit": "",
+  "desc": [
+   ": big ro-vibronic CO model?",
+   ": fast setup"
+  ],
+  "type": "bool"
+ },
+ "custom_hitran_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "d2ust_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "d2ust_to_gas": {
+  "unit": "[-]",
+  "desc": [
+   ": the dust-to-gas mass ratio"
+  ],
+  "type": "float"
+ },
+ "d3ust_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "d3ust_to_gas": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "d4ust_settle": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "d4ust_to_gas": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "daduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "debug_photorates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "DECO": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "deduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "deltaMRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "diffusion_limited": {
+  "unit": "",
+  "desc": [
+   ": reaction barriers are account for"
+  ],
+  "type": "bool"
+ },
+ "diffusion_tunnelling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "diffusion_width": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "DiffusionApprox": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "disk_structure_damp": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "disk_structure_error_threshold": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "dist": {
+  "unit": "[pc]",
+  "desc": [
+   ": distance"
+  ],
+  "type": "float"
+ },
+ "Draine_sticking": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "dust_bins": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "dust_charge_chemistry": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "dust_nonRE": {
+  "unit": "",
+  "desc": [
+   ": dust in non-radiative equilibrium",
+   ": dust not in radiative equilibrium"
+  ],
+  "type": "bool"
+ },
+ "dust_opacity_list_file": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "dust_photoelectric_from_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "dust_settle": {
+  "unit": "",
+  "desc": [
+   ": ... switched off"
+  ],
+  "type": "float"
+ },
+ "dust_to_gas": {
+  "unit": "",
+  "desc": [
+   ": the dust-to-gas mass ratio"
+  ],
+  "type": "float"
+ },
+ "dust_to_gas_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "duty_cycle": {
+  "unit": "",
+  "desc": [
+   ": as in the benchmark"
+  ],
+  "type": "float"
+ },
+ "DVODE": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "DVODEF90": {
+  "unit": "",
+  "desc": [
+   ": fastest routine"
+  ],
+  "type": "bool"
+ },
+ "DVODPK": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "e2psilon": {
+  "unit": "[-]",
+  "desc": [
+   ": col.dens. exponent",
+   ": column density exponent"
+  ],
+  "type": "float"
+ },
+ "e3psilon": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "e4psilon": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Eact_H2_Oueslati": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Eads_filename": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Eads_from_file": {
+  "unit": "",
+  "desc": [
+   ": use UMIST2012/Garrod adsorption energies",
+   ": use UMIST2012 adsorption energies",
+   ": UMIST2012 adsorption energies",
+   ": from AdsorptionEnergies.in"
+  ],
+  "type": "bool"
+ },
+ "Eads_H_Cazaux": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Eads_Minissale": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "el_is_sp": {
+  "unit": "",
+  "desc": [
+   ": electrons as independent species?"
+  ],
+  "type": "bool"
+ },
+ "Eley_Rideal": {
+  "unit": "",
+  "desc": [
+   ": no Eley-Rideal reactions"
+  ],
+  "type": "bool"
+ },
+ "endothermic_barrier": {
+  "unit": "",
+  "desc": [
+   ": no effect on the rates for endo reations"
+  ],
+  "type": "bool"
+ },
+ "enhanced_H2form_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "env_amax": {
+  "unit": "",
+  "desc": [
+   ": maximum grain size in the envelope"
+  ],
+  "type": "float"
+ },
+ "env_cav_coef": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "env_cav_pow": {
+  "unit": "",
+  "desc": [
+   ": shape of the cavity"
+  ],
+  "type": "float"
+ },
+ "env_Mdot": {
+  "unit": "",
+  "desc": [
+   ": mass infall rate M_sun/yr"
+  ],
+  "type": "str"
+ },
+ "env_method": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "env_Rcavity": {
+  "unit": "",
+  "desc": [
+   ": \"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin"
+  ],
+  "type": "int"
+ },
+ "env_Rcent": {
+  "unit": "",
+  "desc": [
+   ": centrifugal radius"
+  ],
+  "type": "str"
+ },
+ "env_structure": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "eps_dJnu": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "eps_dTworst": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "epsilon": {
+  "unit": "[-]",
+  "desc": [
+   ": column density exponent",
+   ": power index of vert. col.dens.",
+   ": col.dens. exponent",
+   ": power index of vert. col.dens. as func of x"
+  ],
+  "type": "float"
+ },
+ "equil_BURCAT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "equil_chem": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "equil_cond": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "equil_elemadjust": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ER_tunnelling": {
+  "unit": "",
+  "desc": [
+   ": Eley-Rideal tunnelling"
+  ],
+  "type": "bool"
+ },
+ "escape_maser": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "escape_Radex_slab": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "escape_Radex_sphere": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "escape_sphere": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "escpro_fit": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "escpro_lmax": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "escpro_lmin": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "estimate_13CO_12CO_ratio": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "evap_fac": {
+  "unit": "",
+  "desc": [
+   ": no chemidesorption"
+  ],
+  "type": "float"
+ },
+ "f2PAH": {
+  "unit": "[-]",
+  "desc": [
+   ": PAH abundance relative to ISM"
+  ],
+  "type": "float"
+ },
+ "f3PAH": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "f4PAH": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "f70": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_AD_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_CE_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_DR_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_IN_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_NN_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_NN_prefactor": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_RA_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fake_RR_chemical_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fast_semi_implicit": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Faure_H2_op": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fbinding": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "Federman_H2_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "first_order_tdesorption": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "fixed_surface_density": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "fixed_water_op": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "FLiTs": {
+  "unit": "",
+  "desc": [
+   ": want to run FLiTs afterwards?"
+  ],
+  "type": "bool"
+ },
+ "FLiTs_contsub": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "FLiTsOBS_file": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fPAH": {
+  "unit": "[-]",
+  "desc": [
+   ": PAH abundance with respect to ISM",
+   ": PAH abundance relative to ISM",
+   ": PAH abundance w.r.t. ISM"
+  ],
+  "type": "float"
+ },
+ "fPAH_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "freeze_chemistry": {
+  "unit": "",
+  "desc": [
+   ": freeze chemical concentrations?"
+  ],
+  "type": "bool"
+ },
+ "freeze_diskstruc": {
+  "unit": "",
+  "desc": [
+   ": freeze density/pressure structure?"
+  ],
+  "type": "bool"
+ },
+ "freeze_RT": {
+  "unit": "",
+  "desc": [
+   ": freeze radiative transfer results Td/Jv?",
+   ": freeze RT results"
+  ],
+  "type": "bool"
+ },
+ "freeze_Tgas": {
+  "unit": "",
+  "desc": [
+   ": freeze gas temperature?"
+  ],
+  "type": "bool"
+ },
+ "from_hash": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "fUV": {
+  "unit": "[-]",
+  "desc": [
+   ": LUV/Lstar",
+   ": UV excess LUV/Lstar",
+   ": UV excess"
+  ],
+  "type": "float"
+ },
+ "FXray_PDR": {
+  "unit": "[erg/s/cm2]",
+  "desc": [
+   ": incident Xray flux  2.7/1e-20"
+  ],
+  "type": "float"
+ },
+ "gas_shielded_photodesorption": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "gbar": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "GEAR": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "grain_H2_op_conversion": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "gtaper": {
+  "unit": "[-]",
+  "desc": [
+   ": tapering-off exponent"
+  ],
+  "type": "float"
+ },
+ "gzip": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "H2_Cazaux2010": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2_Cazaux2017": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "H2_Jura": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2_no_surf_Cazaux": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2_surf_chem_only": {
+  "unit": "",
+  "desc": [
+   ": not only making H2"
+  ],
+  "type": "bool"
+ },
+ "H2COrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2O_addHITRANlines": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "H2O_coll_rate_sensitivity_analysis": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "H2O_Daniel2011": {
+  "unit": "",
+  "desc": [
+   ": new H2O collision rates"
+  ],
+  "type": "bool"
+ },
+ "H2O_Meisner_rates": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H2O_pumping": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "H2O_rovib_Lambda": {
+  "unit": "",
+  "desc": [
+   ": big ro-vib H2O models?"
+  ],
+  "type": "bool"
+ },
+ "H2O_rovibration": {
+  "unit": "",
+  "desc": [
+   ": big ro-vib H2O models?"
+  ],
+  "type": "bool"
+ },
+ "H2Srovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "H_diffusion_Cazaux_ice": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "H_sticking": {
+  "unit": "",
+  "desc": [
+   ": not using Hollenbach & Salpeter H sticking"
+  ],
+  "type": "bool"
+ },
+ "half_same_species": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Hall_Lesur": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Hall_MRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "handle_UMIST": {
+  "unit": "",
+  "desc": [
+   ": handle UMIST-data (erase/overwrite/onlyadd)",
+   ": handle UMIST-data (overwrite/erase/onlyadd)"
+  ],
+  "type": "str"
+ },
+ "Hatom_bb": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Hatom_bf": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "HCN_nonLTE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "HCNrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "HD_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Heat_per_PhotoDiss": {
+  "unit": "",
+  "desc": [
+   ": heating by photodissociation"
+  ],
+  "type": "float"
+ },
+ "high_res_photodata": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "HighTempRateExtrapol": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "hitran2020": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "hitran_min_strength": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "hollow_sphere": {
+  "unit": "",
+  "desc": [
+   ": max hollow volume ratio"
+  ],
+  "type": "float"
+ },
+ "hot_atom": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "Hunderi": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Hunderi_CDE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ice_photodesorption_from_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "icepot": {
+  "unit": "",
+  "desc": [
+   ": a = abare + const*abare^icepot"
+  ],
+  "type": "float"
+ },
+ "IcePowPos": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ignore_Tg_midplane": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "image_fov_arcsec": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "immediate_FLiTs": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "immediate_lines": {
+  "unit": "",
+  "desc": [
+   ": line RT directly after init?",
+   ": line RT directly after init (requires write_pop)?"
+  ],
+  "type": "bool"
+ },
+ "incl": {
+  "unit": "[deg]",
+  "desc": [
+   ": inclination (0=face-on)"
+  ],
+  "type": "float"
+ },
+ "interface1D": {
+  "unit": "",
+  "desc": [
+   ": activate the 1D interface"
+  ],
+  "type": "bool"
+ },
+ "interface2D": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ion_drift": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ion_H_coll": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "IR_ISRF": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Jback_from_RT": {
+  "unit": "",
+  "desc": [
+   ": calculate background Jnu from rad. transfer?",
+   ": calculate background Jnu from RT?"
+  ],
+  "type": "bool"
+ },
+ "keep_iterations": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "KIDA_rates": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "KIDADB": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "L1": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "L2": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Lacc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Lalpha": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "lapack_solver": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Leiden_photoparameters": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_cube": {
+  "unit": "",
+  "desc": [
+   ": 3D-line cube output?"
+  ],
+  "type": "bool"
+ },
+ "line_cube_analysis": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_cube_fits": {
+  "unit": "",
+  "desc": [
+   ": 3D-line cube output ?"
+  ],
+  "type": "bool"
+ },
+ "line_cube_whichside": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_image_side_Npix": {
+  "unit": "",
+  "desc": [
+   ": line image size fore cube output"
+  ],
+  "type": "int"
+ },
+ "line_Ndisk": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "line_Nhole": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "line_nobackground": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_nodust": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_nostar": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_novel": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_Npuff": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "line_Nstar": {
+  "unit": "",
+  "desc": [
+   ": parameters for the line transfer grid"
+  ],
+  "type": "int"
+ },
+ "line_Ntheta": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "line_overlap": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_Rout": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "line_transfer": {
+  "unit": "",
+  "desc": [
+   ": calculate line transfer?"
+  ],
+  "type": "bool"
+ },
+ "line_vkep": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "line_vkeppgrad": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Lique2015_H2_H_rates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "LLL": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "lmaxSED": {
+  "unit": "",
+  "desc": [
+   ": minimum lambda[mic]",
+   ": maximum lambda[mic]"
+  ],
+  "type": "float"
+ },
+ "lminSED": {
+  "unit": "",
+  "desc": [
+   ": minimum lambda[mic]"
+  ],
+  "type": "float"
+ },
+ "LSODE": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "LSODES": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Lstar": {
+  "unit": "[Lsun]",
+  "desc": [
+   ": stellar luminosity"
+  ],
+  "type": "float"
+ },
+ "LTEpopulation": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M2disk": {
+  "unit": "[Msun]",
+  "desc": [
+   ": disk mass"
+  ],
+  "type": "str"
+ },
+ "M2dot": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M2dust": {
+  "unit": "",
+  "desc": [
+   ": dust mass"
+  ],
+  "type": "float"
+ },
+ "M3disk": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M3dot": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M3dust": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M4disk": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M4dot": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "M4dust": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "match_Cazaux2010": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "max_diff_photorates": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "maxit": {
+  "unit": "",
+  "desc": [
+   ": maximum number of global iterations",
+   ": max number of global iterations",
+   ": max number of ProDiMo main iterations"
+  ],
+  "type": "int"
+ },
+ "maxtime": {
+  "unit": "",
+  "desc": [
+   ": maximum computational time [sec]"
+  ],
+  "type": "float"
+ },
+ "Maxwell_Garnett": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "mc_grid": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "mc_only": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "mc_steady_state": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "mc_thermal_balance": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "MCFOST_B2": {
+  "unit": "",
+  "desc": [
+   ": flaring exponent",
+   ": flaring power"
+  ],
+  "type": "float"
+ },
+ "MCFOST_B3": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_B4": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_BETA": {
+  "unit": "",
+  "desc": [
+   ": flaring power",
+   ": flaring exponent"
+  ],
+  "type": "float"
+ },
+ "MCFOST_H0": {
+  "unit": "[AU]",
+  "desc": [
+   ": scale height ...",
+   ": scale height"
+  ],
+  "type": "float"
+ },
+ "MCFOST_H2": {
+  "unit": "[AU]",
+  "desc": [
+   ": scale height",
+   ": scale height ..."
+  ],
+  "type": "float"
+ },
+ "MCFOST_H3": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_H4": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_LIKE": {
+  "unit": "",
+  "desc": [
+   ": parametric disk structure like in MCFOST?",
+   ": fixed disk structure like in MCFOST?",
+   ": use Tdust and mu=2.3amu for cT?"
+  ],
+  "type": "bool"
+ },
+ "MCFOST_R2": {
+  "unit": "[AU]",
+  "desc": [
+   ": ref.radius",
+   ": reference radius for this zone",
+   ": ... belonging to reference radius"
+  ],
+  "type": "float"
+ },
+ "MCFOST_R3": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_R4": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MCFOST_RREF": {
+  "unit": "[AU]",
+  "desc": [
+   ": ... belonging to reference radius",
+   ": ref.radius"
+  ],
+  "type": "float"
+ },
+ "MCMAX_LIKE": {
+  "unit": "",
+  "desc": [
+   ": p = n k Tgas for hydro-structure"
+  ],
+  "type": "bool"
+ },
+ "Mdisk": {
+  "unit": "[Msun]",
+  "desc": [
+   ": disk mass",
+   ": disk mass of outer disk"
+  ],
+  "type": "str"
+ },
+ "Mdot": {
+  "unit": "[Msol/yr]",
+  "desc": [
+   ": accretion rate"
+  ],
+  "type": "str"
+ },
+ "Mdust": {
+  "unit": "",
+  "desc": [
+   ": dust mass"
+  ],
+  "type": "float"
+ },
+ "mean_dust_photoelectric_from_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "MEBDF": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "memLimitGB": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "merge_reaction_files": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Mie_ascii": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "min_Ng_iter": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "Minissale_evap": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "model_name": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "molecular_cloud": {
+  "unit": "",
+  "desc": [
+   ": initial concentrations from mol.cloud.?"
+  ],
+  "type": "bool"
+ },
+ "monoSED": {
+  "unit": "",
+  "desc": [
+   ": use monochromatic mode?",
+   ": monochrmoatic SED?"
+  ],
+  "type": "bool"
+ },
+ "MRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Mstar": {
+  "unit": "[Msun]",
+  "desc": [
+   ": stellar mass",
+   ": stellar mass (Lambda Ori)"
+  ],
+  "type": "float"
+ },
+ "Mumma_water_op": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "N1UV": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "N2_shielding": {
+  "unit": "",
+  "desc": [
+   ": use N2 self-shielding"
+  ],
+  "type": "bool"
+ },
+ "N_age": {
+  "unit": "",
+  "desc": [
+   ": no of successive output ages",
+   ": for more detailed models more steps might be required"
+  ],
+  "type": "int"
+ },
+ "N_age_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NBaregrains": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "NDUST": {
+  "unit": "",
+  "desc": [
+   ": number of selected dust species",
+   ": number of dust species, Vol%, materials",
+   ": number of dust species"
+  ],
+  "type": "int"
+ },
+ "new_energetics": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "new_escape": {
+  "unit": "",
+  "desc": [
+   ": just to make it faster"
+  ],
+  "type": "bool"
+ },
+ "new_escape_lineflux": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "new_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "NewChemScan": {
+  "unit": "",
+  "desc": [
+   ": new initial abund. from down-right scan?"
+  ],
+  "type": "bool"
+ },
+ "newUVphoto": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NH3rovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "nH_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "nH_PDR": {
+  "unit": "[cm^-3]",
+  "desc": [
+   ": H nuclei density",
+   ": H nuclei density 3.16E+5"
+  ],
+  "type": "str"
+ },
+ "nH_surround": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NHfilter": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Ninner": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NIPL": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "NLAM": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NlamSED": {
+  "unit": "",
+  "desc": [
+   ": number of lambda gridpoints"
+  ],
+  "type": "int"
+ },
+ "Nlay": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NlayS6": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NMANTLE": {
+  "unit": "",
+  "desc": [
+   ": number of ice species in dust"
+  ],
+  "type": "int"
+ },
+ "NnewWall": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "no_background_pumping": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "no_C_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "noEUV": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "NOrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Nouter": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Nphi": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "Npixel_continuum": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "nprod_file1": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "nprod_file2": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "NSIZE": {
+  "unit": "",
+  "desc": [
+   ": number of dust size bins",
+   ": number of sizebins"
+  ],
+  "type": "int"
+ },
+ "NTestColl": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Ntheta": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "num_noerase": {
+  "unit": "",
+  "desc": [
+   ": exceptions from erasing UMIST data"
+  ],
+  "type": "int"
+ },
+ "numerical_jacobian": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "NUV": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NXratio": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "NXray": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NXX": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NZONES": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "NZZ": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "O17_O16": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "O18_O16": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "O2rovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "O_diffusion_Congiu": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ode_element_conservation": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "OH_ExoMol": {
+  "unit": "",
+  "desc": [
+   ": non-LTE OH model"
+  ],
+  "type": "bool"
+ },
+ "OH_nonLTE": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "OH_pumping": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "OHrovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "old_surface_GG_reactions": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "old_wall_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "openmp_Nlev": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "optimise_phi": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "optimise_theta": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "OSU_Alchemic": {
+  "unit": "",
+  "desc": [
+   ": use the network of the benchmark"
+  ],
+  "type": "bool"
+ },
+ "OSU_rates": {
+  "unit": "",
+  "desc": [
+   ": using the OSU rates?"
+  ],
+  "type": "bool"
+ },
+ "other_PAH": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "other_reactions": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "PAH_charged": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "PAH_from_RT": {
+  "unit": "",
+  "desc": [
+   ": PAH heating from cross-sections?"
+  ],
+  "type": "bool"
+ },
+ "PAH_in_RT": {
+  "unit": "",
+  "desc": [
+   ": are PAH opacities included in rad.trans.?"
+  ],
+  "type": "bool"
+ },
+ "PAH_name": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "PAH_NC": {
+  "unit": "[-]",
+  "desc": [
+   ": number of C atoms in PAH"
+  ],
+  "type": "int"
+ },
+ "PAH_NH": {
+  "unit": "[-]",
+  "desc": [
+   ": number of H atoms in PAH"
+  ],
+  "type": "int"
+ },
+ "PAobj": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "parallel_chem": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "parallel_debug": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "perfect_ice": {
+  "unit": "",
+  "desc": [
+   ": use long integration time for ices?"
+  ],
+  "type": "bool"
+ },
+ "pg_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "photodesorption": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "photorates_version": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "PlanckSpec": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "population_restart": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "precomputed_CO_selfshielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "precomputed_H2_CO_selfshielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "preconditioning": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "previous_mc_model_filename": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "ProDiMo2mcfost_version": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "pseudo_aniso_scat": {
+  "unit": "",
+  "desc": [
+   ": ignore forward scattering"
+  ],
+  "type": "bool"
+ },
+ "pseudo_Voigt": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "PStar": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "pUV": {
+  "unit": "[-]",
+  "desc": [
+   ": UV powerlaw exponent",
+   ": UV power-lax index",
+   ": UV powerlaw index"
+  ],
+  "type": "float"
+ },
+ "QIndexTotVol": {
+  "unit": "",
+  "desc": [
+   ": volume of ice available can vary from place to place"
+  ],
+  "type": "int"
+ },
+ "QPosDep": {
+  "unit": "",
+  "desc": [
+   ": position dependent Q efficiency calculation"
+  ],
+  "type": "bool"
+ },
+ "qsa": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "QSSA": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "quadp_solver": {
+  "unit": "",
+  "desc": [
+   ": use quadruple precision solver?"
+  ],
+  "type": "bool"
+ },
+ "QvisSplit": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r1aduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r1educ": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r2aduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r2educ": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "R2in": {
+  "unit": "[AU]",
+  "desc": [
+   ": inner disk radius"
+  ],
+  "type": "float"
+ },
+ "R2out": {
+  "unit": "[AU]",
+  "desc": [
+   ": outer radius of this zone",
+   ": outer disk radius"
+  ],
+  "type": "float"
+ },
+ "r3aduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r3educ": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "R3in": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "R3out": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r4aduc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "r4educ": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "R4in": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "R4out": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "RADAU": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "radtrans": {
+  "unit": "",
+  "desc": [
+   ": continuum radiative transfer?",
+   ": calculate dust continuum rad. transfer?",
+   ": calculate dust continuum RT?"
+  ],
+  "type": "bool"
+ },
+ "raduc": {
+  "unit": "",
+  "desc": [
+   ": radius-fac up to where col.dens. increases"
+  ],
+  "type": "float"
+ },
+ "random_initial_population": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "rayleighgans_limit": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "RDI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "reacfile1": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "reacfile2": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "reaction_file": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "read_fits_binary": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "read_reactions_in_csv": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "readMCFOST": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "reduc": {
+  "unit": "",
+  "desc": [
+   ": inner rim increase of col.dens."
+  ],
+  "type": "str"
+ },
+ "refine_Spitzer": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "refine_zz": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "refinement_fac": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "reinit_RT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "resolve_star": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "restart": {
+  "unit": "",
+  "desc": [
+   ": run from restart?",
+   ": restart from checkpoint file?"
+  ],
+  "type": "bool"
+ },
+ "rho_gr": {
+  "unit": "[g/cm^3]",
+  "desc": [
+   ": dust grain material mass density"
+  ],
+  "type": "float"
+ },
+ "rho_gr_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Rin": {
+  "unit": "[AU]",
+  "desc": [
+   ": inner disk radius",
+   ": inner radius of outer disk"
+  ],
+  "type": "float"
+ },
+ "RKCK": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "ROSEN": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Rout": {
+  "unit": "[AU]",
+  "desc": [
+   ": outer disk radius",
+   ": outer radius of the whole structure"
+  ],
+  "type": "float"
+ },
+ "Rph_generic_shape": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Rphoto_bandint": {
+  "unit": "",
+  "desc": [
+   ": use band-integrated photo-rates?"
+  ],
+  "type": "bool"
+ },
+ "Rphoto_from_RT": {
+  "unit": "",
+  "desc": [
+   ": calculate photorates from rad. transfer?",
+   ": calculate photorates from RT?",
+   ": calculate photorates from RT"
+  ],
+  "type": "bool"
+ },
+ "Rtaper": {
+  "unit": "[AU]",
+  "desc": [
+   ": tapering-off radius"
+  ],
+  "type": "float"
+ },
+ "RTitmax": {
+  "unit": "",
+  "desc": [
+   ": just for testing"
+  ],
+  "type": "int"
+ },
+ "rtol_chem": {
+  "unit": "",
+  "desc": [
+   ": rel. tolerance for advance_chemistry"
+  ],
+  "type": "float"
+ },
+ "SDIRK": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "self_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "settle_method": {
+  "unit": "",
+  "desc": [
+   ": no dust settling",
+   ": dust settling (Dubrulle et al. 1995)",
+   ": power-law dust settling",
+   ": dust settling",
+   ": dust settling (2=Dubrulle et al. 1995)"
+  ],
+  "type": "int"
+ },
+ "SEULEX": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "shielding_mc": {
+  "unit": "",
+  "desc": [
+   ": do not account for self-shielding in mc"
+  ],
+  "type": "bool"
+ },
+ "sizefit_powerindex": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "sizeParam_Mie": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "slab_escape": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "slot_ix": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "slot_iz": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "slot_keep": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "smoothEUV": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "SO2rovib_LTE_cooling": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "soft_edges": {
+  "unit": "",
+  "desc": [
+   ": add confining boundary layers?"
+  ],
+  "type": "bool"
+ },
+ "solve_diskstruc": {
+  "unit": "",
+  "desc": [
+   ": solve the vertical hydrostatic eq.?",
+   ": solve the vertical disk structure?",
+   ": solve the vertical hydrostat.eq.?",
+   ": solve the vertical hydrostatic structure?"
+  ],
+  "type": "bool"
+ },
+ "solve_temp": {
+  "unit": "",
+  "desc": [
+   ": solve the heating/cooling balance?",
+   ": solve the heating/cooling balance? still experimental for envelop so deactived",
+   ": solve the gas heating/cooling balance?"
+  ],
+  "type": "bool"
+ },
+ "sparse_Nlev": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "STAND": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STANDfilter": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STANDover": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "start_from_previous_mc_model": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "stateq_min_iter": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "STCRI": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_a": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_b": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_high": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_low": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_method": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "STCRP_NHE": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "sticking_coefficient": {
+  "unit": "",
+  "desc": [
+   ": for all species"
+  ],
+  "type": "float"
+ },
+ "STIFBS": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "stop_after_contRT": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "stop_after_init": {
+  "unit": "",
+  "desc": [
+   ": use this to just check the model setup",
+   ": use this to check the model setup"
+  ],
+  "type": "bool"
+ },
+ "surf_competition": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "surface_benchmark": {
+  "unit": "",
+  "desc": [
+   ": cannot have H2OCO#",
+   ": use a combination of switches instead"
+  ],
+  "type": "bool"
+ },
+ "surface_chemistry": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "SVD_improve": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "switch_off_H2form": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "switch_off_photo": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "tau_cutoff": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "Tback": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Td_from_RT": {
+  "unit": "",
+  "desc": [
+   ": calculate dust temp. from rad. transfer?",
+   ": calculate dust temp. from RT?"
+  ],
+  "type": "bool"
+ },
+ "Td_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "Tdust_PDR": {
+  "unit": "[K]",
+  "desc": [
+   ": dust temperature"
+  ],
+  "type": "float"
+ },
+ "Teff": {
+  "unit": "[K]",
+  "desc": [
+   ": stellar effective temperature"
+  ],
+  "type": "float"
+ },
+ "temp_precis": {
+  "unit": "",
+  "desc": [
+   ": rel. precision in T-determination",
+   ": rel. tolerance for temperature determination"
+  ],
+  "type": "float"
+ },
+ "Tex_subthermal": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Textrapolate": {
+  "unit": "",
+  "desc": [
+   ": extrapolate T in gas-phase reactions?"
+  ],
+  "type": "bool"
+ },
+ "Tg_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "Tgas_once": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Tgas_PDR": {
+  "unit": "[K]",
+  "desc": [
+   ": gas temperature"
+  ],
+  "type": "float"
+ },
+ "thermal_diffusion_only": {
+  "unit": "",
+  "desc": [
+   ": only thermal diffusion"
+  ],
+  "type": "bool"
+ },
+ "threeReactants": {
+  "unit": "",
+  "desc": [
+   ": 3 educts in Reactions.in?",
+   ": 3-column format for Reactions.in?"
+  ],
+  "type": "bool"
+ },
+ "time_chem_disk": {
+  "unit": "",
+  "desc": [
+   ": solve time-dependent disk chemistry?"
+  ],
+  "type": "bool"
+ },
+ "time_chem_disk_ifspecies": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "time_dependent": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "tol_convergence": {
+  "unit": "",
+  "desc": [
+   ": convergence criterion for global interation"
+  ],
+  "type": "float"
+ },
+ "tol_diskstruc": {
+  "unit": "",
+  "desc": [
+   ": rel.&abs. tolerance for vertical disk struc"
+  ],
+  "type": "float"
+ },
+ "tunnelling": {
+  "unit": "",
+  "desc": [
+   ": no surface reaction tunnelling"
+  ],
+  "type": "bool"
+ },
+ "UMIST2006": {
+  "unit": "",
+  "desc": [
+   ": UMIST version"
+  ],
+  "type": "bool"
+ },
+ "UMIST2012": {
+  "unit": "",
+  "desc": [
+   ": using UMIST2012 rates?",
+   ": using UMIST 2012 reactions",
+   ": use UMIST2012 chemical database",
+   ": using UMIST 2012 rates?"
+  ],
+  "type": "bool"
+ },
+ "UMIST2022": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "umist_code": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "UMISTDB": {
+  "unit": "",
+  "desc": [],
+  "type": "str"
+ },
+ "unique_fbinding": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "unit_testing": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "use_Alchemic_nsite": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "use_chemsol": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "use_drift_phoenix": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "use_MCFOST_rgrid": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "UV_H2": {
+  "unit": "",
+  "desc": [
+   ": electronic levels for H2?",
+   ": use electronic level?"
+  ],
+  "type": "bool"
+ },
+ "UVgasRT": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "UVphoto_highres": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "UVpumping": {
+  "unit": "",
+  "desc": [
+   ": use large model atoms?"
+  ],
+  "type": "bool"
+ },
+ "v_turb": {
+  "unit": "[km/s]",
+  "desc": [
+   ": turbulent Doppler width",
+   ": turbulent velocity",
+   ": doppler width of UV H2-lines"
+  ],
+  "type": "float"
+ },
+ "verbose_level": {
+  "unit": "",
+  "desc": [
+   ": how much output? (-1...4)",
+   ": how much output? (0...4)",
+   ": minimal output"
+  ],
+  "type": "int"
+ },
+ "vert_pot": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "VHEAT_GAS": {
+  "unit": "",
+  "desc": [
+   ": viscous heat into dust",
+   ": put heat into the dust"
+  ],
+  "type": "bool"
+ },
+ "Voigt_escape": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "vturb_from_alpha": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "vturb_mc": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "water_h2_ortho_para": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "water_ice_photodesorption_eff": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "weight_FLITS": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "weight_HEIGHTS": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "weight_IMAGES": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "weight_LINES": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "weight_PHOTO": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "weight_SPITZER": {
+  "unit": "",
+  "desc": [],
+  "type": "float"
+ },
+ "weight_VISIB": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Wolcott_Green_shielding": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "write_fits_binary": {
+  "unit": "",
+  "desc": [
+   ": use fits format for Mie and restart output",
+   ": use fits-format?"
+  ],
+  "type": "bool"
+ },
+ "write_pop": {
+  "unit": "",
+  "desc": [
+   ": write output for immediate line transfer?",
+   ": write output for line transfer?"
+  ],
+  "type": "bool"
+ },
+ "write_posDep_opac": {
+  "unit": "",
+  "desc": [
+   ": write position dependnet opacity output files"
+  ],
+  "type": "bool"
+ },
+ "write_zdist": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Xray_Bg_Flux": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Xray_Bg_Temp": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Xray_Bg_XRB": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Xray_Emax": {
+  "unit": "",
+  "desc": [
+   ": optional: maximum photon energy to be considered as Xray [keV]",
+   ": optional: max. energy to be considered as X-ray [keV]"
+  ],
+  "type": "float"
+ },
+ "Xray_Emin": {
+  "unit": "",
+  "desc": [
+   ": minimum energy considered as Xray",
+   ": X-ray min. photon energy",
+   ": minimum X-ray energy"
+  ],
+  "type": "float"
+ },
+ "Xray_FUVumist": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "Xray_Lum": {
+  "unit": "[erg/s]",
+  "desc": [
+   ": X-ray luminosity",
+   ": Xray luminosity"
+  ],
+  "type": "str"
+ },
+ "Xray_mc": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Xray_norm": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "Xray_Temp": {
+  "unit": "[K]",
+  "desc": [
+   ": X-ray emission temperature",
+   ": Xray emission temperature",
+   ": shape of X-ray spectrum"
+  ],
+  "type": "str"
+ },
+ "Xray_wlp": {
+  "unit": "",
+  "desc": [
+   ": optional: number of wl points used for the X-Ray spectrum"
+  ],
+  "type": "int"
+ },
+ "Xray_workaround": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "XrayRT": {
+  "unit": "",
+  "desc": [
+   ": do Xray radiative transfer?"
+  ],
+  "type": "bool"
+ },
+ "XrayRT_chem": {
+  "unit": "",
+  "desc": [
+   ": couple Xray_RT to chemistry"
+  ],
+  "type": "bool"
+ },
+ "XrayRT_chem_effion": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "XrayRT_dust": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "XrayRT_dust_opac": {
+  "unit": "",
+  "desc": [],
+  "type": "bool"
+ },
+ "XrayRT_opac": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "Xrays": {
+  "unit": "[-]",
+  "desc": [
+   ": use Xray chemistry and heating?",
+   ": Xrays in chemistry?",
+   ": switch on X-rays?",
+   ": want Xrays?"
+  ],
+  "type": "bool"
+ },
+ "Zmax_v2": {
+  "unit": "",
+  "desc": [],
+  "type": "int"
+ },
+ "zone1_hs": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "zone2_hs": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "zone3_hs": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ },
+ "zone4_hs": {
+  "unit": "",
+  "desc": [],
+  "type": ""
+ }
 }

@@ -93,36 +93,34 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
             }
         }
 
-        const paramListRaw = fs.readFileSync(this.paramListPath, 'utf8');
-        const paramList = JSON.parse(paramListRaw);
-
+        const paramList = JSON.parse(fs.readFileSync(this.paramListPath, 'utf8'));
 
         // need to create the list
-        for (const param of paramList.parameters) {
-            let insertText = '';
-            let name = "";
+        for (const paramname of Object.keys(paramList)) {
+            const param = paramList[paramname];
+
+            let insertText =    '';
+            let name = ' ' + paramname; // default: triggered by !
             if (triggerKind === 0) {  // not triggered by ! but has ! in line, ist already checked before
-                name = '! ' + param.name;
-                insertText += param.name + ' ';
-            }
-            else { // triggered by !
-                name = param.name;
-                insertText += ' ' + name + ' ';
-            }
+                name = '! ' + paramname;                
+            }           
+            insertText += name + ' ';
 
             const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Variable);
 
             if (endofline) {
-                if (param.unit && param.unit !== '-') {
-                    insertText += "   [" + param.unit + "]";
+                if (param.unit) {
+                    //insertText += "   [" + param.unit + "]";
+                    insertText += "   " + param.unit + " ";
                 }
-                if (param.description) {
-                    insertText += "   : " + param.description;
+                if (param.desc.length > 0) {
+                    //insertText += "   : " + param.desc[0]; // for now : is part of documentation
+                    insertText += "   " + param.desc[0];
                 }
             }
 
             //item.detail = param.type;
-            item.detail = param.description;
+            item.detail = param.desc.join('\n');
             item.documentation = new vscode.MarkdownString(`- **Type:** ${param.type}\n- **Default:** ${param.default}\n- **Unit:** ${param.unit}`);
             //item.documentation = new vscode.MarkdownString(`- Description: ${param.description}\n- Type: ${param.type}\n- Unit: ${param.unit}\n- Default: ${param.default}`);
             item.insertText = insertText;
