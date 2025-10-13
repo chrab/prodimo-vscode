@@ -1,3644 +1,4282 @@
 {
  "a1_mc": {
-  "unit": "[mic]",
-  "desc": [],
-  "type": "float"
+  "default": 0.1,
+  "unit": "",
+  "type": "float",
+  "desc": []
  },
  "a1max": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a1min": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a2_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "a2max": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "a2min": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a3_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "a3max": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a3min": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a4_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "a4max": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a4min": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a_nosettle": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "a_settle": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": turbulence alpha"
-  ],
-  "type": "str"
+   "turbulence alpha"
+  ]
  },
  "ABS_CRI": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "adjustRout": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "adjustRTconv": {
+  "default": 0.5,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "albedoUV_mc": {
+  "default": 0.6,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "alpha_from_Mdot": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "alpha_law": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "alpha_mix": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "float",
+  "desc": []
  },
  "alpha_vis": {
+  "default": 0.0,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": viscous heating parameter"
-  ],
-  "type": "float"
+   "viscous heating parameter"
+  ]
  },
  "amax": {
+  "default": "amax",
   "unit": "[mic]",
+  "type": "float",
   "desc": [
-   ": maximum dust particle size"
-  ],
-  "type": "float"
+   "maximum dust particle size"
+  ]
  },
  "amin": {
+  "default": "amin",
   "unit": "[mic]",
+  "type": "float",
   "desc": [
-   ": minimum dust particle size"
-  ],
-  "type": "float"
+   "minimum dust particle size"
+  ]
  },
  "analyse_failed_chemistry": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Andersson2008_yield": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "apow": {
+  "default": "",
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": dust size distr f(a)~a^-apow",
-   ": dust size distr power index f(a)~a^-apow"
-  ],
-  "type": "float"
+   "dust size distr f(a)~a^-apow",
+   "dust size distr power index f(a)~a^-apow"
+  ]
  },
  "ArmitageMRI": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "atol_chem": {
+  "default": 1e-99,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": abs. tolerance for advance_chemistry"
-  ],
-  "type": "float"
+   "abs. tolerance for advance_chemistry"
+  ]
  },
  "auto_charge_exchange": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "auto_create_barrier": {
+  "default": 5000.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "auto_grain_endotherm": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "auto_proton_exchange": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Av_C_mc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Av_CO_mc": {
+  "default": 3.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Av_H2_mc": {
+  "default": 0.5,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Av_mc": {
+  "default": 10.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "AVmax_PDR": {
+  "default": 100.0,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": maximum A_V"
-  ],
-  "type": "str"
+   "maximum A_V"
+  ]
  },
  "AVmin_PDR": {
+  "default": 0.0001,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": minimum A_V"
-  ],
-  "type": "str"
+   "minimum A_V"
+  ]
  },
  "BareComp": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "BarePos": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "barrier_width": {
+  "default": 1e-08,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": 1A in cm"
-  ],
-  "type": "float"
+   "1A in cm"
+  ]
  },
  "basel_filename": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "Bell_quantum_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "beta_mag": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "beta_max": {
+  "default": 45.0,
   "unit": "[deg]",
+  "type": "float",
   "desc": [
-   ": maximum half opening angle of resolved disk",
-   ": defines the cavity opening angle (here 20 degree)"
-  ],
-  "type": "float"
+   "maximum half opening angle of resolved disk",
+   "defines the cavity opening angle (here 20 degree)"
+  ]
  },
  "Bfield": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "bh_mie": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Bpow": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "branchingFraction": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "bulk_reactions": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C13_C12": {
+  "default": 0.014,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C1toN": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C1toO": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C2H2_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C2H2_nonLTE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "C2H4_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C2H6_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C2toN": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C2toO": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C3H4_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C3toN": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C3toO": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C4H2_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C4toN": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C4toO": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "C6H6_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "C_H2_shielding_Bertoldi": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "c_mie": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "C_shielding": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "calcSED": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate SED and images?"
-  ],
-  "type": "bool"
+   "calculate SED and images?"
+  ]
  },
  "Carbon_ionization_pumping": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CG97": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CH3_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CH3CNrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CH3OHrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CH4_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Chaabouni_stick": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "charge_chemistry_v2": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "charge_chemistry_v3": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "check_Mie": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "check_network": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": the osu network fails the checks"
-  ],
-  "type": "bool"
+   "the osu network fails the checks"
+  ]
  },
  "chem_precis": {
+  "default": 1e-08,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": precision in solve_chemistry 1.0E-9",
-   ": precision in solve_chemistry"
-  ],
-  "type": "float"
+   "precision in solve_chemistry",
+   "precision in solve_chemistry 1.0E-9"
+  ]
  },
  "chem_scale": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": scale chemical equations to solve?"
-  ],
-  "type": "bool"
+   "scale chemical equations to solve?"
+  ]
  },
  "chem_stability": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": extend advance when fast - default=T"
-  ],
-  "type": "bool"
+   "extend advance when fast - default=T"
+  ]
  },
  "chemanalysis": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": output for rate network analysis",
-   ": output"
-  ],
-  "type": "bool"
+   "output for rate network analysis",
+   "output"
+  ]
  },
  "chemanalysis_fits": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CHEMEQ": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ChemHeatFac": {
+  "default": 0.33333,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": efficiency of chemical heating"
-  ],
-  "type": "float"
+   "efficiency of chemical heating"
+  ]
  },
  "CHEMSODE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CHI1_mc": {
+  "default": "CHI_ISM",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "CHI2_mc": {
+  "default": "CHI_ISM",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "chi_from_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate chi from UV rad. transfer?",
-   ": calculate chi from UV RT?"
-  ],
-  "type": "bool"
+   "calculate chi from UV rad. transfer?",
+   "calculate chi from UV RT?"
+  ]
  },
  "CHI_ISM": {
+  "default": 1.0,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": strength of incident vertical UV",
-   ": strength of incident interstellar UV",
-   ": UV-field strength (Draine units)"
-  ],
-  "type": "float"
+   "strength of incident vertical UV",
+   "strength of incident interstellar UV",
+   "UV-field strength (Draine units)"
+  ]
  },
  "chi_logbin": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": using spectral windows to calc CHI_PHOTO?"
-  ],
-  "type": "bool"
+   "using spectral windows to calc CHI_PHOTO?"
+  ]
  },
  "CO2_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CO2_nonLTE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CO_diffusion_Lauck": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CO_Emax": {
+  "default": 89460.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "CO_H_2015": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CO_selfshielding_from_RT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CO_sticking": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "COA_Nvib": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "colour_correct_from_RT": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "comp_forces": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "compare_photorates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "compute_line_visibilities": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "compute_visibilities": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "computed_CR_DESORB_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "conserve_pressure": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": conserve pgas instead of n<H>?"
-  ],
-  "type": "bool"
+   "conserve pgas instead of n<H>?"
+  ]
  },
  "cont_lmax": {
+  "default": 9e+99,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "cont_lmin": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "cont_Ndisk": {
+  "default": 150,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cont_Nhole": {
+  "default": 40,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cont_Npuff": {
+  "default": 30,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cont_Nstar": {
+  "default": 4,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cont_Ntheta": {
+  "default": 72,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cont_Rout": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "continuum_cube_fits": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "COphotodesorption_yield2010": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "core_Nlay": {
+  "default": 1.0,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": in the silicate core"
-  ],
-  "type": "int"
+   "in the silicate core"
+  ]
  },
  "CoreMantle": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": ice in mantle or well-mixed?"
-  ],
-  "type": "bool"
+   "ice in mantle or well-mixed?"
+  ]
  },
  "COrovib_sensitivity_analysis": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "correct_endotherm": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "correct_PAH": {
+  "default": 0.4,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "COX_Nrot": {
+  "default": 60,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "COX_Nvib": {
+  "default": 4,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "cputime_max": {
+  "default": 20.0,
   "unit": "[s]",
+  "type": "float",
   "desc": [
-   ": max. CPU time for advance_chemistry"
-  ],
-  "type": "float"
+   "max. CPU time for advance_chemistry"
+  ]
  },
  "CR_elec_heating": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "CR_induced_UV": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use new CR UV field implementation"
-  ],
-  "type": "bool"
+   "use new CR UV field implementation"
+  ]
  },
  "CRCS": {
+  "default": 0.0,
   "unit": "[cm^2]",
+  "type": "float",
   "desc": [
-   ": cosmic rate absorption"
-  ],
-  "type": "float"
+   "cosmic rate absorption"
+  ]
  },
  "CRI": {
+  "default": 1.36e-17,
   "unit": "[1/s]",
+  "type": "float",
   "desc": [
-   ": cosmic ray ionisation of H2",
-   ": cosmic ray ionisation rate H2",
-   ": cosmic ray ionisation H2 (UMIST:1.36E-17)",
-   ": cosmic ray ionisation of H2 (UMIST:1.36E-17)"
-  ],
-  "type": "float"
+   "cosmic ray ionisation of H2",
+   "cosmic ray ionisation of H2 (UMIST:1.36E-17)",
+   "cosmic ray ionisation rate H2",
+   "cosmic ray ionisation H2 (UMIST:1.36E-17)"
+  ]
  },
  "CRI_mc": {
+  "default": 1.36e-17,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "CRP_a": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "CRP_high": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "CRP_lim": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "CRP_low": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "CRP_s0": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "CSrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "CtoN": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "CtoO": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "custom_13COrovib": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "custom_C17Orovib": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "custom_C18Orovib": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "custom_COrovib": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": big ro-vibronic CO model?",
-   ": fast setup"
-  ],
-  "type": "bool"
+   "big ro-vibronic CO model?",
+   "fast setup"
+  ]
  },
  "custom_hitran_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "d2ust_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "d2ust_to_gas": {
+  "default": "",
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": the dust-to-gas mass ratio"
-  ],
-  "type": "float"
+   "the dust-to-gas mass ratio"
+  ]
  },
  "d3ust_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "d3ust_to_gas": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "d4ust_settle": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "d4ust_to_gas": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "daduc": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "debug_photorates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "DECO": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "deduc": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "deltaMRI": {
+  "default": 0.5,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "diffusion_limited": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": reaction barriers are account for"
-  ],
-  "type": "bool"
+   "reaction barriers are account for"
+  ]
  },
  "diffusion_tunnelling": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "diffusion_width": {
+  "default": 1e-08,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "DiffusionApprox": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "disk_structure_damp": {
+  "default": 0.3,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "disk_structure_error_threshold": {
+  "default": 2.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "dist": {
+  "default": 100.0,
   "unit": "[pc]",
+  "type": "float",
   "desc": [
-   ": distance"
-  ],
-  "type": "float"
+   "distance"
+  ]
  },
  "Draine_sticking": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "dust_bins": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "dust_charge_chemistry": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "dust_nonRE": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": dust in non-radiative equilibrium",
-   ": dust not in radiative equilibrium"
-  ],
-  "type": "bool"
+   "dust in non-radiative equilibrium",
+   "dust not in radiative equilibrium"
+  ]
  },
  "dust_opacity_list_file": {
+  "default": "\"dust_opacity_list.txt\"",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "dust_photoelectric_from_RT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "dust_settle": {
+  "default": 0.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": ... switched off"
-  ],
-  "type": "float"
+   "... switched off"
+  ]
  },
  "dust_to_gas": {
-  "unit": "",
+  "default": "",
+  "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": the dust-to-gas mass ratio"
-  ],
-  "type": "float"
+   "the dust-to-gas mass ratio"
+  ]
  },
  "dust_to_gas_mc": {
+  "default": 0.01,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "duty_cycle": {
+  "default": 0.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": as in the benchmark"
-  ],
-  "type": "float"
+   "as in the benchmark"
+  ]
  },
  "DVODE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "DVODEF90": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": fastest routine"
-  ],
-  "type": "bool"
+   "fastest routine"
+  ]
  },
  "DVODPK": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "e2psilon": {
+  "default": "",
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": col.dens. exponent",
-   ": column density exponent"
-  ],
-  "type": "float"
+   "col.dens. exponent",
+   "column density exponent"
+  ]
  },
  "e3psilon": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "e4psilon": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "Eact_H2_Oueslati": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Eads_filename": {
+  "default": "\"AdsorptionEnergies.in\"",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "Eads_from_file": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use UMIST2012/Garrod adsorption energies",
-   ": use UMIST2012 adsorption energies",
-   ": UMIST2012 adsorption energies",
-   ": from AdsorptionEnergies.in"
-  ],
-  "type": "bool"
+   "UMIST2012 adsorption energies",
+   "use UMIST2012/Garrod adsorption energies",
+   "from AdsorptionEnergies.in",
+   "use UMIST2012 adsorption energies"
+  ]
  },
  "Eads_H_Cazaux": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Eads_Minissale": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "el_is_sp": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": electrons as independent species?"
-  ],
-  "type": "bool"
+   "electrons as independent species?"
+  ]
  },
  "Eley_Rideal": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": no Eley-Rideal reactions"
-  ],
-  "type": "bool"
+   "no Eley-Rideal reactions"
+  ]
  },
  "endothermic_barrier": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": no effect on the rates for endo reations"
-  ],
-  "type": "bool"
+   "no effect on the rates for endo reations"
+  ]
  },
  "enhanced_H2form_mc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "env_amax": {
+  "default": -1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": maximum grain size in the envelope"
-  ],
-  "type": "float"
+   "maximum grain size in the envelope"
+  ]
  },
  "env_cav_coef": {
+  "default": 0.9,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "env_cav_pow": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": shape of the cavity"
-  ],
-  "type": "float"
+   "shape of the cavity"
+  ]
  },
  "env_Mdot": {
+  "default": "1.d-6",
   "unit": "",
+  "type": "str",
   "desc": [
-   ": mass infall rate M_sun/yr"
-  ],
-  "type": "str"
+   "mass infall rate M_sun/yr"
+  ]
  },
  "env_method": {
+  "default": 3,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "env_Rcavity": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": \"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin"
-  ],
-  "type": "int"
+   "\"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin"
+  ]
  },
  "env_Rcent": {
+  "default": 100.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": centrifugal radius"
-  ],
-  "type": "str"
+   "centrifugal radius"
+  ]
  },
  "env_structure": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "eps_dJnu": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "eps_dTworst": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "epsilon": {
+  "default": 1.5,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": column density exponent",
-   ": power index of vert. col.dens.",
-   ": col.dens. exponent",
-   ": power index of vert. col.dens. as func of x"
-  ],
-  "type": "float"
+   "column density exponent",
+   "power index of vert. col.dens. as func of x",
+   "power index of vert. col.dens.",
+   "col.dens. exponent"
+  ]
  },
  "equil_BURCAT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "equil_chem": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "equil_cond": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "equil_elemadjust": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ER_tunnelling": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": Eley-Rideal tunnelling"
-  ],
-  "type": "bool"
+   "Eley-Rideal tunnelling"
+  ]
  },
  "escape_maser": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "escape_Radex_slab": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "escape_Radex_sphere": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "escape_sphere": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "escpro_fit": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "escpro_lmax": {
+  "default": 40.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "escpro_lmin": {
+  "default": 5.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "estimate_13CO_12CO_ratio": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "evap_fac": {
+  "default": 0.01,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": no chemidesorption"
-  ],
-  "type": "float"
+   "no chemidesorption"
+  ]
  },
  "f2PAH": {
+  "default": "",
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": PAH abundance relative to ISM"
-  ],
-  "type": "float"
+   "PAH abundance relative to ISM"
+  ]
  },
  "f3PAH": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "f4PAH": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "f70": {
+  "default": "3.16d-19",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "fake_AD_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_CE_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_DR_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_IN_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_NN_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_NN_prefactor": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_RA_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fake_RR_chemical_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fast_semi_implicit": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Faure_H2_op": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fbinding": {
+  "default": 0.5,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "Federman_H2_shielding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "first_order_tdesorption": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "fixed_surface_density": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "fixed_water_op": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "FLiTs": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": want to run FLiTs afterwards?"
-  ],
-  "type": "bool"
+   "want to run FLiTs afterwards?"
+  ]
  },
  "FLiTs_contsub": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "FLiTsOBS_file": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "fPAH": {
+  "default": 0.1,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": PAH abundance with respect to ISM",
-   ": PAH abundance relative to ISM",
-   ": PAH abundance w.r.t. ISM"
-  ],
-  "type": "float"
+   "PAH abundance with respect to ISM",
+   "PAH abundance relative to ISM",
+   "PAH abundance w.r.t. ISM"
+  ]
  },
  "fPAH_mc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "freeze_chemistry": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": freeze chemical concentrations?"
-  ],
-  "type": "bool"
+   "freeze chemical concentrations?"
+  ]
  },
  "freeze_diskstruc": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": freeze density/pressure structure?"
-  ],
-  "type": "bool"
+   "freeze density/pressure structure?"
+  ]
  },
  "freeze_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": freeze radiative transfer results Td/Jv?",
-   ": freeze RT results"
-  ],
-  "type": "bool"
+   "freeze radiative transfer results Td/Jv?",
+   "freeze RT results"
+  ]
  },
  "freeze_Tgas": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": freeze gas temperature?"
-  ],
-  "type": "bool"
+   "freeze gas temperature?"
+  ]
  },
  "from_hash": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "fUV": {
+  "default": -1.0,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": LUV/Lstar",
-   ": UV excess LUV/Lstar",
-   ": UV excess"
-  ],
-  "type": "float"
+   "LUV/Lstar",
+   "UV excess"
+  ]
  },
  "FXray_PDR": {
+  "default": 1e-20,
   "unit": "[erg/s/cm2]",
+  "type": "float",
   "desc": [
-   ": incident Xray flux  2.7/1e-20"
-  ],
-  "type": "float"
+   "incident Xray flux  2.7/1e-20"
+  ]
  },
  "gas_shielded_photodesorption": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "gbar": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "GEAR": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "grain_H2_op_conversion": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "gtaper": {
+  "default": -99.0,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": tapering-off exponent"
-  ],
-  "type": "float"
+   "tapering-off exponent"
+  ]
  },
  "gzip": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "H2_Cazaux2010": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2_Cazaux2017": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "H2_Jura": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2_no_surf_Cazaux": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2_shielding": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2_surf_chem_only": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": not only making H2"
-  ],
-  "type": "bool"
+   "not only making H2"
+  ]
  },
  "H2COrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2O_addHITRANlines": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "H2O_coll_rate_sensitivity_analysis": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "H2O_Daniel2011": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": new H2O collision rates"
-  ],
-  "type": "bool"
+   "new H2O collision rates"
+  ]
  },
  "H2O_Meisner_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H2O_pumping": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "H2O_rovib_Lambda": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": big ro-vib H2O models?"
-  ],
-  "type": "bool"
+   "big ro-vib H2O models?"
+  ]
  },
  "H2O_rovibration": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": big ro-vib H2O models?"
-  ],
-  "type": "bool"
+   "big ro-vib H2O models?"
+  ]
  },
  "H2Srovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "H_diffusion_Cazaux_ice": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "H_sticking": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": not using Hollenbach & Salpeter H sticking"
-  ],
-  "type": "bool"
+   "not using Hollenbach & Salpeter H sticking"
+  ]
  },
  "half_same_species": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Hall_Lesur": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Hall_MRI": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "handle_UMIST": {
+  "default": "",
   "unit": "",
+  "type": "str",
   "desc": [
-   ": handle UMIST-data (erase/overwrite/onlyadd)",
-   ": handle UMIST-data (overwrite/erase/onlyadd)"
-  ],
-  "type": "str"
+   "handle UMIST-data (erase/overwrite/onlyadd)",
+   "handle UMIST-data (overwrite/erase/onlyadd)"
+  ]
  },
  "Hatom_bb": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Hatom_bf": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "HCN_nonLTE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "HCNrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "HD_shielding": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Heat_per_PhotoDiss": {
+  "default": 2.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": heating by photodissociation"
-  ],
-  "type": "float"
+   "heating by photodissociation"
+  ]
  },
  "high_res_photodata": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "HighTempRateExtrapol": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "hitran2020": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "hitran_min_strength": {
+  "default": 1e-05,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "hollow_sphere": {
+  "default": 0.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": max hollow volume ratio"
-  ],
-  "type": "float"
+   "max hollow volume ratio"
+  ]
  },
  "hot_atom": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "Hunderi": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Hunderi_CDE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ice_photodesorption_from_RT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "icepot": {
+  "default": 0.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": a = abare + const*abare^icepot"
-  ],
-  "type": "float"
+   "a = abare + const*abare^icepot"
+  ]
  },
  "IcePowPos": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "ignore_Tg_midplane": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "image_fov_arcsec": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "immediate_FLiTs": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "immediate_lines": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": line RT directly after init?",
-   ": line RT directly after init (requires write_pop)?"
-  ],
-  "type": "bool"
+   "line RT directly after init?",
+   "line RT directly after init (requires write_pop)?"
+  ]
  },
  "incl": {
+  "default": 45.0,
   "unit": "[deg]",
+  "type": "float",
   "desc": [
-   ": inclination (0=face-on)"
-  ],
-  "type": "float"
+   "inclination (0=face-on)"
+  ]
  },
  "interface1D": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": activate the 1D interface"
-  ],
-  "type": "bool"
+   "activate the 1D interface"
+  ]
  },
  "interface2D": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ion_drift": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ion_H_coll": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "IR_ISRF": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Jback_from_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate background Jnu from rad. transfer?",
-   ": calculate background Jnu from RT?"
-  ],
-  "type": "bool"
+   "calculate background Jnu from rad. transfer?",
+   "calculate background Jnu from RT?"
+  ]
  },
  "keep_iterations": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "KIDA_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "KIDADB": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "L1": {
+  "default": "1./3.",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "L2": {
+  "default": "1./3.",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "Lacc": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Lalpha": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "lapack_solver": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Leiden_photoparameters": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_cube": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": 3D-line cube output?"
-  ],
-  "type": "bool"
+   "3D-line cube output?"
+  ]
  },
  "line_cube_analysis": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_cube_fits": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": 3D-line cube output ?"
-  ],
-  "type": "bool"
+   "3D-line cube output ?"
+  ]
  },
  "line_cube_whichside": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "line_image_side_Npix": {
+  "default": 201,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": line image size fore cube output"
-  ],
-  "type": "int"
+   "line image size fore cube output"
+  ]
  },
  "line_Ndisk": {
+  "default": 100,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "line_Nhole": {
+  "default": 40,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "line_nobackground": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_nodust": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_nostar": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_novel": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_Npuff": {
+  "default": 10,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "line_Nstar": {
+  "default": 5,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": parameters for the line transfer grid"
-  ],
-  "type": "int"
+   "parameters for the line transfer grid"
+  ]
  },
  "line_Ntheta": {
+  "default": 72,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "line_overlap": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "line_Rout": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "line_transfer": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate line transfer?"
-  ],
-  "type": "bool"
+   "calculate line transfer?"
+  ]
  },
  "line_vkep": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "line_vkeppgrad": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "Lique2015_H2_H_rates": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "LLL": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "lmaxSED": {
+  "default": 5000.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": minimum lambda[mic]",
-   ": maximum lambda[mic]"
-  ],
-  "type": "float"
+   "minimum lambda[mic]",
+   "maximum lambda[mic]"
+  ]
  },
  "lminSED": {
+  "default": 0.1,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": minimum lambda[mic]"
-  ],
-  "type": "float"
+   "minimum lambda[mic]"
+  ]
  },
  "LSODE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "LSODES": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Lstar": {
+  "default": "Lstar",
   "unit": "[Lsun]",
+  "type": "float",
   "desc": [
-   ": stellar luminosity"
-  ],
-  "type": "float"
+   "stellar luminosity"
+  ]
  },
  "LTEpopulation": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "M2disk": {
+  "default": "",
   "unit": "[Msun]",
+  "type": "float",
   "desc": [
-   ": disk mass"
-  ],
-  "type": "str"
+   "disk mass"
+  ]
  },
  "M2dot": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "M2dust": {
-  "unit": "",
+  "default": -1.0,
+  "unit": "[Msun]",
+  "type": "float",
   "desc": [
-   ": dust mass"
-  ],
-  "type": "float"
+   "dust mass"
+  ]
  },
  "M3disk": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "M3dot": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "M3dust": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "M4disk": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "M4dot": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "M4dust": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "match_Cazaux2010": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "max_diff_photorates": {
+  "default": 10.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "maxit": {
+  "default": 9999999,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": maximum number of global iterations",
-   ": max number of global iterations",
-   ": max number of ProDiMo main iterations"
-  ],
-  "type": "int"
+   "maximum number of global iterations",
+   "max number of global iterations",
+   "max number of ProDiMo main iterations"
+  ]
  },
  "maxtime": {
+  "default": 1e+99,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": maximum computational time [sec]"
-  ],
-  "type": "float"
+   "maximum computational time [sec]"
+  ]
  },
  "Maxwell_Garnett": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "mc_grid": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "mc_only": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "mc_steady_state": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "mc_thermal_balance": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "MCFOST_B2": {
+  "default": "MCFOST_BETA",
   "unit": "",
+  "type": "float",
   "desc": [
-   ": flaring exponent",
-   ": flaring power"
-  ],
-  "type": "float"
+   "flaring exponent",
+   "flaring power"
+  ]
  },
  "MCFOST_B3": {
+  "default": "MCFOST_BETA",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "MCFOST_B4": {
+  "default": "MCFOST_BETA",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "MCFOST_BETA": {
+  "default": 1.1,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": flaring power",
-   ": flaring exponent"
-  ],
-  "type": "float"
+   "flaring power",
+   "flaring exponent"
+  ]
  },
  "MCFOST_H0": {
+  "default": 10.0,
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": scale height ...",
-   ": scale height"
-  ],
-  "type": "float"
+   "scale height ...",
+   "scale height"
+  ]
  },
  "MCFOST_H2": {
+  "default": "MCFOST_H0",
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": scale height",
-   ": scale height ..."
-  ],
-  "type": "float"
+   "scale height",
+   "scale height ..."
+  ]
  },
  "MCFOST_H3": {
+  "default": "MCFOST_H0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "MCFOST_H4": {
+  "default": "MCFOST_H0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "MCFOST_LIKE": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": parametric disk structure like in MCFOST?",
-   ": fixed disk structure like in MCFOST?",
-   ": use Tdust and mu=2.3amu for cT?"
-  ],
-  "type": "bool"
+   "parametric disk structure like in MCFOST?",
+   "fixed disk structure like in MCFOST?",
+   "use Tdust and mu=2.3amu for cT?"
+  ]
  },
  "MCFOST_R2": {
+  "default": -1.0,
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": ref.radius",
-   ": reference radius for this zone",
-   ": ... belonging to reference radius"
-  ],
-  "type": "float"
+   "ref.radius",
+   "... belonging to reference radius"
+  ]
  },
  "MCFOST_R3": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "MCFOST_R4": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "MCFOST_RREF": {
+  "default": 100.0,
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": ... belonging to reference radius",
-   ": ref.radius"
-  ],
-  "type": "float"
+   "... belonging to reference radius",
+   "ref.radius"
+  ]
  },
  "MCMAX_LIKE": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": p = n k Tgas for hydro-structure"
-  ],
-  "type": "bool"
+   "p = n k Tgas for hydro-structure"
+  ]
  },
  "Mdisk": {
+  "default": "Mdisk",
   "unit": "[Msun]",
+  "type": "float",
   "desc": [
-   ": disk mass",
-   ": disk mass of outer disk"
-  ],
-  "type": "str"
+   "disk mass",
+   "disk mass of outer disk"
+  ]
  },
  "Mdot": {
-  "unit": "[Msol/yr]",
+  "default": 0.0,
+  "unit": "[Msun/yr]",
+  "type": "float",
   "desc": [
-   ": accretion rate"
-  ],
-  "type": "str"
+   "accretion rate"
+  ]
  },
  "Mdust": {
-  "unit": "",
+  "default": -1.0,
+  "unit": "[Msun]",
+  "type": "float",
   "desc": [
-   ": dust mass"
-  ],
-  "type": "float"
+   "dust mass"
+  ]
  },
  "mean_dust_photoelectric_from_RT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "MEBDF": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "memLimitGB": {
+  "default": 8,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "merge_reaction_files": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Mie_ascii": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "min_Ng_iter": {
+  "default": 99,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "Minissale_evap": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "model_name": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "molecular_cloud": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": initial concentrations from mol.cloud.?"
-  ],
-  "type": "bool"
+   "initial concentrations from mol.cloud.?"
+  ]
  },
  "monoSED": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use monochromatic mode?",
-   ": monochrmoatic SED?"
-  ],
-  "type": "bool"
+   "use monochromatic mode?",
+   "monochrmoatic SED?"
+  ]
  },
  "MRI": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Mstar": {
+  "default": "Mstar",
   "unit": "[Msun]",
+  "type": "float",
   "desc": [
-   ": stellar mass",
-   ": stellar mass (Lambda Ori)"
-  ],
-  "type": "float"
+   "stellar mass",
+   "stellar mass (Lambda Ori)"
+  ]
  },
  "Mumma_water_op": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "N1UV": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "N2_shielding": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use N2 self-shielding"
-  ],
-  "type": "bool"
+   "use N2 self-shielding"
+  ]
  },
  "N_age": {
+  "default": 1,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": no of successive output ages",
-   ": for more detailed models more steps might be required"
-  ],
-  "type": "int"
+   "no of successive output ages",
+   "for more detailed models more steps might be required"
+  ]
  },
  "N_age_mc": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NBaregrains": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "NDUST": {
+  "default": 1,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": number of selected dust species",
-   ": number of dust species, Vol%, materials",
-   ": number of dust species"
-  ],
-  "type": "int"
+   "number of selected dust species",
+   "number of dust species, Vol%, materials",
+   "number of dust species"
+  ]
  },
  "new_energetics": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "new_escape": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": just to make it faster"
-  ],
-  "type": "bool"
+   "just to make it faster"
+  ]
  },
  "new_escape_lineflux": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "new_shielding": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "NewChemScan": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": new initial abund. from down-right scan?"
-  ],
-  "type": "bool"
+   "new initial abund. from down-right scan?"
+  ]
  },
  "newUVphoto": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NH3rovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "nH_mc": {
+  "default": 10000.0,
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "float",
+  "desc": []
  },
  "nH_PDR": {
+  "default": 10,
   "unit": "[cm^-3]",
+  "type": "float",
   "desc": [
-   ": H nuclei density",
-   ": H nuclei density 3.16E+5"
-  ],
-  "type": "str"
+   "H nuclei density 3.16E+5",
+   "H nuclei density"
+  ]
  },
  "nH_surround": {
+  "default": 100.0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NHfilter": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Ninner": {
+  "default": 10,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NIPL": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "NLAM": {
+  "default": 20,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NlamSED": {
+  "default": 40,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": number of lambda gridpoints"
-  ],
-  "type": "int"
+   "number of lambda gridpoints"
+  ]
  },
  "Nlay": {
+  "default": 2.0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NlayS6": {
+  "default": 200.0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NMANTLE": {
+  "default": 0,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": number of ice species in dust"
-  ],
-  "type": "int"
+   "number of ice species in dust"
+  ]
  },
  "NnewWall": {
+  "default": 5,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "no_background_pumping": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "no_C_shielding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "noEUV": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "NOrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Nouter": {
+  "default": 3,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "Nphi": {
+  "default": 9,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "Npixel_continuum": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "nprod_file1": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "nprod_file2": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "NSIZE": {
+  "default": "",
   "unit": "",
+  "type": "int",
   "desc": [
-   ": number of dust size bins",
-   ": number of sizebins"
-  ],
-  "type": "int"
+   "number of dust size bins",
+   "number of sizebins"
+  ]
  },
  "NTestColl": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "Ntheta": {
+  "default": 17,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "num_noerase": {
+  "default": 0,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": exceptions from erasing UMIST data"
-  ],
-  "type": "int"
+   "exceptions from erasing UMIST data"
+  ]
  },
  "numerical_jacobian": {
+  "default": 0,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "int",
+  "desc": []
  },
  "NUV": {
+  "default": 3,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NXratio": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "NXray": {
+  "default": 20,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NXX": {
+  "default": 30,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NZONES": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "NZZ": {
+  "default": 30,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "O17_O16": {
+  "default": "1./1900.0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "O18_O16": {
+  "default": "1./498.7",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "O2rovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "O_diffusion_Congiu": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ode_element_conservation": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "OH_ExoMol": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": non-LTE OH model"
-  ],
-  "type": "bool"
+   "non-LTE OH model"
+  ]
  },
  "OH_nonLTE": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "OH_pumping": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "OHrovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "old_surface_GG_reactions": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "old_wall_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "openmp_Nlev": {
+  "default": 1000,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "optimise_phi": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "optimise_theta": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "OSU_Alchemic": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use the network of the benchmark"
-  ],
-  "type": "bool"
+   "use the network of the benchmark"
+  ]
  },
  "OSU_rates": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": using the OSU rates?"
-  ],
-  "type": "bool"
+   "using the OSU rates?"
+  ]
  },
  "other_PAH": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "other_reactions": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "PAH_charged": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "PAH_from_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": PAH heating from cross-sections?"
-  ],
-  "type": "bool"
+   "PAH heating from cross-sections?"
+  ]
  },
  "PAH_in_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": are PAH opacities included in rad.trans.?"
-  ],
-  "type": "bool"
+   "are PAH opacities included in rad.trans.?"
+  ]
  },
  "PAH_name": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "PAH_NC": {
+  "default": "",
   "unit": "[-]",
+  "type": "int",
   "desc": [
-   ": number of C atoms in PAH"
-  ],
-  "type": "int"
+   "number of C atoms in PAH"
+  ]
  },
  "PAH_NH": {
+  "default": "",
   "unit": "[-]",
+  "type": "int",
   "desc": [
-   ": number of H atoms in PAH"
-  ],
-  "type": "int"
+   "number of H atoms in PAH"
+  ]
  },
  "PAobj": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "parallel_chem": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "parallel_debug": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "perfect_ice": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use long integration time for ices?"
-  ],
-  "type": "bool"
+   "use long integration time for ices?"
+  ]
  },
  "pg_mc": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "photodesorption": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "photorates_version": {
+  "default": 2,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "PlanckSpec": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "population_restart": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "precomputed_CO_selfshielding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "precomputed_H2_CO_selfshielding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "preconditioning": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "previous_mc_model_filename": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "ProDiMo2mcfost_version": {
+  "default": 3,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "pseudo_aniso_scat": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": ignore forward scattering"
-  ],
-  "type": "bool"
+   "ignore forward scattering"
+  ]
  },
  "pseudo_Voigt": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "PStar": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "pUV": {
+  "default": 0.2,
   "unit": "[-]",
+  "type": "float",
   "desc": [
-   ": UV powerlaw exponent",
-   ": UV power-lax index",
-   ": UV powerlaw index"
-  ],
-  "type": "float"
+   "UV powerlaw exponent",
+   "UV power-lax index",
+   "UV powerlaw index"
+  ]
  },
  "QIndexTotVol": {
+  "default": 0,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": volume of ice available can vary from place to place"
-  ],
-  "type": "int"
+   "volume of ice available can vary from place to place"
+  ]
  },
  "QPosDep": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": position dependent Q efficiency calculation"
-  ],
-  "type": "bool"
+   "position dependent Q efficiency calculation"
+  ]
  },
  "qsa": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "QSSA": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "quadp_solver": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use quadruple precision solver?"
-  ],
-  "type": "bool"
+   "use quadruple precision solver?"
+  ]
  },
  "QvisSplit": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r1aduc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r1educ": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r2aduc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r2educ": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "float",
+  "desc": []
  },
  "R2in": {
+  "default": "",
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": inner disk radius"
-  ],
-  "type": "float"
+   "inner disk radius"
+  ]
  },
  "R2out": {
+  "default": 1e+99,
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": outer radius of this zone",
-   ": outer disk radius"
-  ],
-  "type": "float"
+   "outer disk radius"
+  ]
  },
  "r3aduc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r3educ": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "R3in": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "R3out": {
+  "default": 1e+99,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r4aduc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "r4educ": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "R4in": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "",
+  "desc": []
  },
  "R4out": {
+  "default": 1e+99,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "RADAU": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "radtrans": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": continuum radiative transfer?",
-   ": calculate dust continuum rad. transfer?",
-   ": calculate dust continuum RT?"
-  ],
-  "type": "bool"
+   "continuum radiative transfer?",
+   "calculate dust continuum rad. transfer?",
+   "calculate dust continuum RT?"
+  ]
  },
  "raduc": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": radius-fac up to where col.dens. increases"
-  ],
-  "type": "float"
+   "radius-fac up to where col.dens. increases"
+  ]
  },
  "random_initial_population": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "rayleighgans_limit": {
+  "default": "7.d-1",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "RDI": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "reacfile1": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "reacfile2": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "reaction_file": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "read_fits_binary": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "read_reactions_in_csv": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "readMCFOST": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "reduc": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": inner rim increase of col.dens."
-  ],
-  "type": "str"
+   "inner rim increase of col.dens."
+  ]
  },
  "refine_Spitzer": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "refine_zz": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "refinement_fac": {
+  "default": -1.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "reinit_RT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "resolve_star": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "restart": {
+  "default": "",
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": run from restart?",
-   ": restart from checkpoint file?"
-  ],
-  "type": "bool"
+   "run from restart?",
+   "restart from checkpoint file?"
+  ]
  },
  "rho_gr": {
+  "default": "",
   "unit": "[g/cm^3]",
+  "type": "float",
   "desc": [
-   ": dust grain material mass density"
-  ],
-  "type": "float"
+   "dust grain material mass density"
+  ]
  },
  "rho_gr_mc": {
+  "default": 3.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Rin": {
+  "default": "Rin",
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": inner disk radius",
-   ": inner radius of outer disk"
-  ],
-  "type": "float"
+   "inner disk radius",
+   "inner radius of outer disk"
+  ]
  },
  "RKCK": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "ROSEN": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Rout": {
+  "default": "Rout",
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": outer disk radius",
-   ": outer radius of the whole structure"
-  ],
-  "type": "float"
+   "outer disk radius",
+   "outer radius of the whole structure"
+  ]
  },
  "Rph_generic_shape": {
+  "default": 2,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "Rphoto_bandint": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use band-integrated photo-rates?"
-  ],
-  "type": "bool"
+   "use band-integrated photo-rates?"
+  ]
  },
  "Rphoto_from_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate photorates from rad. transfer?",
-   ": calculate photorates from RT?",
-   ": calculate photorates from RT"
-  ],
-  "type": "bool"
+   "calculate photorates from rad. transfer?",
+   "calculate photorates from RT?",
+   "calculate photorates from RT"
+  ]
  },
  "Rtaper": {
+  "default": 1e+99,
   "unit": "[AU]",
+  "type": "float",
   "desc": [
-   ": tapering-off radius"
-  ],
-  "type": "float"
+   "tapering-off radius"
+  ]
  },
  "RTitmax": {
+  "default": 50,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": just for testing"
-  ],
-  "type": "int"
+   "just for testing"
+  ]
  },
  "rtol_chem": {
+  "default": 2e-05,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": rel. tolerance for advance_chemistry"
-  ],
-  "type": "float"
+   "rel. tolerance for advance_chemistry"
+  ]
  },
  "SDIRK": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "self_shielding": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "settle_method": {
+  "default": 1,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": no dust settling",
-   ": dust settling (Dubrulle et al. 1995)",
-   ": power-law dust settling",
-   ": dust settling",
-   ": dust settling (2=Dubrulle et al. 1995)"
-  ],
-  "type": "int"
+   "dust settling (Dubrulle et al. 1995)",
+   "power-law dust settling",
+   "no dust settling",
+   "dust settling",
+   "dust settling (2=Dubrulle et al. 1995)"
+  ]
  },
  "SEULEX": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "shielding_mc": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": do not account for self-shielding in mc"
-  ],
-  "type": "bool"
+   "do not account for self-shielding in mc"
+  ]
  },
  "sizefit_powerindex": {
+  "default": 2.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "sizeParam_Mie": {
+  "default": "5.5d5",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "slab_escape": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "slot_ix": {
+  "default": 1,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "slot_iz": {
+  "default": "NZZ-1",
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "slot_keep": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "smoothEUV": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "SO2rovib_LTE_cooling": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "soft_edges": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": add confining boundary layers?"
-  ],
-  "type": "bool"
+   "add confining boundary layers?"
+  ]
  },
  "solve_diskstruc": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": solve the vertical hydrostatic eq.?",
-   ": solve the vertical disk structure?",
-   ": solve the vertical hydrostat.eq.?",
-   ": solve the vertical hydrostatic structure?"
-  ],
-  "type": "bool"
+   "solve the vertical hydrostatic eq.?",
+   "solve the vertical disk structure?",
+   "solve the vertical hydrostatic structure?",
+   "solve the vertical hydrostat.eq.?"
+  ]
  },
  "solve_temp": {
+  "default": "",
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": solve the heating/cooling balance?",
-   ": solve the heating/cooling balance? still experimental for envelop so deactived",
-   ": solve the gas heating/cooling balance?"
-  ],
-  "type": "bool"
+   "solve the heating/cooling balance?",
+   "solve the gas heating/cooling balance?",
+   "solve the heating/cooling balance? still experimental for envelop so deactived"
+  ]
  },
  "sparse_Nlev": {
+  "default": 121,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "STAND": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "STANDfilter": {
+  "default": "\"",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STANDover": {
+  "default": true,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "start_from_previous_mc_model": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "stateq_min_iter": {
+  "default": 3,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "STCRI": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STCRP_a": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STCRP_b": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STCRP_high": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STCRP_low": {
+  "default": "-1.d0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "STCRP_method": {
+  "default": -1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "STCRP_NHE": {
+  "default": 2.5e+25,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "sticking_coefficient": {
+  "default": 1.0,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": for all species"
-  ],
-  "type": "float"
+   "for all species"
+  ]
  },
  "STIFBS": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "stop_after_contRT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "stop_after_init": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use this to just check the model setup",
-   ": use this to check the model setup"
-  ],
-  "type": "bool"
+   "use this to just check the model setup",
+   "use this to check the model setup"
+  ]
  },
  "surf_competition": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "surface_benchmark": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": cannot have H2OCO#",
-   ": use a combination of switches instead"
-  ],
-  "type": "bool"
+   "use a combination of switches instead",
+   "cannot have H2OCO#"
+  ]
  },
  "surface_chemistry": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "SVD_improve": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "switch_off_H2form": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "switch_off_photo": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "tau_cutoff": {
+  "default": 10.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "Tback": {
+  "default": 2.7,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Td_from_RT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": calculate dust temp. from rad. transfer?",
-   ": calculate dust temp. from RT?"
-  ],
-  "type": "bool"
+   "calculate dust temp. from rad. transfer?",
+   "calculate dust temp. from RT?"
+  ]
  },
  "Td_mc": {
+  "default": 10.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "Tdust_PDR": {
+  "default": 20.0,
   "unit": "[K]",
+  "type": "float",
   "desc": [
-   ": dust temperature"
-  ],
-  "type": "float"
+   "dust temperature"
+  ]
  },
  "Teff": {
+  "default": "",
   "unit": "[K]",
+  "type": "float",
   "desc": [
-   ": stellar effective temperature"
-  ],
-  "type": "float"
+   "stellar effective temperature"
+  ]
  },
  "temp_precis": {
+  "default": 1e-06,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": rel. precision in T-determination",
-   ": rel. tolerance for temperature determination"
-  ],
-  "type": "float"
+   "rel. precision in T-determination",
+   "rel. tolerance for temperature determination"
+  ]
  },
  "Tex_subthermal": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Textrapolate": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": extrapolate T in gas-phase reactions?"
-  ],
-  "type": "bool"
+   "extrapolate T in gas-phase reactions?"
+  ]
  },
  "Tg_mc": {
+  "default": 10.0,
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "Tgas_once": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Tgas_PDR": {
+  "default": 50.0,
   "unit": "[K]",
+  "type": "float",
   "desc": [
-   ": gas temperature"
-  ],
-  "type": "float"
+   "gas temperature"
+  ]
  },
  "thermal_diffusion_only": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": only thermal diffusion"
-  ],
-  "type": "bool"
+   "only thermal diffusion"
+  ]
  },
  "threeReactants": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": 3 educts in Reactions.in?",
-   ": 3-column format for Reactions.in?"
-  ],
-  "type": "bool"
+   "3 educts in Reactions.in?",
+   "3-column format for Reactions.in?"
+  ]
  },
  "time_chem_disk": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": solve time-dependent disk chemistry?"
-  ],
-  "type": "bool"
+   "solve time-dependent disk chemistry?"
+  ]
  },
  "time_chem_disk_ifspecies": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "time_dependent": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "tol_convergence": {
+  "default": 0.05,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": convergence criterion for global interation"
-  ],
-  "type": "float"
+   "convergence criterion for global interation"
+  ]
  },
  "tol_diskstruc": {
+  "default": 1e-08,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": rel.&abs. tolerance for vertical disk struc"
-  ],
-  "type": "float"
+   "rel.&abs. tolerance for vertical disk struc"
+  ]
  },
  "tunnelling": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": no surface reaction tunnelling"
-  ],
-  "type": "bool"
+   "no surface reaction tunnelling"
+  ]
  },
  "UMIST2006": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": UMIST version"
-  ],
-  "type": "bool"
+   "UMIST version"
+  ]
  },
  "UMIST2012": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": using UMIST2012 rates?",
-   ": using UMIST 2012 reactions",
-   ": use UMIST2012 chemical database",
-   ": using UMIST 2012 rates?"
-  ],
-  "type": "bool"
+   "using UMIST2012 rates?",
+   "using UMIST 2012 reactions",
+   "using UMIST 2012 rates?",
+   "use UMIST2012 chemical database"
+  ]
  },
  "UMIST2022": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "umist_code": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "UMISTDB": {
+  "default": "",
   "unit": "",
-  "desc": [],
-  "type": "str"
+  "type": "str",
+  "desc": []
  },
  "unique_fbinding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "unit_testing": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "use_Alchemic_nsite": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "use_chemsol": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "use_drift_phoenix": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "use_MCFOST_rgrid": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "UV_H2": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": electronic levels for H2?",
-   ": use electronic level?"
-  ],
-  "type": "bool"
+   "electronic levels for H2?",
+   "use electronic level?"
+  ]
  },
  "UVgasRT": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "UVphoto_highres": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "UVpumping": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use large model atoms?"
-  ],
-  "type": "bool"
+   "use large model atoms?"
+  ]
  },
  "v_turb": {
+  "default": 0.15,
   "unit": "[km/s]",
+  "type": "float",
   "desc": [
-   ": turbulent Doppler width",
-   ": turbulent velocity",
-   ": doppler width of UV H2-lines"
-  ],
-  "type": "float"
+   "turbulent Doppler width",
+   "turbulent velocity",
+   "doppler width of UV H2-lines"
+  ]
  },
  "verbose_level": {
+  "default": 0,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": how much output? (-1...4)",
-   ": how much output? (0...4)",
-   ": minimal output"
-  ],
-  "type": "int"
+   "how much output? (-1...4)",
+   "how much output? (0...4)",
+   "minimal output"
+  ]
  },
  "vert_pot": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "VHEAT_GAS": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": viscous heat into dust",
-   ": put heat into the dust"
-  ],
-  "type": "bool"
+   "viscous heat into dust",
+   "put heat into the dust"
+  ]
  },
  "Voigt_escape": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "vturb_from_alpha": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "vturb_mc": {
+  "default": 1.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "water_h2_ortho_para": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "water_ice_photodesorption_eff": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "weight_FLITS": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "weight_HEIGHTS": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "weight_IMAGES": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "weight_LINES": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "weight_PHOTO": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "weight_SPITZER": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": "float"
+  "type": "float",
+  "desc": []
  },
  "weight_VISIB": {
+  "default": "1.0/5.0",
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "str",
+  "desc": []
  },
  "Wolcott_Green_shielding": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "write_fits_binary": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": use fits format for Mie and restart output",
-   ": use fits-format?"
-  ],
-  "type": "bool"
+   "use fits format for Mie and restart output",
+   "use fits-format?"
+  ]
  },
  "write_pop": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": write output for immediate line transfer?",
-   ": write output for line transfer?"
-  ],
-  "type": "bool"
+   "write output for immediate line transfer?",
+   "write output for line transfer?"
+  ]
  },
  "write_posDep_opac": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": write position dependnet opacity output files"
-  ],
-  "type": "bool"
+   "write position dependnet opacity output files"
+  ]
  },
  "write_zdist": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Xray_Bg_Flux": {
+  "default": 0.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Xray_Bg_Temp": {
+  "default": 40000000.0,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "float",
+  "desc": []
  },
  "Xray_Bg_XRB": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Xray_Emax": {
+  "default": 61.99215628,
   "unit": "",
+  "type": "float",
   "desc": [
-   ": optional: maximum photon energy to be considered as Xray [keV]",
-   ": optional: max. energy to be considered as X-ray [keV]"
-  ],
-  "type": "float"
+   "optional: maximum photon energy to be considered as Xray [keV]",
+   "optional: max. energy to be considered as X-ray [keV]"
+  ]
  },
  "Xray_Emin": {
-  "unit": "",
+  "default": 0.1,
+  "unit": "[keV]",
+  "type": "float",
   "desc": [
-   ": minimum energy considered as Xray",
-   ": X-ray min. photon energy",
-   ": minimum X-ray energy"
-  ],
-  "type": "float"
+   "X-ray min. photon energy",
+   "minimum energy considered as Xray",
+   "minimum X-ray energy"
+  ]
  },
  "Xray_FUVumist": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "Xray_Lum": {
+  "default": 1e+30,
   "unit": "[erg/s]",
+  "type": "float",
   "desc": [
-   ": X-ray luminosity",
-   ": Xray luminosity"
-  ],
-  "type": "str"
+   "X-ray luminosity",
+   "Xray luminosity"
+  ]
  },
  "Xray_mc": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Xray_norm": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "Xray_Temp": {
+  "default": 10000000.0,
   "unit": "[K]",
+  "type": "float",
   "desc": [
-   ": X-ray emission temperature",
-   ": Xray emission temperature",
-   ": shape of X-ray spectrum"
-  ],
-  "type": "str"
+   "X-ray emission temperature",
+   "Xray emission temperature",
+   "shape of X-ray spectrum"
+  ]
  },
  "Xray_wlp": {
+  "default": 1000,
   "unit": "",
+  "type": "int",
   "desc": [
-   ": optional: number of wl points used for the X-Ray spectrum"
-  ],
-  "type": "int"
+   "optional: number of wl points used for the X-Ray spectrum"
+  ]
  },
  "Xray_workaround": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "XrayRT": {
+  "default": false,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": do Xray radiative transfer?"
-  ],
-  "type": "bool"
+   "do Xray radiative transfer?"
+  ]
  },
  "XrayRT_chem": {
+  "default": true,
   "unit": "",
+  "type": "bool",
   "desc": [
-   ": couple Xray_RT to chemistry"
-  ],
-  "type": "bool"
+   "couple Xray_RT to chemistry"
+  ]
  },
  "XrayRT_chem_effion": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "bool",
+  "desc": []
  },
  "XrayRT_dust": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "XrayRT_dust_opac": {
+  "default": false,
   "unit": "",
-  "desc": [],
-  "type": "bool"
+  "type": "bool",
+  "desc": []
  },
  "XrayRT_opac": {
+  "default": 4,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "Xrays": {
+  "default": false,
   "unit": "[-]",
+  "type": "bool",
   "desc": [
-   ": use Xray chemistry and heating?",
-   ": Xrays in chemistry?",
-   ": switch on X-rays?",
-   ": want Xrays?"
-  ],
-  "type": "bool"
+   "use Xray chemistry and heating?",
+   "Xrays in chemistry?",
+   "want Xrays?",
+   "switch on X-rays?"
+  ]
  },
  "Zmax_v2": {
+  "default": 10000.0,
   "unit": "",
-  "desc": [],
-  "type": "int"
+  "type": "int",
+  "desc": []
  },
  "zone1_hs": {
+  "default": -1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "zone2_hs": {
+  "default": -1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "zone3_hs": {
+  "default": -1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  },
  "zone4_hs": {
+  "default": -1,
   "unit": "",
-  "desc": [],
-  "type": ""
+  "type": "int",
+  "desc": []
  }
 }
