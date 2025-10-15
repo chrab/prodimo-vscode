@@ -33,7 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.languages.registerCompletionItemProvider(
             { scheme: 'file', language: 'prodimoparam' },
             new ParameterNameCompletionProvider(context),
-            '!' // Optional: trigger character(s)
+            '!', '.' // Optional: trigger character(s)
         )
     );
 
@@ -58,25 +58,55 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
         this.completionItems0 = [];
         this.completionItems1 = [];
     }
+
+    // TODO: to make the code clearer, we could simply build all two or three lists at the beginning (when they are still empty. And the rest of the code just selects the list.)
+
     provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
         // Return an array of CompletionItem objects
         let completionItems = [];
 
         const line = document.lineAt(position);
-        let endofline = (position.character === line.range.end.character); // character is the index of the position in the line
+        // special case case for .true. and .false.
+        if (context.triggerCharacter === ".") {
+            if (line.text.substring(0, position.character).includes('!')) {
+                return []; // ! in line so value is not expected here
+            }
+            else {
+                // only suggest .true. and .false.
+                // TODO: could be improved, one could already suggest .true.    ! paramnames
+                // kind of keeping another list for the switches 
+                var item = new vscode.CompletionItem('.true.', vscode.CompletionItemKind.Value);
+                item.insertText = 'true. ';
+                completionItems.push(item);
+                item = new vscode.CompletionItem('.false.', vscode.CompletionItemKind.Value);
+                item.insertText = 'false.     ';
+                completionItems.push(item);
+                return completionItems;
+            }
+        }
+
+        // trigger kinds: 0 pressed ctrl+space , 1 pressed !;  
+
+        // character is the index of the position in the line
+        let endofline = (position.character === line.range.end.character);
         let triggerKind = context.triggerKind;
         const textBeforeCursor = line.text.substring(0, position.character);
         const lastTriggerPos = textBeforeCursor.lastIndexOf('!');
-        if (triggerKind === 0 && !line.text.substring(lastTriggerPos + 1).includes(' ')) {
-            triggerKind = 1; // I am directly after a ! (no space or whatever, is like triggerKind1)
+        // case were we have triggerKind 0, but ! is in the line, so we want to trigger as if ! was pressed
+        if (triggerKind === 0 && lastTriggerPos >= 0) { // only if we have a ! in the line
+            if ((line.text.substring(lastTriggerPos + 1).trim().length === 0)) { // only spaces after ! so it is fine
+                triggerKind = 1;
+            }
+            else {
+                return []; // something else after ! we stop
+            }
         }
 
         if (triggerKind === 0) {
-            // find position of "! " starting
-            if (lastTriggerPos === -1) {
-                return []; // no trigger char found, no completion
-            }
-            // also if there is another ! before that no completion
+            // pressed ctrl+space ... suggest the parameters with ! so it is fine to have no ! in the line
+            //if (lastTriggerPos === -1) {
+            //    return []; // no trigger char found, no completion
+            //}
             if (line.text.substring(0, lastTriggerPos).includes('!')) {
                 return []; // another ! found, no completion
             }
@@ -85,8 +115,6 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
                 return this.completionItems0;
             }
         }
-
-        // no else because triggerKind can be changed above
         else if (triggerKind === 1) {
             if (context.triggerKind !== 0) { // if this is zero special case trigger was not ! but we are in a situation like !kaslj;lkfj
                 if (position.character - 1 !== 0 && line.text.substring(0, position.character - 1).includes('!')) {
@@ -107,11 +135,11 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
         for (const paramname of Object.keys(paramList)) {
             const param = paramList[paramname];
 
-            let insertText =    '';
+            let insertText = '';
             let name = ' ' + paramname; // default: triggered by !
             if (triggerKind === 0) {  // not triggered by ! but has ! in line, ist already checked before
-                name = '! ' + paramname;                
-            }           
+                name = '! ' + paramname;
+            }
             insertText += name + ' ';
 
             const item = new vscode.CompletionItem(name, vscode.CompletionItemKind.Variable);
@@ -122,8 +150,7 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
                     insertText += "   " + param.unit + " ";
                 }
                 if (param.desc.length > 0) {
-                    //insertText += "   : " + param.desc[0]; // for now : is part of documentation
-                    insertText += "   " + param.desc[0];
+                    insertText += "   : " + param.desc[0];
                 }
             }
 
@@ -136,6 +163,9 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
         }
         // store the lists, not sure if this is good style, but it seems unneccessary to create it again and again
         if (triggerKind === 0) {
+            // also explicitly add .true. and .false. to the list
+            completionItems.push(new vscode.CompletionItem('.true.', vscode.CompletionItemKind.Value));
+            completionItems.push(new vscode.CompletionItem('.false.', vscode.CompletionItemKind.Value));
             this.completionItems0 = completionItems;
         }
         else if (triggerKind === 1) {
@@ -180,9 +210,10 @@ class ProDiMoLogDocumentSymbolProvider implements vscode.DocumentSymbolProvider 
             //vscode.window.showInformationMessage('provideDocumentSymbols called');
             let heatcoolHook: DocumentSymbol | undefined = undefined;
             let chemistryHook: DocumentSymbol | undefined = undefined;
+            let contRTHook: DocumentSymbol | undefined = undefined;
 
             symbols.push(new DocumentSymbol("INIT", "section", vscode.SymbolKind.Class, new vscode.Range(0, 0, 0, 0), new vscode.Range(0, 0, 0, 0)));
-            
+
             for (let line = 0; line < document.lineCount; line++) {
                 const textLine = document.lineAt(line);
 
@@ -192,35 +223,47 @@ class ProDiMoLogDocumentSymbolProvider implements vscode.DocumentSymbolProvider 
                         chemistryHook = undefined;
                     }
                 }
+                else if (contRTHook) {
+                    if (textLine.text.startsWith(" RT total time=")) {
+                        symbols.push(new DocumentSymbol("CONTINUUM RT END", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                        contRTHook = undefined;
+                    }
+                }
+
                 var regex = new RegExp('^ {0,1}(INIT_[a-z_]*)(?::|[ ])', 'i');
                 var result = regex.exec(textLine.text);
                 if (result) {
-                    var sym= new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
+                    var sym = new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
                     symbols[0].children.push(sym);
-                    if (result[1]==="INIT_HEATCOOL") {
-                        heatcoolHook=sym;
+                    if (result[1] === "INIT_HEATCOOL") {
+                        heatcoolHook = sym;
                     }
                     else {
-                        heatcoolHook=undefined;
+                        heatcoolHook = undefined;
                     }
                 }
-                if (heatcoolHook) 
-                    {
+                if (heatcoolHook) {
                     const res = new RegExp("^ *(INIT SYS \\S*) ...").exec(textLine.text);
                     if (res) {
                         heatcoolHook.children.push(new DocumentSymbol(res[1], "", vscode.SymbolKind.Variable, textLine.range, textLine.range));
                     }
                 }
                 if (textLine.text.startsWith(" total INIT CPU time")) {
-                    symbols[0].children.push(new DocumentSymbol(`INIT END`, "", vscode.SymbolKind.Method, textLine.range, textLine.range));
+                    symbols[0].children.push(new DocumentSymbol("INIT END", "", vscode.SymbolKind.Method, textLine.range, textLine.range));
                 }
-                if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
-                    symbols.push(new DocumentSymbol(`SED`, "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                else if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
+                    symbols.push(new DocumentSymbol("SED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                 }
-                if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...")) {
-                    var sym = new DocumentSymbol(`CHEMISTRY START`, "", vscode.SymbolKind.Class, textLine.range, textLine.range);
-                    symbols.push(sym);
-                    chemistryHook = sym;
+                else if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...")) {
+                    chemistryHook = new DocumentSymbol("CHEMISTRY START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                    symbols.push(chemistryHook);
+                }
+                else if (textLine.text.startsWith(" SOLUTION OF CONTINUUM RADIATIVE TRANSFER ...")) {
+                    contRTHook = new DocumentSymbol("CONTINUUM RT START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                    symbols.push(contRTHook);
+                }
+                else if (textLine.text.startsWith(" Starting line ray-tracing...")) {
+                    symbols.push(new DocumentSymbol("LINE TRANSFER", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                 }
             }
             resolve(symbols);
