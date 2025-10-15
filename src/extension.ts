@@ -230,7 +230,7 @@ class ProDiMoLogDocumentSymbolProvider implements vscode.DocumentSymbolProvider 
                     }
                 }
 
-                var regex = new RegExp('^ {0,1}(INIT_[a-z_]*)(?::|[ ])', 'i');
+                var regex = new RegExp('^ {0,1}(INIT_[a-z0-9_]*)(?::|[ ])', 'i');
                 var result = regex.exec(textLine.text);
                 if (result) {
                     var sym = new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
