@@ -22,6 +22,14 @@ export function activate(context: vscode.ExtensionContext) {
     );
 
     context.subscriptions.push(
+        vscode.languages.registerDocumentSymbolProvider(
+            { scheme: "file", language: "prodimolog" },
+            new ProDiMoLogDocumentSymbolProvider()
+        )
+    );
+
+
+    context.subscriptions.push(
         vscode.languages.registerCompletionItemProvider(
             { scheme: 'file', language: 'prodimoparam' },
             new ParameterNameCompletionProvider(context),
@@ -160,6 +168,65 @@ class ProDiMoParamDocumentSymbolProvider implements vscode.DocumentSymbolProvide
             resolve(symbols);
         });
     }
-}
+};
+
+
+class ProDiMoLogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
+    public provideDocumentSymbols(
+        document: vscode.TextDocument,
+        token: vscode.CancellationToken): Promise<vscode.DocumentSymbol[]> {
+        return new Promise((resolve, reject) => {
+            const symbols: vscode.DocumentSymbol[] = [];
+            //vscode.window.showInformationMessage('provideDocumentSymbols called');
+            let heatcoolHook: DocumentSymbol | undefined = undefined;
+            let chemistryHook: DocumentSymbol | undefined = undefined;
+
+            symbols.push(new DocumentSymbol("INIT", "section", vscode.SymbolKind.Class, new vscode.Range(0, 0, 0, 0), new vscode.Range(0, 0, 0, 0)));
+            
+            for (let line = 0; line < document.lineCount; line++) {
+                const textLine = document.lineAt(line);
+
+                if (chemistryHook) {
+                    if (textLine.text.startsWith("   max element conservation error   :")) {
+                        symbols.push(new DocumentSymbol("CHEMISTRY END", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                        chemistryHook = undefined;
+                    }
+                }
+                var regex = new RegExp('^ {0,1}(INIT_[a-z_]*)(?::|[ ])', 'i');
+                var result = regex.exec(textLine.text);
+                if (result) {
+                    var sym= new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
+                    symbols[0].children.push(sym);
+                    if (result[1]==="INIT_HEATCOOL") {
+                        heatcoolHook=sym;
+                    }
+                    else {
+                        heatcoolHook=undefined;
+                    }
+                }
+                if (heatcoolHook) 
+                    {
+                    const res = new RegExp("^ *(INIT SYS \\S*) ...").exec(textLine.text);
+                    if (res) {
+                        heatcoolHook.children.push(new DocumentSymbol(res[1], "", vscode.SymbolKind.Variable, textLine.range, textLine.range));
+                    }
+                }
+                if (textLine.text.startsWith(" total INIT CPU time")) {
+                    symbols[0].children.push(new DocumentSymbol(`INIT END`, "", vscode.SymbolKind.Method, textLine.range, textLine.range));
+                }
+                if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
+                    symbols.push(new DocumentSymbol(`SED`, "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                }
+                if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...")) {
+                    var sym = new DocumentSymbol(`CHEMISTRY START`, "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                    symbols.push(sym);
+                    chemistryHook = sym;
+                }
+            }
+            resolve(symbols);
+        });
+    }
+};
+
 // This method is called when your extension is deactivated
 export function deactivate() { }
