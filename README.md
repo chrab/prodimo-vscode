@@ -41,10 +41,8 @@ No particular settings are needed for this extension.
 It is my very first VS Code extension, so there are probably issues.
 The auto-completion is still a bit basic, and buggy.
 
-
-
 ## Release Notes
 
-### 0.1.0 
+### 0.1.0
 
 Initial beta release of the ProDiMo VS Code Tools extension.
