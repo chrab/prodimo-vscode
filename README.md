@@ -1,14 +1,32 @@
-# ProDiMo - VS Code
+# ProDiMo - VS Code Tools
 
-Some experiments to provide VS Code support for ProDiMo.
-
-Currently this extension only provides some syntax highlighting for the Parameter.in file of ProDiMo.
-
-In the future it may provide more features.
+A VS Code extension that might make working with ProDiMo a bit easier.
 
 ## Features
 
-Syntax highlighting for the comments, parameter names, and units.
+### Editing Parameter.in files
+
+- Syntax highlighting for the comments, parameter names, values and units.
+- Auto-completion for parameter names. Just press `!` or Ctrl+Space to see the suggestions
+- Outline-View support. Just put some text between `---` and `---` to create a section in the outline view.
+
+    Just do something like this:
+
+    ```prodimoparam
+    --- This will appear in the outline ---
+    .true.     ! stop_after_init 
+
+
+    --- Another block of parameters ---
+    .false.    ! some Parameter 
+
+    --- This will not appear in the outline, is is just an ordinary comment
+
+    ```
+
+### Outline-View for ProDiMo log files
+
+If you open a log file produced by ProDiMo VS code will show the "structure" in the outline-view. The file has to have the extension `.log` and `prodimo` needs to be in the filename (e.g. `my_prodimo.log` or just `prodimo.log`); then VS code should automatically use the ProDiMo log file outline provider.
 
 ## Requirements
 
@@ -20,12 +38,13 @@ No particular settings are needed for this extension.
 
 ## Known Issues
 
-It is my very first VS Code extension, so there are probably many issues.
+It is my very first VS Code extension, so there are probably issues.
+The auto-completion is still a bit basic, and buggy.
+
+
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1.0 
 
-### 0.0.1
-
-Initial release, syntax highlighting for comments, parameter names and units.
+Initial beta release of the ProDiMo VS Code Tools extension.
