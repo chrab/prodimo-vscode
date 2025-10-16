@@ -3,6 +3,7 @@
   "displayName": "ProDiMo - Tools",
   "description": "VS Code tools for ProDiMo",
   "version": "0.1.0",
+  "preview": true,
   "publisher": "chrab",
   "author" : {
     "name": "Christian Rab"
