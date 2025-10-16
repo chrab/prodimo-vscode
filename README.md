@@ -20,7 +20,7 @@ A VS Code extension that might make working with ProDiMo a bit easier.
     --- Another block of parameters ---
     .false.    ! some Parameter 
 
-    --- This will not appear in the outline, is is just an ordinary comment
+    --- This will not appear in the outline, it is just an ordinary comment
 
     ```
 
@@ -43,6 +43,6 @@ The auto-completion is still a bit basic, and buggy.
 
 ## Release Notes
 
-### 0.1.0
+### 0.1.2
 
 Initial beta release of the ProDiMo VS Code Tools extension.

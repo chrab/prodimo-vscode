@@ -522,8 +522,8 @@
   "unit": "",
   "type": "float",
   "desc": [
-   "precision in solve_chemistry",
-   "precision in solve_chemistry 1.0E-9"
+   "precision in solve_chemistry 1.0E-9",
+   "precision in solve_chemistry"
   ]
  },
  "chem_scale": {
@@ -850,9 +850,9 @@
   "type": "float",
   "desc": [
    "cosmic ray ionisation of H2",
-   "cosmic ray ionisation of H2 (UMIST:1.36E-17)",
    "cosmic ray ionisation rate H2",
-   "cosmic ray ionisation H2 (UMIST:1.36E-17)"
+   "cosmic ray ionisation H2 (UMIST:1.36E-17)",
+   "cosmic ray ionisation of H2 (UMIST:1.36E-17)"
   ]
  },
  "CRI_mc": {
@@ -1105,7 +1105,7 @@
  },
  "dust_to_gas": {
   "default": "",
-  "unit": "[-]",
+  "unit": "",
   "type": "float",
   "desc": [
    "the dust-to-gas mass ratio"
@@ -1183,10 +1183,10 @@
   "unit": "",
   "type": "bool",
   "desc": [
-   "UMIST2012 adsorption energies",
    "use UMIST2012/Garrod adsorption energies",
-   "from AdsorptionEnergies.in",
-   "use UMIST2012 adsorption energies"
+   "use UMIST2012 adsorption energies",
+   "UMIST2012 adsorption energies",
+   "from AdsorptionEnergies.in"
   ]
  },
  "Eads_H_Cazaux": {
@@ -1270,7 +1270,7 @@
  "env_Rcavity": {
   "default": 1.0,
   "unit": "",
-  "type": "float",
+  "type": "int",
   "desc": [
    "\"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin"
   ]
@@ -1307,9 +1307,9 @@
   "type": "float",
   "desc": [
    "column density exponent",
-   "power index of vert. col.dens. as func of x",
    "power index of vert. col.dens.",
-   "col.dens. exponent"
+   "col.dens. exponent",
+   "power index of vert. col.dens. as func of x"
   ]
  },
  "equil_BURCAT": {
@@ -2439,7 +2439,7 @@
  },
  "Mdot": {
   "default": 0.0,
-  "unit": "[Msun/yr]",
+  "unit": "[Msol/yr]",
   "type": "float",
   "desc": [
    "accretion rate"
@@ -2611,7 +2611,7 @@
   "desc": []
  },
  "NewChemScan": {
-  "default": false,
+  "default": true,
   "unit": "",
   "type": "bool",
   "desc": [
@@ -2641,8 +2641,8 @@
   "unit": "[cm^-3]",
   "type": "float",
   "desc": [
-   "H nuclei density 3.16E+5",
-   "H nuclei density"
+   "H nuclei density",
+   "H nuclei density 3.16E+5"
   ]
  },
  "nH_surround": {
@@ -2795,7 +2795,7 @@
  "numerical_jacobian": {
   "default": 0,
   "unit": "",
-  "type": "int",
+  "type": "bool",
   "desc": []
  },
  "NUV": {
@@ -3472,9 +3472,9 @@
   "unit": "",
   "type": "int",
   "desc": [
+   "no dust settling",
    "dust settling (Dubrulle et al. 1995)",
    "power-law dust settling",
-   "no dust settling",
    "dust settling",
    "dust settling (2=Dubrulle et al. 1995)"
   ]
@@ -3556,8 +3556,8 @@
   "desc": [
    "solve the vertical hydrostatic eq.?",
    "solve the vertical disk structure?",
-   "solve the vertical hydrostatic structure?",
-   "solve the vertical hydrostat.eq.?"
+   "solve the vertical hydrostat.eq.?",
+   "solve the vertical hydrostatic structure?"
   ]
  },
  "solve_temp": {
@@ -3566,8 +3566,8 @@
   "type": "bool",
   "desc": [
    "solve the heating/cooling balance?",
-   "solve the gas heating/cooling balance?",
-   "solve the heating/cooling balance? still experimental for envelop so deactived"
+   "solve the heating/cooling balance? still experimental for envelop so deactived",
+   "solve the gas heating/cooling balance?"
   ]
  },
  "sparse_Nlev": {
@@ -3688,8 +3688,8 @@
   "unit": "",
   "type": "bool",
   "desc": [
-   "use a combination of switches instead",
-   "cannot have H2OCO#"
+   "cannot have H2OCO#",
+   "use a combination of switches instead"
   ]
  },
  "surface_chemistry": {
@@ -3878,8 +3878,8 @@
   "desc": [
    "using UMIST2012 rates?",
    "using UMIST 2012 reactions",
-   "using UMIST 2012 rates?",
-   "use UMIST2012 chemical database"
+   "use UMIST2012 chemical database",
+   "using UMIST 2012 rates?"
   ]
  },
  "UMIST2022": {
@@ -4139,11 +4139,11 @@
  },
  "Xray_Emin": {
   "default": 0.1,
-  "unit": "[keV]",
+  "unit": "",
   "type": "float",
   "desc": [
-   "X-ray min. photon energy",
    "minimum energy considered as Xray",
+   "X-ray min. photon energy",
    "minimum X-ray energy"
   ]
  },
@@ -4245,8 +4245,8 @@
   "desc": [
    "use Xray chemistry and heating?",
    "Xrays in chemistry?",
-   "want Xrays?",
-   "switch on X-rays?"
+   "switch on X-rays?",
+   "want Xrays?"
   ]
  },
  "Zmax_v2": {

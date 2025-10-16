@@ -2,7 +2,7 @@
   "name": "prodimo-vscode",
   "displayName": "ProDiMo - Tools",
   "description": "VS Code tools for ProDiMo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preview": true,
   "publisher": "chrab",
   "author" : {
