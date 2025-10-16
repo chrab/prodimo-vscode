@@ -35,9 +35,9 @@
     {
       "id": "prodimolog",
       "aliases": ["ProDiMo logfile", "prodimo.log"],
-      "filenamePatterns": ["**/*prodimo*.log"],
+      "filenamePatterns": ["**/*prodimo*.log","*prodimo*.log"],
       "firstLine": "^ {27}o",
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration-log.json"
     }],
     "grammars": [{
       "language": "prodimoparam",
