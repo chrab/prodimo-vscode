@@ -701,7 +701,7 @@
   "desc": []
  },
  "conserve_pressure": {
-  "default": false,
+  "default": true,
   "unit": "",
   "type": "bool",
   "desc": [
@@ -862,27 +862,27 @@
   "desc": []
  },
  "CRP_a": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "CRP_high": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "CRP_lim": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "CRP_low": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "CRP_s0": {
@@ -1254,9 +1254,9 @@
   ]
  },
  "env_Mdot": {
-  "default": "1.d-6",
+  "default": 1e-06,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": [
    "mass infall rate M_sun/yr"
   ]
@@ -1777,7 +1777,7 @@
   "desc": []
  },
  "handle_UMIST": {
-  "default": "",
+  "default": "\"onlyadd\"",
   "unit": "",
   "type": "str",
   "desc": [
@@ -1961,7 +1961,7 @@
   "desc": []
  },
  "Jback_from_RT": {
-  "default": false,
+  "default": true,
   "unit": "",
   "type": "bool",
   "desc": [
@@ -2434,7 +2434,8 @@
   "type": "float",
   "desc": [
    "disk mass",
-   "disk mass of outer disk"
+   "disk mass of outer disk",
+   "disk gas mass"
   ]
  },
  "Mdot": {
@@ -3269,9 +3270,9 @@
   "desc": []
  },
  "rayleighgans_limit": {
-  "default": "7.d-1",
+  "default": 0.7,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "RDI": {
@@ -3607,33 +3608,33 @@
   "desc": []
  },
  "STCRI": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "STCRP_a": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "STCRP_b": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "STCRP_high": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "STCRP_low": {
-  "default": "-1.d0",
+  "default": -1.0,
   "unit": "",
-  "type": "str",
+  "type": "float",
   "desc": []
  },
  "STCRP_method": {

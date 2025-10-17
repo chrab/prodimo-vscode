@@ -4,10 +4,14 @@ A VS Code extension that might make working with ProDiMo a bit easier.
 
 ## Features
 
+<p align="center">
+    <img src="images/anim.gif" alt="Animated GIF showing the ProDiMo VS Code Tools extension: a short looping preview highlighting the extension icon and brief UI interactions. Environment: displayed in a code editor window. Text shown: ProDiMo VS Code Tools. Tone: informative and technical." width="90%" />
+</p>
+
 ### Editing Parameter.in files
 
 - Syntax highlighting for the comments, parameter names, values and units.
-- Auto-completion for parameter names. Just press `!` or Ctrl+Space to see the suggestions
+- Auto-completion for parameter names. Just press `!` or `Ctrl+Space` to see the suggestions
 - Outline-View support. Just put some text between `---` and `---` to create a section in the outline view.
 
     Just do something like this:
