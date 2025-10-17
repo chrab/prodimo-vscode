@@ -4,10 +4,10 @@
   "description": "VS Code tools for ProDiMo",
   "preview": true,
   "publisher": "chrab",
-  "author" : {
+  "author": {
     "name": "Christian Rab"
   },
-  "license": "CC0 1.0",  
+  "license": "CC0 1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/chrab/prodimo-vscode"
@@ -16,7 +16,7 @@
   "galleryBanner": {
     "color": "#C80000",
     "theme": "dark"
-  },  
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -26,24 +26,39 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "languages": [{
-      "id": "prodimoparam",
-      "aliases": ["ProDiMo Parameter.in", "prodimoparam"],
-      "extensions": [".in"],
-      "configuration": "./language-configuration.json"
-    },
-    {
-      "id": "prodimolog",
-      "aliases": ["ProDiMo logfile", "prodimo.log"],
-      "filenamePatterns": ["**/*prodimo*.log","*prodimo*.log"],
-      "firstLine": "^ {27}o",
-      "configuration": "./language-configuration-log.json"
-    }],
-    "grammars": [{
-      "language": "prodimoparam",
-      "scopeName": "text.prodimoparam",
-      "path": "./syntaxes/prodimoparam.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "prodimoparam",
+        "aliases": [
+          "ProDiMo Parameter.in",
+          "prodimoparam"
+        ],
+        "extensions": [
+          ".in"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "prodimolog",
+        "aliases": [
+          "ProDiMo logfile",
+          "prodimo.log"
+        ],
+        "filenamePatterns": [
+          "**/*prodimo*.log",
+          "*prodimo*.log"
+        ],
+        "firstLine": "^ {27}o",
+        "configuration": "./language-configuration-log.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "prodimoparam",
+        "scopeName": "text.prodimoparam",
+        "path": "./syntaxes/prodimoparam.tmLanguage.json"
+      }
+    ],
     "configurationDefaults": {
       "[prodimoparam]": {
         "editor.wordWrap": "off",
@@ -55,7 +70,7 @@
       }
     }
   },
-"scripts": {
+  "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
     "watch": "npm-run-all -p watch:*",
@@ -81,5 +96,6 @@
     "typescript": "^5.9.3",
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2"
-  }  
+  },
+  "version": "0.1.7"
 }
