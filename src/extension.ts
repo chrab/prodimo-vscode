@@ -135,6 +135,10 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
         for (const paramname of Object.keys(paramList)) {
             const param = paramList[paramname];
 
+            if (param.desc === null) {
+                param.desc = "";
+            }
+
             let insertText = '';
             let name = ' ' + paramname; // default: triggered by !
             if (triggerKind === 0) {  // not triggered by ! but has ! in line, ist already checked before
@@ -147,16 +151,16 @@ class ParameterNameCompletionProvider implements vscode.CompletionItemProvider {
             if (endofline) {
                 if (param.unit) {
                     //insertText += "   [" + param.unit + "]";
-                    insertText += "   " + param.unit + " ";
+                    insertText += "   [" + param.unit + "] ";
                 }
-                if (param.desc.length > 0) {
-                    insertText += "   : " + param.desc[0];
+                if (param.desc.trim() !=="") {
+                    insertText += "   : " + param.desc;
                 }
             }
-
+            
             //item.detail = param.type;
-            item.detail = param.desc.join('\n');
-            item.documentation = new vscode.MarkdownString(`- **Type:** ${param.type}\n- **Default:** ${param.default}\n- **Unit:** ${param.unit}`);
+            item.detail = param.desc + "\n";
+            item.documentation = new vscode.MarkdownString(`- **Type:** ${param.type}\n- **Default:** ${param.default}\n- **Unit:** [${param.unit}]`);
             //item.documentation = new vscode.MarkdownString(`- Description: ${param.description}\n- Type: ${param.type}\n- Unit: ${param.unit}\n- Default: ${param.default}`);
             item.insertText = insertText;
             completionItems.push(item);

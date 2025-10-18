@@ -1,4283 +1,6274 @@
 {
- "a1_mc": {
-  "default": 0.1,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a1max": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a1min": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a2_settle": {
+ "Mstar": {
   "default": "",
-  "unit": "",
+  "unit": "Msun",
   "type": "",
-  "desc": []
- },
- "a2max": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a2min": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a3_settle": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "a3max": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a3min": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a4_settle": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "a4max": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a4min": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a_nosettle": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "a_settle": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "turbulence alpha"
+  "desc": "stellar mass",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/star_fit.md"
   ]
- },
- "ABS_CRI": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "adjustRout": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "adjustRTconv": {
-  "default": 0.5,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "albedoUV_mc": {
-  "default": 0.6,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "alpha_from_Mdot": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "alpha_law": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "alpha_mix": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "alpha_vis": {
-  "default": 0.0,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "viscous heating parameter"
-  ]
- },
- "amax": {
-  "default": "amax",
-  "unit": "[mic]",
-  "type": "float",
-  "desc": [
-   "maximum dust particle size"
-  ]
- },
- "amin": {
-  "default": "amin",
-  "unit": "[mic]",
-  "type": "float",
-  "desc": [
-   "minimum dust particle size"
-  ]
- },
- "analyse_failed_chemistry": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Andersson2008_yield": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "apow": {
-  "default": "",
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "dust size distr f(a)~a^-apow",
-   "dust size distr power index f(a)~a^-apow"
-  ]
- },
- "ArmitageMRI": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "atol_chem": {
-  "default": 1e-99,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "abs. tolerance for advance_chemistry"
-  ]
- },
- "auto_charge_exchange": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "auto_create_barrier": {
-  "default": 5000.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "auto_grain_endotherm": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "auto_proton_exchange": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Av_C_mc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Av_CO_mc": {
-  "default": 3.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Av_H2_mc": {
-  "default": 0.5,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Av_mc": {
-  "default": 10.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "AVmax_PDR": {
-  "default": 100.0,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "maximum A_V"
-  ]
- },
- "AVmin_PDR": {
-  "default": 0.0001,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "minimum A_V"
-  ]
- },
- "BareComp": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "BarePos": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "barrier_width": {
-  "default": 1e-08,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "1A in cm"
-  ]
- },
- "basel_filename": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "Bell_quantum_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "beta_mag": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "beta_max": {
-  "default": 45.0,
-  "unit": "[deg]",
-  "type": "float",
-  "desc": [
-   "maximum half opening angle of resolved disk",
-   "defines the cavity opening angle (here 20 degree)"
-  ]
- },
- "Bfield": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "bh_mie": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Bpow": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "branchingFraction": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "bulk_reactions": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C13_C12": {
-  "default": 0.014,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C1toN": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C1toO": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C2H2_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C2H2_nonLTE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C2H4_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C2H6_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C2toN": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C2toO": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C3H4_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C3toN": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C3toO": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C4H2_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C4toN": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C4toO": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "C6H6_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C_H2_shielding_Bertoldi": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "c_mie": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "C_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "calcSED": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate SED and images?"
-  ]
- },
- "Carbon_ionization_pumping": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CG97": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CH3_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CH3CNrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CH3OHrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CH4_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Chaabouni_stick": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "charge_chemistry_v2": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "charge_chemistry_v3": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "check_Mie": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "check_network": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "the osu network fails the checks"
-  ]
- },
- "chem_precis": {
-  "default": 1e-08,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "precision in solve_chemistry 1.0E-9",
-   "precision in solve_chemistry"
-  ]
- },
- "chem_scale": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "scale chemical equations to solve?"
-  ]
- },
- "chem_stability": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "extend advance when fast - default=T"
-  ]
- },
- "chemanalysis": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "output for rate network analysis",
-   "output"
-  ]
- },
- "chemanalysis_fits": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CHEMEQ": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ChemHeatFac": {
-  "default": 0.33333,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "efficiency of chemical heating"
-  ]
- },
- "CHEMSODE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CHI1_mc": {
-  "default": "CHI_ISM",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "CHI2_mc": {
-  "default": "CHI_ISM",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "chi_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate chi from UV rad. transfer?",
-   "calculate chi from UV RT?"
-  ]
- },
- "CHI_ISM": {
-  "default": 1.0,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "strength of incident vertical UV",
-   "strength of incident interstellar UV",
-   "UV-field strength (Draine units)"
-  ]
- },
- "chi_logbin": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "using spectral windows to calc CHI_PHOTO?"
-  ]
- },
- "CO2_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CO2_nonLTE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CO_diffusion_Lauck": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CO_Emax": {
-  "default": 89460.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CO_H_2015": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CO_selfshielding_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CO_sticking": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "COA_Nvib": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "colour_correct_from_RT": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "comp_forces": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "compare_photorates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "compute_line_visibilities": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "compute_visibilities": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "computed_CR_DESORB_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "conserve_pressure": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "conserve pgas instead of n<H>?"
-  ]
- },
- "cont_lmax": {
-  "default": 9e+99,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "cont_lmin": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "cont_Ndisk": {
-  "default": 150,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cont_Nhole": {
-  "default": 40,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cont_Npuff": {
-  "default": 30,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cont_Nstar": {
-  "default": 4,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cont_Ntheta": {
-  "default": 72,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cont_Rout": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "continuum_cube_fits": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "COphotodesorption_yield2010": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "core_Nlay": {
-  "default": 1.0,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "in the silicate core"
-  ]
- },
- "CoreMantle": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "ice in mantle or well-mixed?"
-  ]
- },
- "COrovib_sensitivity_analysis": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "correct_endotherm": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "correct_PAH": {
-  "default": 0.4,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "COX_Nrot": {
-  "default": 60,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "COX_Nvib": {
-  "default": 4,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "cputime_max": {
-  "default": 20.0,
-  "unit": "[s]",
-  "type": "float",
-  "desc": [
-   "max. CPU time for advance_chemistry"
-  ]
- },
- "CR_elec_heating": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CR_induced_UV": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use new CR UV field implementation"
-  ]
- },
- "CRCS": {
-  "default": 0.0,
-  "unit": "[cm^2]",
-  "type": "float",
-  "desc": [
-   "cosmic rate absorption"
-  ]
- },
- "CRI": {
-  "default": 1.36e-17,
-  "unit": "[1/s]",
-  "type": "float",
-  "desc": [
-   "cosmic ray ionisation of H2",
-   "cosmic ray ionisation rate H2",
-   "cosmic ray ionisation H2 (UMIST:1.36E-17)",
-   "cosmic ray ionisation of H2 (UMIST:1.36E-17)"
-  ]
- },
- "CRI_mc": {
-  "default": 1.36e-17,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CRP_a": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CRP_high": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CRP_lim": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CRP_low": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CRP_s0": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "CSrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "CtoN": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "CtoO": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "custom_13COrovib": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "custom_C17Orovib": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "custom_C18Orovib": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "custom_COrovib": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "big ro-vibronic CO model?",
-   "fast setup"
-  ]
- },
- "custom_hitran_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "d2ust_settle": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "d2ust_to_gas": {
-  "default": "",
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "the dust-to-gas mass ratio"
-  ]
- },
- "d3ust_settle": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "d3ust_to_gas": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "d4ust_settle": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "d4ust_to_gas": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "daduc": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "debug_photorates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "DECO": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "deduc": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "deltaMRI": {
-  "default": 0.5,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "diffusion_limited": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "reaction barriers are account for"
-  ]
- },
- "diffusion_tunnelling": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "diffusion_width": {
-  "default": 1e-08,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "DiffusionApprox": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "disk_structure_damp": {
-  "default": 0.3,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "disk_structure_error_threshold": {
-  "default": 2.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "dist": {
-  "default": 100.0,
-  "unit": "[pc]",
-  "type": "float",
-  "desc": [
-   "distance"
-  ]
- },
- "Draine_sticking": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "dust_bins": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "dust_charge_chemistry": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "dust_nonRE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "dust in non-radiative equilibrium",
-   "dust not in radiative equilibrium"
-  ]
- },
- "dust_opacity_list_file": {
-  "default": "\"dust_opacity_list.txt\"",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "dust_photoelectric_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "dust_settle": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "... switched off"
-  ]
- },
- "dust_to_gas": {
-  "default": "",
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "the dust-to-gas mass ratio"
-  ]
- },
- "dust_to_gas_mc": {
-  "default": 0.01,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "duty_cycle": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "as in the benchmark"
-  ]
- },
- "DVODE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "DVODEF90": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "fastest routine"
-  ]
- },
- "DVODPK": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "e2psilon": {
-  "default": "",
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "col.dens. exponent",
-   "column density exponent"
-  ]
- },
- "e3psilon": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "e4psilon": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "Eact_H2_Oueslati": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Eads_filename": {
-  "default": "\"AdsorptionEnergies.in\"",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "Eads_from_file": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use UMIST2012/Garrod adsorption energies",
-   "use UMIST2012 adsorption energies",
-   "UMIST2012 adsorption energies",
-   "from AdsorptionEnergies.in"
-  ]
- },
- "Eads_H_Cazaux": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Eads_Minissale": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "el_is_sp": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "electrons as independent species?"
-  ]
- },
- "Eley_Rideal": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "no Eley-Rideal reactions"
-  ]
- },
- "endothermic_barrier": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "no effect on the rates for endo reations"
-  ]
- },
- "enhanced_H2form_mc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "env_amax": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "maximum grain size in the envelope"
-  ]
- },
- "env_cav_coef": {
-  "default": 0.9,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "env_cav_pow": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "shape of the cavity"
-  ]
- },
- "env_Mdot": {
-  "default": 1e-06,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "mass infall rate M_sun/yr"
-  ]
- },
- "env_method": {
-  "default": 3,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "env_Rcavity": {
-  "default": 1.0,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "\"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin"
-  ]
- },
- "env_Rcent": {
-  "default": 100.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "centrifugal radius"
-  ]
- },
- "env_structure": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "eps_dJnu": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "eps_dTworst": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "epsilon": {
-  "default": 1.5,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "column density exponent",
-   "power index of vert. col.dens.",
-   "col.dens. exponent",
-   "power index of vert. col.dens. as func of x"
-  ]
- },
- "equil_BURCAT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "equil_chem": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "equil_cond": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "equil_elemadjust": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ER_tunnelling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "Eley-Rideal tunnelling"
-  ]
- },
- "escape_maser": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "escape_Radex_slab": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "escape_Radex_sphere": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "escape_sphere": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "escpro_fit": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "escpro_lmax": {
-  "default": 40.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "escpro_lmin": {
-  "default": 5.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "estimate_13CO_12CO_ratio": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "evap_fac": {
-  "default": 0.01,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "no chemidesorption"
-  ]
- },
- "f2PAH": {
-  "default": "",
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "PAH abundance relative to ISM"
-  ]
- },
- "f3PAH": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "f4PAH": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "f70": {
-  "default": "3.16d-19",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "fake_AD_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_CE_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_DR_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_IN_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_NN_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_NN_prefactor": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_RA_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fake_RR_chemical_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fast_semi_implicit": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Faure_H2_op": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fbinding": {
-  "default": 0.5,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Federman_H2_shielding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "first_order_tdesorption": {
-  "default": "",
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fixed_surface_density": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fixed_water_op": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "FLiTs": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "want to run FLiTs afterwards?"
-  ]
- },
- "FLiTs_contsub": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "FLiTsOBS_file": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "fPAH": {
-  "default": 0.1,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "PAH abundance with respect to ISM",
-   "PAH abundance relative to ISM",
-   "PAH abundance w.r.t. ISM"
-  ]
- },
- "fPAH_mc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "freeze_chemistry": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "freeze chemical concentrations?"
-  ]
- },
- "freeze_diskstruc": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "freeze density/pressure structure?"
-  ]
- },
- "freeze_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "freeze radiative transfer results Td/Jv?",
-   "freeze RT results"
-  ]
- },
- "freeze_Tgas": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "freeze gas temperature?"
-  ]
- },
- "from_hash": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "fUV": {
-  "default": -1.0,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "LUV/Lstar",
-   "UV excess"
-  ]
- },
- "FXray_PDR": {
-  "default": 1e-20,
-  "unit": "[erg/s/cm2]",
-  "type": "float",
-  "desc": [
-   "incident Xray flux  2.7/1e-20"
-  ]
- },
- "gas_shielded_photodesorption": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "gbar": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "GEAR": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "grain_H2_op_conversion": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "gtaper": {
-  "default": -99.0,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "tapering-off exponent"
-  ]
- },
- "gzip": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2_Cazaux2010": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2_Cazaux2017": {
-  "default": true,
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "H2_Jura": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2_no_surf_Cazaux": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2_surf_chem_only": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "not only making H2"
-  ]
- },
- "H2COrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2O_addHITRANlines": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2O_coll_rate_sensitivity_analysis": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2O_Daniel2011": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "new H2O collision rates"
-  ]
- },
- "H2O_Meisner_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H2O_pumping": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "H2O_rovib_Lambda": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "big ro-vib H2O models?"
-  ]
- },
- "H2O_rovibration": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "big ro-vib H2O models?"
-  ]
- },
- "H2Srovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H_diffusion_Cazaux_ice": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "H_sticking": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "not using Hollenbach & Salpeter H sticking"
-  ]
- },
- "half_same_species": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Hall_Lesur": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Hall_MRI": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "handle_UMIST": {
-  "default": "\"onlyadd\"",
-  "unit": "",
-  "type": "str",
-  "desc": [
-   "handle UMIST-data (erase/overwrite/onlyadd)",
-   "handle UMIST-data (overwrite/erase/onlyadd)"
-  ]
- },
- "Hatom_bb": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Hatom_bf": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "HCN_nonLTE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "HCNrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "HD_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Heat_per_PhotoDiss": {
-  "default": 2.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "heating by photodissociation"
-  ]
- },
- "high_res_photodata": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "HighTempRateExtrapol": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "hitran2020": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "hitran_min_strength": {
-  "default": 1e-05,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "hollow_sphere": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "max hollow volume ratio"
-  ]
- },
- "hot_atom": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Hunderi": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Hunderi_CDE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ice_photodesorption_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "icepot": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "a = abare + const*abare^icepot"
-  ]
- },
- "IcePowPos": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "ignore_Tg_midplane": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "image_fov_arcsec": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "immediate_FLiTs": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "immediate_lines": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "line RT directly after init?",
-   "line RT directly after init (requires write_pop)?"
-  ]
- },
- "incl": {
-  "default": 45.0,
-  "unit": "[deg]",
-  "type": "float",
-  "desc": [
-   "inclination (0=face-on)"
-  ]
- },
- "interface1D": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "activate the 1D interface"
-  ]
- },
- "interface2D": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ion_drift": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ion_H_coll": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "IR_ISRF": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Jback_from_RT": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate background Jnu from rad. transfer?",
-   "calculate background Jnu from RT?"
-  ]
- },
- "keep_iterations": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "KIDA_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "KIDADB": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "L1": {
-  "default": "1./3.",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "L2": {
-  "default": "1./3.",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "Lacc": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Lalpha": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "lapack_solver": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Leiden_photoparameters": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_cube": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "3D-line cube output?"
-  ]
- },
- "line_cube_analysis": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_cube_fits": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "3D-line cube output ?"
-  ]
- },
- "line_cube_whichside": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_image_side_Npix": {
-  "default": 201,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "line image size fore cube output"
-  ]
- },
- "line_Ndisk": {
-  "default": 100,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_Nhole": {
-  "default": 40,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_nobackground": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_nodust": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_nostar": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_novel": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_Npuff": {
-  "default": 10,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_Nstar": {
-  "default": 5,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "parameters for the line transfer grid"
-  ]
- },
- "line_Ntheta": {
-  "default": 72,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_overlap": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "line_Rout": {
-  "default": 0.0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_transfer": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate line transfer?"
-  ]
- },
- "line_vkep": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "line_vkeppgrad": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "Lique2015_H2_H_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "LLL": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "lmaxSED": {
-  "default": 5000.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "minimum lambda[mic]",
-   "maximum lambda[mic]"
-  ]
- },
- "lminSED": {
-  "default": 0.1,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "minimum lambda[mic]"
-  ]
- },
- "LSODE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "LSODES": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
  },
  "Lstar": {
-  "default": "Lstar",
-  "unit": "[Lsun]",
-  "type": "float",
-  "desc": [
-   "stellar luminosity"
-  ]
- },
- "LTEpopulation": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "M2disk": {
   "default": "",
-  "unit": "[Msun]",
-  "type": "float",
-  "desc": [
-   "disk mass"
-  ]
- },
- "M2dot": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "M2dust": {
-  "default": -1.0,
-  "unit": "[Msun]",
-  "type": "float",
-  "desc": [
-   "dust mass"
-  ]
- },
- "M3disk": {
-  "default": "",
-  "unit": "",
+  "unit": "Lsun",
   "type": "",
-  "desc": []
- },
- "M3dot": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "M3dust": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "M4disk": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "M4dot": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "M4dust": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "match_Cazaux2010": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "max_diff_photorates": {
-  "default": 10.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "maxit": {
-  "default": 9999999,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "maximum number of global iterations",
-   "max number of global iterations",
-   "max number of ProDiMo main iterations"
-  ]
- },
- "maxtime": {
-  "default": 1e+99,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "maximum computational time [sec]"
-  ]
- },
- "Maxwell_Garnett": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "mc_grid": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "mc_only": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "mc_steady_state": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "mc_thermal_balance": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "MCFOST_B2": {
-  "default": "MCFOST_BETA",
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "flaring exponent",
-   "flaring power"
-  ]
- },
- "MCFOST_B3": {
-  "default": "MCFOST_BETA",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "MCFOST_B4": {
-  "default": "MCFOST_BETA",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "MCFOST_BETA": {
-  "default": 1.1,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "flaring power",
-   "flaring exponent"
-  ]
- },
- "MCFOST_H0": {
-  "default": 10.0,
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "scale height ...",
-   "scale height"
-  ]
- },
- "MCFOST_H2": {
-  "default": "MCFOST_H0",
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "scale height",
-   "scale height ..."
-  ]
- },
- "MCFOST_H3": {
-  "default": "MCFOST_H0",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "MCFOST_H4": {
-  "default": "MCFOST_H0",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "MCFOST_LIKE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "parametric disk structure like in MCFOST?",
-   "fixed disk structure like in MCFOST?",
-   "use Tdust and mu=2.3amu for cT?"
-  ]
- },
- "MCFOST_R2": {
-  "default": -1.0,
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "ref.radius",
-   "... belonging to reference radius"
-  ]
- },
- "MCFOST_R3": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "MCFOST_R4": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "MCFOST_RREF": {
-  "default": 100.0,
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "... belonging to reference radius",
-   "ref.radius"
-  ]
- },
- "MCMAX_LIKE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "p = n k Tgas for hydro-structure"
-  ]
- },
- "Mdisk": {
-  "default": "Mdisk",
-  "unit": "[Msun]",
-  "type": "float",
-  "desc": [
-   "disk mass",
-   "disk mass of outer disk",
-   "disk gas mass"
-  ]
- },
- "Mdot": {
-  "default": 0.0,
-  "unit": "[Msol/yr]",
-  "type": "float",
-  "desc": [
-   "accretion rate"
-  ]
- },
- "Mdust": {
-  "default": -1.0,
-  "unit": "[Msun]",
-  "type": "float",
-  "desc": [
-   "dust mass"
-  ]
- },
- "mean_dust_photoelectric_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "MEBDF": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "memLimitGB": {
-  "default": 8,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "merge_reaction_files": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Mie_ascii": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "min_Ng_iter": {
-  "default": 99,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "Minissale_evap": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "model_name": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "molecular_cloud": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "initial concentrations from mol.cloud.?"
-  ]
- },
- "monoSED": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use monochromatic mode?",
-   "monochrmoatic SED?"
-  ]
- },
- "MRI": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Mstar": {
-  "default": "Mstar",
-  "unit": "[Msun]",
-  "type": "float",
-  "desc": [
-   "stellar mass",
-   "stellar mass (Lambda Ori)"
-  ]
- },
- "Mumma_water_op": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "N1UV": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "N2_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use N2 self-shielding"
-  ]
- },
- "N_age": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "no of successive output ages",
-   "for more detailed models more steps might be required"
-  ]
- },
- "N_age_mc": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NBaregrains": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NDUST": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "number of selected dust species",
-   "number of dust species, Vol%, materials",
-   "number of dust species"
-  ]
- },
- "new_energetics": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "new_escape": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "just to make it faster"
-  ]
- },
- "new_escape_lineflux": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "new_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "NewChemScan": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "new initial abund. from down-right scan?"
-  ]
- },
- "newUVphoto": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NH3rovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "nH_mc": {
-  "default": 10000.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "nH_PDR": {
-  "default": 10,
-  "unit": "[cm^-3]",
-  "type": "float",
-  "desc": [
-   "H nuclei density",
-   "H nuclei density 3.16E+5"
-  ]
- },
- "nH_surround": {
-  "default": 100.0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NHfilter": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Ninner": {
-  "default": 10,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NIPL": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NLAM": {
-  "default": 20,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NlamSED": {
-  "default": 40,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "number of lambda gridpoints"
-  ]
- },
- "Nlay": {
-  "default": 2.0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NlayS6": {
-  "default": 200.0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NMANTLE": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "number of ice species in dust"
-  ]
- },
- "NnewWall": {
-  "default": 5,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "no_background_pumping": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "no_C_shielding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "noEUV": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "NOrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Nouter": {
-  "default": 3,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "Nphi": {
-  "default": 9,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "Npixel_continuum": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "nprod_file1": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "nprod_file2": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "NSIZE": {
-  "default": "",
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "number of dust size bins",
-   "number of sizebins"
-  ]
- },
- "NTestColl": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "Ntheta": {
-  "default": 17,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "num_noerase": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "exceptions from erasing UMIST data"
-  ]
- },
- "numerical_jacobian": {
-  "default": 0,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "NUV": {
-  "default": 3,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NXratio": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "NXray": {
-  "default": 20,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NXX": {
-  "default": 30,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NZONES": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "NZZ": {
-  "default": 30,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "O17_O16": {
-  "default": "1./1900.0",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "O18_O16": {
-  "default": "1./498.7",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "O2rovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "O_diffusion_Congiu": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ode_element_conservation": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "OH_ExoMol": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "non-LTE OH model"
-  ]
- },
- "OH_nonLTE": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "OH_pumping": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "OHrovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "old_surface_GG_reactions": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "old_wall_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "openmp_Nlev": {
-  "default": 1000,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "optimise_phi": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "optimise_theta": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "OSU_Alchemic": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use the network of the benchmark"
-  ]
- },
- "OSU_rates": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "using the OSU rates?"
-  ]
- },
- "other_PAH": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "other_reactions": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "PAH_charged": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "PAH_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "PAH heating from cross-sections?"
-  ]
- },
- "PAH_in_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "are PAH opacities included in rad.trans.?"
-  ]
- },
- "PAH_name": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "PAH_NC": {
-  "default": "",
-  "unit": "[-]",
-  "type": "int",
-  "desc": [
-   "number of C atoms in PAH"
-  ]
- },
- "PAH_NH": {
-  "default": "",
-  "unit": "[-]",
-  "type": "int",
-  "desc": [
-   "number of H atoms in PAH"
-  ]
- },
- "PAobj": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "parallel_chem": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "parallel_debug": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "perfect_ice": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use long integration time for ices?"
-  ]
- },
- "pg_mc": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "photodesorption": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "photorates_version": {
-  "default": 2,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "PlanckSpec": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "population_restart": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "precomputed_CO_selfshielding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "precomputed_H2_CO_selfshielding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "preconditioning": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "previous_mc_model_filename": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "ProDiMo2mcfost_version": {
-  "default": 3,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "pseudo_aniso_scat": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "ignore forward scattering"
-  ]
- },
- "pseudo_Voigt": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "PStar": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "pUV": {
-  "default": 0.2,
-  "unit": "[-]",
-  "type": "float",
-  "desc": [
-   "UV powerlaw exponent",
-   "UV power-lax index",
-   "UV powerlaw index"
-  ]
- },
- "QIndexTotVol": {
-  "default": 0,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "volume of ice available can vary from place to place"
-  ]
- },
- "QPosDep": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "position dependent Q efficiency calculation"
-  ]
- },
- "qsa": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "QSSA": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "quadp_solver": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use quadruple precision solver?"
-  ]
- },
- "QvisSplit": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r1aduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r1educ": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r2aduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r2educ": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "R2in": {
-  "default": "",
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "inner disk radius"
-  ]
- },
- "R2out": {
-  "default": 1e+99,
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "outer disk radius"
-  ]
- },
- "r3aduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r3educ": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "R3in": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "R3out": {
-  "default": 1e+99,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r4aduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "r4educ": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "R4in": {
-  "default": "",
-  "unit": "",
-  "type": "",
-  "desc": []
- },
- "R4out": {
-  "default": 1e+99,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "RADAU": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "radtrans": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "continuum radiative transfer?",
-   "calculate dust continuum rad. transfer?",
-   "calculate dust continuum RT?"
-  ]
- },
- "raduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "radius-fac up to where col.dens. increases"
-  ]
- },
- "random_initial_population": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "rayleighgans_limit": {
-  "default": 0.7,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "RDI": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "reacfile1": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "reacfile2": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "reaction_file": {
-  "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "read_fits_binary": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "read_reactions_in_csv": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "readMCFOST": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "reduc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "inner rim increase of col.dens."
-  ]
- },
- "refine_Spitzer": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "refine_zz": {
-  "default": "",
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "refinement_fac": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "reinit_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "resolve_star": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "restart": {
-  "default": "",
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "run from restart?",
-   "restart from checkpoint file?"
-  ]
- },
- "rho_gr": {
-  "default": "",
-  "unit": "[g/cm^3]",
-  "type": "float",
-  "desc": [
-   "dust grain material mass density"
-  ]
- },
- "rho_gr_mc": {
-  "default": 3.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Rin": {
-  "default": "Rin",
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "inner disk radius",
-   "inner radius of outer disk"
-  ]
- },
- "RKCK": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "ROSEN": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Rout": {
-  "default": "Rout",
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "outer disk radius",
-   "outer radius of the whole structure"
-  ]
- },
- "Rph_generic_shape": {
-  "default": 2,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "Rphoto_bandint": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use band-integrated photo-rates?"
-  ]
- },
- "Rphoto_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate photorates from rad. transfer?",
-   "calculate photorates from RT?",
-   "calculate photorates from RT"
-  ]
- },
- "Rtaper": {
-  "default": 1e+99,
-  "unit": "[AU]",
-  "type": "float",
-  "desc": [
-   "tapering-off radius"
-  ]
- },
- "RTitmax": {
-  "default": 50,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "just for testing"
-  ]
- },
- "rtol_chem": {
-  "default": 2e-05,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "rel. tolerance for advance_chemistry"
-  ]
- },
- "SDIRK": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "self_shielding": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "settle_method": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": [
-   "no dust settling",
-   "dust settling (Dubrulle et al. 1995)",
-   "power-law dust settling",
-   "dust settling",
-   "dust settling (2=Dubrulle et al. 1995)"
-  ]
- },
- "SEULEX": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "shielding_mc": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "do not account for self-shielding in mc"
-  ]
- },
- "sizefit_powerindex": {
-  "default": 2.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "sizeParam_Mie": {
-  "default": "5.5d5",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "slab_escape": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "slot_ix": {
-  "default": 1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "slot_iz": {
-  "default": "NZZ-1",
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "slot_keep": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "smoothEUV": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "SO2rovib_LTE_cooling": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "soft_edges": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "add confining boundary layers?"
-  ]
- },
- "solve_diskstruc": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "solve the vertical hydrostatic eq.?",
-   "solve the vertical disk structure?",
-   "solve the vertical hydrostat.eq.?",
-   "solve the vertical hydrostatic structure?"
-  ]
- },
- "solve_temp": {
-  "default": "",
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "solve the heating/cooling balance?",
-   "solve the heating/cooling balance? still experimental for envelop so deactived",
-   "solve the gas heating/cooling balance?"
-  ]
- },
- "sparse_Nlev": {
-  "default": 121,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "STAND": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "STANDfilter": {
-  "default": "\"",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "STANDover": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "start_from_previous_mc_model": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "stateq_min_iter": {
-  "default": 3,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "STCRI": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "STCRP_a": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "STCRP_b": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "STCRP_high": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "STCRP_low": {
-  "default": -1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "STCRP_method": {
-  "default": -1,
-  "unit": "",
-  "type": "int",
-  "desc": []
- },
- "STCRP_NHE": {
-  "default": 2.5e+25,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "sticking_coefficient": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "for all species"
-  ]
- },
- "STIFBS": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "stop_after_contRT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "stop_after_init": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use this to just check the model setup",
-   "use this to check the model setup"
-  ]
- },
- "surf_competition": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "surface_benchmark": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "cannot have H2OCO#",
-   "use a combination of switches instead"
-  ]
- },
- "surface_chemistry": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "SVD_improve": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "switch_off_H2form": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "switch_off_photo": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "tau_cutoff": {
-  "default": 10.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Tback": {
-  "default": 2.7,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Td_from_RT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "calculate dust temp. from rad. transfer?",
-   "calculate dust temp. from RT?"
-  ]
- },
- "Td_mc": {
-  "default": 10.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Tdust_PDR": {
-  "default": 20.0,
-  "unit": "[K]",
-  "type": "float",
-  "desc": [
-   "dust temperature"
+  "desc": "stellar luminosity",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "Teff": {
   "default": "",
-  "unit": "[K]",
-  "type": "float",
-  "desc": [
-   "stellar effective temperature"
+  "unit": "K",
+  "type": "",
+  "desc": "stellar effective temperature",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/StellarSpectra.md"
   ]
  },
- "temp_precis": {
-  "default": 1e-06,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "rel. precision in T-determination",
-   "rel. tolerance for temperature determination"
-  ]
- },
- "Tex_subthermal": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Textrapolate": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "extrapolate T in gas-phase reactions?"
-  ]
- },
- "Tg_mc": {
-  "default": 10.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Tgas_once": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Tgas_PDR": {
-  "default": 50.0,
-  "unit": "[K]",
-  "type": "float",
-  "desc": [
-   "gas temperature"
-  ]
- },
- "thermal_diffusion_only": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "only thermal diffusion"
-  ]
- },
- "threeReactants": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "3 educts in Reactions.in?",
-   "3-column format for Reactions.in?"
-  ]
- },
- "time_chem_disk": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "solve time-dependent disk chemistry?"
-  ]
- },
- "time_chem_disk_ifspecies": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "time_dependent": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "tol_convergence": {
-  "default": 0.05,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "convergence criterion for global interation"
-  ]
- },
- "tol_diskstruc": {
-  "default": 1e-08,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "rel.&abs. tolerance for vertical disk struc"
-  ]
- },
- "tunnelling": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "no surface reaction tunnelling"
-  ]
- },
- "UMIST2006": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "UMIST version"
-  ]
- },
- "UMIST2012": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "using UMIST2012 rates?",
-   "using UMIST 2012 reactions",
-   "use UMIST2012 chemical database",
-   "using UMIST 2012 rates?"
-  ]
- },
- "UMIST2022": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "umist_code": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "UMISTDB": {
+ "Mdisk": {
   "default": "",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "unique_fbinding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "unit_testing": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "use_Alchemic_nsite": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "use_chemsol": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "use_drift_phoenix": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "use_MCFOST_rgrid": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "UV_H2": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "electronic levels for H2?",
-   "use electronic level?"
+  "unit": "Msun",
+  "type": "",
+  "desc": "disk mass",
+  "basename": "Mdisk",
+  "wiki": [
+   "userguide/fitting.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/Slab-models.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/multiple_zones.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/viscous_heating.md"
   ]
  },
- "UVgasRT": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "UVphoto_highres": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "UVpumping": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use large model atoms?"
-  ]
- },
- "v_turb": {
-  "default": 0.15,
-  "unit": "[km/s]",
+ "Mdust": {
+  "default": -1.0,
+  "unit": "Msun",
   "type": "float",
-  "desc": [
-   "turbulent Doppler width",
-   "turbulent velocity",
-   "doppler width of UV H2-lines"
+  "desc": "dust mass",
+  "basename": "Mdust",
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md"
   ]
  },
- "verbose_level": {
-  "default": 0,
-  "unit": "",
+ "Rin": {
+  "default": "",
+  "unit": "AU",
+  "type": "",
+  "desc": "inner disk radius",
+  "basename": "Rin",
+  "wiki": [
+   "userguide/Images.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/H2O_rovibrational_cooling.md",
+   "userguide/input_and_output_files.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "Rout": {
+  "default": "",
+  "unit": "AU",
+  "type": "",
+  "desc": "outer disk radius; outer radius of the whole structure",
+  "basename": "Rout",
+  "wiki": [
+   "userguide/Images.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/envelope.md",
+   "userguide/H2O_rovibrational_cooling.md",
+   "userguide/input_and_output_files.md",
+   "userguide/multiple_zones.md",
+   "userguide/channel_maps.md"
+  ]
+ },
+ "Rtaper": {
+  "default": 1e+99,
+  "unit": "AU",
+  "type": "float",
+  "desc": "tapering-off radius",
+  "basename": null,
+  "wiki": [
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/envelope.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "epsilon": {
+  "default": 1.5,
+  "unit": null,
+  "type": "float",
+  "desc": "column density exponent; power index of vert. col.dens.",
+  "basename": "epsilon",
+  "wiki": [
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/multiple_zones.md",
+   "userguide/viscous_heating.md",
+   "userguide/RTparameter.md"
+  ]
+ },
+ "beta_max": {
+  "default": 45.0,
+  "unit": "deg",
+  "type": "float",
+  "desc": "maximum half opening angle of resolved disk; defines the cavity opening angle (here 20 degree)",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/envelope.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "dust_to_gas": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "the dust-to-gas mass ratio",
+  "basename": "dust_to_gas",
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Slab-models.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d2ust_to_gas": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "the dust-to-gas mass ratio",
+  "basename": "dust_to_gas",
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d3ust_to_gas": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "dust_to_gas",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d4ust_to_gas": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "dust_to_gas",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "NDUST": {
+  "default": 1,
+  "unit": null,
   "type": "int",
-  "desc": [
-   "how much output? (-1...4)",
-   "how much output? (0...4)",
-   "minimal output"
+  "desc": "number of selected dust species",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/Position_dependent_opacities.md",
+   "userguide/Porous_and_hollow_grains.md",
+   "userguide/multiple_zones.md"
   ]
  },
- "vert_pot": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "VHEAT_GAS": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "viscous heat into dust",
-   "put heat into the dust"
-  ]
- },
- "Voigt_escape": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "vturb_from_alpha": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "vturb_mc": {
-  "default": 1.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "water_h2_ortho_para": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "water_ice_photodesorption_eff": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "weight_FLITS": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "weight_HEIGHTS": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "weight_IMAGES": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "weight_LINES": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "weight_PHOTO": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "weight_SPITZER": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "weight_VISIB": {
-  "default": "1.0/5.0",
-  "unit": "",
-  "type": "str",
-  "desc": []
- },
- "Wolcott_Green_shielding": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "write_fits_binary": {
-  "default": true,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "use fits format for Mie and restart output",
-   "use fits-format?"
-  ]
- },
- "write_pop": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "write output for immediate line transfer?",
-   "write output for line transfer?"
-  ]
- },
- "write_posDep_opac": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": [
-   "write position dependnet opacity output files"
-  ]
- },
- "write_zdist": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Xray_Bg_Flux": {
-  "default": 0.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Xray_Bg_Temp": {
-  "default": 40000000.0,
-  "unit": "",
-  "type": "float",
-  "desc": []
- },
- "Xray_Bg_XRB": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Xray_Emax": {
-  "default": 61.99215628,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "optional: maximum photon energy to be considered as Xray [keV]",
-   "optional: max. energy to be considered as X-ray [keV]"
-  ]
- },
- "Xray_Emin": {
-  "default": 0.1,
-  "unit": "",
-  "type": "float",
-  "desc": [
-   "minimum energy considered as Xray",
-   "X-ray min. photon energy",
-   "minimum X-ray energy"
-  ]
- },
- "Xray_FUVumist": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Xray_Lum": {
-  "default": 1e+30,
-  "unit": "[erg/s]",
-  "type": "float",
-  "desc": [
-   "X-ray luminosity",
-   "Xray luminosity"
-  ]
- },
- "Xray_mc": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Xray_norm": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "Xray_Temp": {
-  "default": 10000000.0,
-  "unit": "[K]",
-  "type": "float",
-  "desc": [
-   "X-ray emission temperature",
-   "Xray emission temperature",
-   "shape of X-ray spectrum"
-  ]
- },
- "Xray_wlp": {
-  "default": 1000,
-  "unit": "",
+ "NLAM": {
+  "default": 20,
+  "unit": null,
   "type": "int",
-  "desc": [
-   "optional: number of wl points used for the X-Ray spectrum"
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md",
+   "userguide/UV_photorates.md",
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md",
+   "devguide/Parallel_ProDiMo.md"
   ]
  },
- "Xray_workaround": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
+ "N1UV": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "NUV": {
+  "default": 3,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/UV_photorates.md"
+  ]
+ },
+ "NXray": {
+  "default": 20,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
  },
  "XrayRT": {
   "default": false,
-  "unit": "",
+  "unit": null,
   "type": "bool",
-  "desc": [
-   "do Xray radiative transfer?"
+  "desc": "do Xray radiative transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md",
+   "devguide/Parallel_ProDiMo.md"
   ]
  },
  "XrayRT_chem": {
   "default": true,
-  "unit": "",
+  "unit": null,
   "type": "bool",
-  "desc": [
-   "couple Xray_RT to chemistry"
+  "desc": "couple Xray_RT to chemistry",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md",
+   "devguide/Parallel_ProDiMo.md"
   ]
  },
  "XrayRT_chem_effion": {
   "default": false,
-  "unit": "",
+  "unit": null,
   "type": "bool",
-  "desc": []
- },
- "XrayRT_dust": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
- },
- "XrayRT_dust_opac": {
-  "default": false,
-  "unit": "",
-  "type": "bool",
-  "desc": []
+  "desc": null,
+  "basename": null,
+  "wiki": []
  },
  "XrayRT_opac": {
   "default": 4,
-  "unit": "",
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "XrayRT_dust": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "XrayRT_dust_opac": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "UVgasRT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "rho_gr": {
+  "default": "",
+  "unit": "g/cm^3",
+  "type": "",
+  "desc": "dust grain material mass density",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "amin": {
+  "default": "",
+  "unit": "mic",
+  "type": "",
+  "desc": "minimum dust particle size",
+  "basename": "amin",
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/molecular_clouds_models.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/Porous_and_hollow_grains.md",
+   "devguide/RTbenchmark.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "amax": {
+  "default": "",
+  "unit": "mic",
+  "type": "",
+  "desc": "maximum dust particle size",
+  "basename": "amax",
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/molecular_clouds_models.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/Porous_and_hollow_grains.md",
+   "devguide/RTbenchmark.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "apow": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "dust size distr f(a)~a^-apow",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/molecular_clouds_models.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/Porous_and_hollow_grains.md",
+   "userguide/multiple_zones.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "a1min": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a2min": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a3min": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a4min": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a1max": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amax",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a2max": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amax",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a3max": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amax",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a4max": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": "amax",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "dust_bins": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "NSIZE": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "number of dust size bins",
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "CRI": {
+  "default": 1.36e-17,
+  "unit": "1/s",
+  "type": "float",
+  "desc": "cosmic ray ionisation of H2",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "ABS_CRI": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "STCRI": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CR_elec_heating": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CHI_ISM": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "strength of incident vertical UV; UV-field strength (Draine units)",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/UV_IR_ISRF.md"
+  ]
+ },
+ "alpha_vis": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "viscous heating parameter",
+  "basename": null,
+  "wiki": [
+   "userguide/viscous_heating.md"
+  ]
+ },
+ "alpha_mix": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/mixing.md"
+  ]
+ },
+ "vturb_from_alpha": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Mdot": {
+  "default": 0.0,
+  "unit": "Msun/yr",
+  "type": "float",
+  "desc": "accretion rate",
+  "basename": "Mdot",
+  "wiki": [
+   "userguide/viscous_heating.md",
+   "userguide/RTparameter.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M2dot": {
+  "default": -1.0,
+  "unit": "Msun/yr",
+  "type": "float",
+  "desc": null,
+  "basename": "Mdot",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M3dot": {
+  "default": -1.0,
+  "unit": "Msun/yr",
+  "type": "float",
+  "desc": null,
+  "basename": "Mdot",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M4dot": {
+  "default": -1.0,
+  "unit": "Msun/yr",
+  "type": "float",
+  "desc": null,
+  "basename": "Mdot",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "alpha_from_Mdot": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "dust_nonRE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "dust in non-radiative equilibrium",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/viscous_heating.md",
+   "userguide/RTparameter.md"
+  ]
+ },
+ "QvisSplit": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fPAH": {
+  "default": 0.1,
+  "unit": null,
+  "type": "float",
+  "desc": "PAH abundance with respect to ISM",
+  "basename": "fPAH",
+  "wiki": [
+   "userguide/PAH_size.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/PAH_heating_and_chemistry.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "f2PAH": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "PAH abundance relative to ISM",
+  "basename": "fPAH",
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "f3PAH": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "fPAH",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "f4PAH": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "fPAH",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "fUV": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "LUV/Lstar; UV excess",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md"
+  ]
+ },
+ "pUV": {
+  "default": 0.2,
+  "unit": null,
+  "type": "float",
+  "desc": "UV powerlaw exponent",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md"
+  ]
+ },
+ "Lacc": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Lalpha": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "calcSED": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate SED and images?",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md",
+   "userguide/beginnersguide.md",
+   "userguide/mixing.md",
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "monoSED": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "use monochromatic mode?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "NlamSED": {
+  "default": 40,
+  "unit": null,
+  "type": "int",
+  "desc": "number of lambda gridpoints",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "lminSED": {
+  "default": 0.1,
+  "unit": null,
+  "type": "float",
+  "desc": "minimum lambda[mic]",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "lmaxSED": {
+  "default": 5000.0,
+  "unit": null,
+  "type": "float",
+  "desc": "minimum lambda[mic]",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "dist": {
+  "default": 100.0,
+  "unit": "pc",
+  "type": "float",
+  "desc": "distance",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md",
+   "userguide/star_fit.md"
+  ]
+ },
+ "incl": {
+  "default": 45.0,
+  "unit": "deg",
+  "type": "float",
+  "desc": "inclination (0=face-on)",
+  "basename": null,
+  "wiki": [
+   "userguide/Look_at_the_results.md",
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/ProDiMo_SED.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/compute_visibilities.md",
+   "userguide/RATRAN.md"
+  ]
+ },
+ "tol_convergence": {
+  "default": 0.05,
+  "unit": null,
+  "type": "float",
+  "desc": "convergence criterion for global interation",
+  "basename": null,
+  "wiki": [
+   "userguide/mixing.md"
+  ]
+ },
+ "tol_diskstruc": {
+  "default": 1e-08,
+  "unit": null,
+  "type": "float",
+  "desc": "rel.&abs. tolerance for vertical disk struc",
+  "basename": null,
+  "wiki": []
+ },
+ "temp_precis": {
+  "default": 1e-06,
+  "unit": null,
+  "type": "float",
+  "desc": "rel. precision in T-determination",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "chem_precis": {
+  "default": 1e-08,
+  "unit": null,
+  "type": "float",
+  "desc": "precision in solve_chemistry 1.0E-9",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "rtol_chem": {
+  "default": 2e-05,
+  "unit": null,
+  "type": "float",
+  "desc": "rel. tolerance for advance_chemistry",
+  "basename": null,
+  "wiki": []
+ },
+ "atol_chem": {
+  "default": 1e-99,
+  "unit": null,
+  "type": "float",
+  "desc": "abs. tolerance for advance_chemistry",
+  "basename": null,
+  "wiki": []
+ },
+ "cputime_max": {
+  "default": 20.0,
+  "unit": "s",
+  "type": "float",
+  "desc": "max. CPU time for advance_chemistry",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "maxtime": {
+  "default": 1e+99,
+  "unit": null,
+  "type": "float",
+  "desc": "maximum computational time [sec]",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md"
+  ]
+ },
+ "maxit": {
+  "default": 9999999,
+  "unit": null,
+  "type": "int",
+  "desc": "maximum number of global iterations",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/mixing.md",
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "verbose_level": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "how much output? (-1...4); minimal output",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/How_do_I.md",
+   "userguide/chemistry_details.md"
+  ]
+ },
+ "solve_diskstruc": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "solve the vertical hydrostatic eq.?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/vertical_structure.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "solve_temp": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "solve the heating/cooling balance?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/IR-pumping.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "conserve_pressure": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "conserve pgas instead of n<H>?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/vertical_structure.md"
+  ]
+ },
+ "chem_scale": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "scale chemical equations to solve?",
+  "basename": null,
+  "wiki": []
+ },
+ "restart": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "run from restart?; restart from checkpoint file?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/mixing.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/Run_ProDiMo.md",
+   "userguide/XrayRadiativeTransfer.md",
+   "userguide/IR-pumping.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/channel_maps.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "radtrans": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "continuum radiative transfer?; calculate dust continuum RT?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/RATRAN.md",
+   "userguide/XrayRadiativeTransfer.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "chi_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate chi from UV rad. transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Td_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate dust temp. from rad. transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md"
+  ]
+ },
+ "Jback_from_RT": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate background Jnu from rad. transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Rphoto_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate photorates from rad. transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/UV_photorates.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Rphoto_bandint": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use band-integrated photo-rates?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/XrayRadiativeTransfer.md",
+   "userguide/UV_photorates.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Textrapolate": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "extrapolate T in gas-phase reactions?",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "NewChemScan": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "new initial abund. from down-right scan?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/accelerate_ProDiMo.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "freeze_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "freeze radiative transfer results Td/Jv?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/mixing.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/IR-pumping.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md"
+  ]
+ },
+ "freeze_diskstruc": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "freeze density/pressure structure?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/IR-pumping.md"
+  ]
+ },
+ "freeze_Tgas": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "freeze gas temperature?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/IR-pumping.md"
+  ]
+ },
+ "freeze_chemistry": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "freeze chemical concentrations?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/IR-pumping.md"
+  ]
+ },
+ "reinit_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "from_hash": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "soft_edges": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "add confining boundary layers?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md"
+  ]
+ },
+ "perfect_ice": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use long integration time for ices?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md"
+  ]
+ },
+ "write_pop": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "write output for immediate line transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/RATRAN.md",
+   "userguide/Run_ProDiMo.md"
+  ]
+ },
+ "handle_UMIST": {
+  "default": "\"onlyadd\"",
+  "unit": null,
+  "type": "str",
+  "desc": "handle UMIST-data (erase/overwrite/onlyadd)",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/Slab-models.md",
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "read_reactions_in_csv": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "molecular_cloud": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "initial concentrations from mol.cloud.?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "time_dependent": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "N_age_mc": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "N_age": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "no of successive output ages; for more detailed models more steps might be required",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "num_noerase": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "exceptions from erasing UMIST data",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/Slab-models.md"
+  ]
+ },
+ "readMCFOST": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md"
+  ]
+ },
+ "colour_correct_from_RT": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/PAH_heating_and_chemistry.md"
+  ]
+ },
+ "PAH_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "PAH heating from cross-sections?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/PAH_heating_and_chemistry.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "PAH_in_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "are PAH opacities included in rad.trans.?",
+  "basename": null,
+  "wiki": []
+ },
+ "PAH_charged": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "cont_Nstar": {
+  "default": 4,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_Nhole": {
+  "default": 40,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_Ndisk": {
+  "default": 150,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_Npuff": {
+  "default": 30,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_Ntheta": {
+  "default": 72,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_Rout": {
+  "default": 0.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "cont_lmin": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "cont_lmax": {
+  "default": 9e+99,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "line_transfer": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "calculate line transfer?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/beginnersguide.md",
+   "userguide/mixing.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/input_and_output_files.md",
+   "userguide/spatial_grid_resolution.md",
+   "userguide/channel_maps.md"
+  ]
+ },
+ "immediate_lines": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "line RT directly after init?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "line_cube": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "3D-line cube output?",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_cube_fits": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "3D-line cube output ?",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_cube_analysis": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "line_vkep": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "line_vkeppgrad": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "line_cube_whichside": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_image_side_Npix": {
+  "default": 201,
+  "unit": null,
+  "type": "int",
+  "desc": "line image size fore cube output",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Nstar": {
+  "default": 5,
+  "unit": null,
+  "type": "int",
+  "desc": "parameters for the line transfer grid",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Nhole": {
+  "default": 40,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Ndisk": {
+  "default": 100,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Npuff": {
+  "default": 10,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Ntheta": {
+  "default": 72,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_Rout": {
+  "default": 0.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
+ },
+ "line_novel": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "line_nostar": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "line_nobackground": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "line_nodust": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "image_fov_arcsec": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "v_turb": {
+  "default": 0.15,
+  "unit": "km",
+  "type": "float",
+  "desc": "turbulent Doppler width; doppler width of UV H2-lines",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md"
+  ]
+ },
+ "MCFOST_LIKE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "parametric disk structure like in MCFOST?; use Tdust and mu=2.3amu for cT?",
+  "basename": null,
+  "wiki": [
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/vertical_structure.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCMAX_LIKE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "p = n k Tgas for hydro-structure",
+  "basename": null,
+  "wiki": [
+   "userguide/vertical_structure.md",
+   "userguide/multiple_zones.md",
+   "userguide/viscous_heating.md"
+  ]
+ },
+ "VHEAT_GAS": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "viscous heat into dust",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "MCFOST_H0": {
+  "default": 10.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": "scale height ...",
+  "basename": "MCFOST_H0",
+  "wiki": [
+   "userguide/fitting.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_RREF": {
+  "default": 100.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": "... belonging to reference radius; ref.radius",
+  "basename": "MCFOST_RREF",
+  "wiki": [
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_BETA": {
+  "default": 1.1,
+  "unit": null,
+  "type": "float",
+  "desc": "flaring power",
+  "basename": "MCFOST_BETA",
+  "wiki": [
+   "userguide/fixed_density_structure.md",
+   "userguide/beginnersguide.md",
+   "userguide/dust_settling.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "adjustRTconv": {
+  "default": 0.5,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "optimise_theta": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "optimise_phi": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "resolve_star": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "DiffusionApprox": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "fixed_surface_density": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/1Dinterface.md"
+  ]
+ },
+ "interface1D": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "activate the 1D interface",
+  "basename": null,
+  "wiki": [
+   "userguide/1Dinterface.md"
+  ]
+ },
+ "interface2D": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "hollow_sphere": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "max hollow volume ratio",
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "dust_settle": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "... switched off",
+  "basename": "dust_settle",
+  "wiki": [
+   "userguide/dust_settling.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d2ust_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "dust_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d3ust_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "dust_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "d4ust_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "dust_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a_settle": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "turbulence alpha",
+  "basename": "a_settle",
+  "wiki": [
+   "userguide/dust_settling.md",
+   "userguide/mid-IR-JWST-spectrum.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a2_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "a_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a3_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "a_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a4_settle": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "a_settle",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "a_nosettle": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "UVpumping": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use large model atoms?",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/optical-and-UV-levels.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "LLL": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "Hunderi": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "Hunderi_CDE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "Maxwell_Garnett": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "L1": {
+  "default": "1./3.",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "L2": {
+  "default": "1./3.",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "UV_H2": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "electronic levels for H2?",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/H2_UV_fluorescence.md"
+  ]
+ },
+ "sparse_Nlev": {
+  "default": 121,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/H2O_rovibrational_cooling.md",
+   "userguide/H2_UV_fluorescence.md"
+  ]
+ },
+ "threeReactants": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "3 educts in Reactions.in?",
+  "basename": null,
+  "wiki": []
  },
  "Xrays": {
   "default": false,
-  "unit": "[-]",
+  "unit": null,
   "type": "bool",
-  "desc": [
-   "use Xray chemistry and heating?",
-   "Xrays in chemistry?",
-   "switch on X-rays?",
-   "want Xrays?"
+  "desc": "use Xray chemistry and heating?; switch on X-rays?",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/Slab-models.md",
+   "userguide/How_to_run_a_X-ray_model.md",
+   "devguide/Parallel_ProDiMo.md"
   ]
  },
- "Zmax_v2": {
-  "default": 10000.0,
-  "unit": "",
+ "Xray_Lum": {
+  "default": 1e+30,
+  "unit": "erg/s",
+  "type": "float",
+  "desc": "X-ray luminosity",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/molecular_clouds_models.md",
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
+ },
+ "Xray_norm": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Xray_Emin": {
+  "default": 0.1,
+  "unit": "keV",
+  "type": "float",
+  "desc": "minimum energy considered as Xray; X-ray min. photon energy",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_X-ray_model.md",
+   "userguide/Include-H-as-coolant.md"
+  ]
+ },
+ "Xray_Temp": {
+  "default": 10000000.0,
+  "unit": "K",
+  "type": "float",
+  "desc": "X-ray emission temperature; shape of X-ray spectrum",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md",
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
+ },
+ "Xray_Bg_Flux": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "Xray_Bg_Temp": {
+  "default": 40000000.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "Xray_Bg_XRB": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Xray_wlp": {
+  "default": 1000,
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": "optional: number of wl points used for the X-Ray spectrum",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
+ },
+ "Xray_Emax": {
+  "default": 61.99215628,
+  "unit": "keV",
+  "type": "float",
+  "desc": "optional: maximum photon energy to be considered as Xray [keV]",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
+ },
+ "Xray_FUVumist": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
+ },
+ "correct_PAH": {
+  "default": 0.4,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "compare_photorates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "max_diff_photorates": {
+  "default": 10.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "weight_PHOTO": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "weight_SPITZER": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/fitting.md"
+  ]
+ },
+ "weight_LINES": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/fitting.md"
+  ]
+ },
+ "weight_IMAGES": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "weight_VISIB": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "weight_FLITS": {
+  "default": "1.0/5.0",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "weight_HEIGHTS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ChemHeatFac": {
+  "default": 0.33333,
+  "unit": null,
+  "type": "float",
+  "desc": "efficiency of chemical heating",
+  "basename": null,
+  "wiki": []
+ },
+ "NXX": {
+  "default": 30,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/multiple_zones.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/spatial_grid_resolution.md",
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "NZZ": {
+  "default": 30,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/multiple_zones.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/spatial_grid_resolution.md",
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Ntheta": {
+  "default": 17,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "Nphi": {
+  "default": 9,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "H2_Jura": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/H2_formation.md"
+  ]
+ },
+ "H2_Cazaux2010": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/H2_formation.md"
+  ]
+ },
+ "H2_Cazaux2017": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "switch_off_H2form": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "switch_off_photo": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "debug_photorates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "other_PAH": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/PAH_size.md"
+  ]
+ },
+ "PAH_name": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/PAH_size.md"
+  ]
+ },
+ "PAH_NC": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "number of C atoms in PAH",
+  "basename": null,
+  "wiki": [
+   "userguide/PAH_size.md"
+  ]
+ },
+ "PAH_NH": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "number of H atoms in PAH",
+  "basename": null,
+  "wiki": [
+   "userguide/PAH_size.md"
+  ]
+ },
+ "Federman_H2_shielding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/H2selfshielding.md"
+  ]
+ },
+ "Wolcott_Green_shielding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/H2selfshielding.md"
+  ]
+ },
+ "dust_photoelectric_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/dust_photoelectric_from_RT.md"
+  ]
+ },
+ "H2O_rovibration": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "big ro-vib H2O models?",
+  "basename": null,
+  "wiki": [
+   "userguide/H2O_rovibrational_cooling.md"
+  ]
+ },
+ "use_MCFOST_rgrid": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md"
+  ]
+ },
+ "no_C_shielding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "C_H2_shielding_Bertoldi": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ion_drift": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "PStar": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Carbon_ionization_pumping": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "OH_pumping": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "H2O_pumping": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "self_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/UV_line_shielding.md"
+  ]
+ },
+ "C_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/UV_line_shielding.md"
+  ]
+ },
+ "H2_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/UV_line_shielding.md"
+  ]
+ },
+ "NZONES": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Look_at_the_results.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md",
+   "userguide/spatial_grid_resolution.md"
+  ]
+ },
+ "R2in": {
+  "default": "",
+  "unit": "AU",
+  "type": "",
+  "desc": "inner disk radius",
+  "basename": "Rin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "R3in": {
+  "default": "",
+  "unit": "AU",
+  "type": "",
+  "desc": null,
+  "basename": "Rin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "R4in": {
+  "default": "",
+  "unit": "AU",
+  "type": "",
+  "desc": null,
+  "basename": "Rin",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "R2out": {
+  "default": 1e+99,
+  "unit": "AU",
+  "type": "float",
+  "desc": "outer disk radius",
+  "basename": "Rout",
+  "wiki": [
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "R3out": {
+  "default": 1e+99,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": "Rout",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "R4out": {
+  "default": 1e+99,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": "Rout",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "e2psilon": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "col.dens. exponent",
+  "basename": "epsilon",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "e3psilon": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "epsilon",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "e4psilon": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": "epsilon",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M2disk": {
+  "default": "",
+  "unit": "Msun",
+  "type": "",
+  "desc": "disk mass",
+  "basename": "Mdisk",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M3disk": {
+  "default": "",
+  "unit": "Msun",
+  "type": "",
+  "desc": null,
+  "basename": "Mdisk",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M4disk": {
+  "default": "",
+  "unit": "Msun",
+  "type": "",
+  "desc": null,
+  "basename": "Mdisk",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M2dust": {
+  "default": -1.0,
+  "unit": "Msun",
+  "type": "float",
+  "desc": "dust mass",
+  "basename": "Mdust",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M3dust": {
+  "default": -1.0,
+  "unit": "Msun",
+  "type": "float",
+  "desc": null,
+  "basename": "Mdust",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "M4dust": {
+  "default": -1.0,
+  "unit": "Msun",
+  "type": "float",
+  "desc": null,
+  "basename": "Mdust",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_H2": {
+  "default": "MCFOST_H0",
+  "unit": "AU",
+  "type": "str",
+  "desc": "scale height",
+  "basename": "MCFOST_H0",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_H3": {
+  "default": "MCFOST_H0",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": "MCFOST_H0",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_H4": {
+  "default": "MCFOST_H0",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": "MCFOST_H0",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_B2": {
+  "default": "MCFOST_BETA",
+  "unit": null,
+  "type": "str",
+  "desc": "flaring exponent",
+  "basename": "MCFOST_BETA",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_B3": {
+  "default": "MCFOST_BETA",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": "MCFOST_BETA",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_B4": {
+  "default": "MCFOST_BETA",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": "MCFOST_BETA",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_R2": {
+  "default": -1.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": "ref.radius; ... belonging to reference radius",
+  "basename": "MCFOST_RREF",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_R3": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "MCFOST_RREF",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "MCFOST_R4": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "MCFOST_RREF",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "reduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "inner rim increase of col.dens.",
+  "basename": "reduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r1educ": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "reduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r2educ": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": "reduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r3educ": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "reduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r4educ": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "reduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "raduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "radius-fac up to where col.dens. increases",
+  "basename": "raduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r1aduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "raduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r2aduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "raduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r3aduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "raduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "r4aduc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "raduc",
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "deduc": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "daduc": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CtoO": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoO",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C1toO": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoO",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C2toO": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoO",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C3toO": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoO",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C4toO": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoO",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "CtoN": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C1toN": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C2toN": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C3toN": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C4toN": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "refinement_fac": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "Hatom_bb": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md",
+   "userguide/Include-H-as-coolant.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "Hatom_bf": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md",
+   "userguide/Include-H-as-coolant.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "custom_COrovib": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "big ro-vibronic CO model?",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "COX_Nrot": {
+  "default": 60,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "COX_Nvib": {
+  "default": 4,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "COA_Nvib": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "CO_Emax": {
+  "default": 89460.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CO_H_2015": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "CO_selfshielding_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CO_selfshielding_from_RT.md"
+  ]
+ },
+ "precomputed_CO_selfshielding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CO_selfshielding_from_RT.md"
+  ]
+ },
+ "photodesorption": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "Nlay": {
+  "default": 2.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "NlayS6": {
+  "default": 200.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Voigt_escape": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Voigt_profile_escape_probability.md",
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/optical-and-UV-levels.md"
+  ]
+ },
+ "tau_cutoff": {
+  "default": 10.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Look_at_the_results.md",
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "pseudo_aniso_scat": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "ignore forward scattering",
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "RTitmax": {
+  "default": 50,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md",
+   "devguide/RTbenchmark.md"
+  ]
+ },
+ "gbar": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/optical-and-UV-levels.md"
+  ]
+ },
+ "bh_mie": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "c_mie": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "check_Mie": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "sizeParam_Mie": {
+  "default": "5.5d5",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
+  ]
+ },
+ "rayleighgans_limit": {
+  "default": 0.7,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ion_H_coll": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "min_Ng_iter": {
+  "default": 99,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "openmp_Nlev": {
+  "default": 1000,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "pseudo_Voigt": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "dust_charge_chemistry": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "compute_visibilities": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/compute_visibilities.md"
+  ]
+ },
+ "compute_line_visibilities": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "basel_filename": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "PAobj": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "gas_shielded_photodesorption": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/photodesorption.md"
+  ]
+ },
+ "COphotodesorption_yield2010": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/photodesorption.md"
+  ]
+ },
+ "merge_reaction_files": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/combine_reaction_rate_lists.md"
+  ]
+ },
+ "nprod_file1": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/combine_reaction_rate_lists.md"
+  ]
+ },
+ "nprod_file2": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/combine_reaction_rate_lists.md"
+  ]
+ },
+ "reacfile1": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/combine_reaction_rate_lists.md"
+  ]
+ },
+ "reacfile2": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/combine_reaction_rate_lists.md"
+  ]
+ },
+ "read_fits_binary": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/fits_format.md"
+  ]
+ },
+ "write_fits_binary": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "use fits format for Mie and restart output; use fits-format?",
+  "basename": null,
+  "wiki": [
+   "userguide/fits_format.md"
+  ]
+ },
+ "CRCS": {
+  "default": 0.0,
+  "unit": "cm^2",
+  "type": "float",
+  "desc": "cosmic rate absorption",
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "COrovib_sensitivity_analysis": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "H2O_coll_rate_sensitivity_analysis": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/H2O_rovibrational_cooling.md"
+  ]
+ },
+ "water_h2_ortho_para": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "grain_H2_op_conversion": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Mie_ascii": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "water_ice_photodesorption_eff": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "nH_PDR": {
+  "default": 10,
+  "unit": "cm^-3",
+  "type": "int",
+  "desc": "H nuclei density",
+  "basename": null,
+  "wiki": []
+ },
+ "Tdust_PDR": {
+  "default": 20.0,
+  "unit": "K",
+  "type": "float",
+  "desc": "dust temperature",
+  "basename": null,
+  "wiki": []
+ },
+ "Tgas_PDR": {
+  "default": 50.0,
+  "unit": "K",
+  "type": "float",
+  "desc": "gas temperature",
+  "basename": null,
+  "wiki": []
+ },
+ "AVmin_PDR": {
+  "default": 0.0001,
+  "unit": null,
+  "type": "float",
+  "desc": "minimum A_V",
+  "basename": null,
+  "wiki": []
+ },
+ "AVmax_PDR": {
+  "default": 100.0,
+  "unit": null,
+  "type": "float",
+  "desc": "maximum A_V",
+  "basename": null,
+  "wiki": []
+ },
+ "FXray_PDR": {
+  "default": 1e-20,
+  "unit": "erg/s/cm2",
+  "type": "float",
+  "desc": "incident Xray flux  2.7/1e-20",
+  "basename": null,
+  "wiki": []
+ },
+ "slab_escape": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "gzip": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CO2_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C2H2_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "HCNrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "CH4_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "OHrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "OH_ExoMol": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "non-LTE OH model",
+  "basename": null,
+  "wiki": [
+   "userguide/mid_IR_lines.md",
+   "userguide/OH-cooling.md"
+  ]
+ },
+ "NH3rovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "H2O_Daniel2011": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "new H2O collision rates",
+  "basename": null,
+  "wiki": [
+   "userguide/H2O_rovibrational_cooling.md"
+  ]
+ },
+ "H2O_rovib_Lambda": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "big ro-vib H2O models?",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/H2O_rovibrational_cooling.md"
+  ]
+ },
+ "H2O_addHITRANlines": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Lique2015_H2_H_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CH3CNrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "O2rovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "H2COrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "CH3OHrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "CSrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "SO2rovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "NOrovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "H2Srovib_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "CH3_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C2H4_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C2H6_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C3H4_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C4H2_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "C6H6_LTE_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "no_background_pumping": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "refine_Spitzer": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/RTparameter.md"
+  ]
+ },
+ "NXratio": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/multiple_zones.md",
+   "userguide/spatial_grid_resolution.md"
+  ]
+ },
+ "Ninner": {
+  "default": 10,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/spatial_grid_resolution.md",
+   "userguide/RTparameter.md",
+   "devguide/AutomaticTests.md"
+  ]
+ },
+ "Nouter": {
+  "default": 3,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "NnewWall": {
+  "default": 5,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/rounded_inner_walls.md",
+   "userguide/spatial_grid_resolution.md",
+   "userguide/How-to-rerun-an-old-model.md"
+  ]
+ },
+ "vert_pot": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "OSU_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "using the OSU rates?",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "OSU_Alchemic": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use the network of the benchmark",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "KIDA_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "chemanalysis": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "output for rate network analysis; output",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/chemistry_details.md"
+  ]
+ },
+ "chemanalysis_fits": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/chemistry_details.md"
+  ]
+ },
+ "eps_dTworst": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "eps_dJnu": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "dust_opacity_list_file": {
+  "default": "\"dust_opacity_list.txt\"",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/XrayRadiativeTransfer.md"
+  ]
+ },
+ "parallel_chem": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "parallel_debug": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md",
+   "devguide/Parallel_ProDiMo.md"
+  ]
+ },
+ "IR_ISRF": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/UV_IR_ISRF.md"
+  ]
+ },
+ "settle_method": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "no dust settling; dust settling (Dubrulle et al. 1995)",
+  "basename": null,
+  "wiki": [
+   "userguide/dust_settling.md",
+   "userguide/mid-IR-JWST-spectrum.md",
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "HighTempRateExtrapol": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ice_photodesorption_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/photodesorption.md"
+  ]
  },
  "zone1_hs": {
   "default": -1,
-  "unit": "",
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": null,
+  "basename": "zone1_hs",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
  },
  "zone2_hs": {
   "default": -1,
-  "unit": "",
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": null,
+  "basename": "zone1_hs",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
  },
  "zone3_hs": {
   "default": -1,
-  "unit": "",
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": null,
+  "basename": "zone1_hs",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
  },
  "zone4_hs": {
   "default": -1,
-  "unit": "",
+  "unit": null,
   "type": "int",
-  "desc": []
+  "desc": null,
+  "basename": "zone1_hs",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "high_res_photodata": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fixed_water_op": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "C13_C12": {
+  "default": 0.014,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Location-dependent-13CO-12CO_ratio.md"
+  ]
+ },
+ "O18_O16": {
+  "default": "1./498.7    ",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "O17_O16": {
+  "default": "1./1900.0   ",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Bfield": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Bpow": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "beta_mag": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "gtaper": {
+  "default": -99.0,
+  "unit": null,
+  "type": "float",
+  "desc": "tapering-off exponent",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "chi_logbin": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "using spectral windows to calc CHI_PHOTO?",
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md"
+  ]
+ },
+ "RDI": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Radioactive_decay.md"
+  ]
+ },
+ "Xray_workaround": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "use_chemsol": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "ignore_Tg_midplane": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "ProDiMo2mcfost_version": {
+  "default": 3,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "FLiTs": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "want to run FLiTs afterwards?",
+  "basename": null,
+  "wiki": [
+   "userguide/Line-spectra-postprocessing.md",
+   "userguide/FLiTs.md",
+   "userguide/mid-IR-JWST-spectrum.md"
+  ]
+ },
+ "FLiTs_contsub": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "FLiTsOBS_file": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "immediate_FLiTs": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/FLiTs.md"
+  ]
+ },
+ "population_restart": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/FLiTs.md"
+  ]
+ },
+ "UMIST2006": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "UMIST version",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "UMIST2012": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "using UMIST2012 rates?",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "UMISTDB": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "UMIST2022": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "KIDADB": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "Eads_from_file": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use UMIST2012/Garrod adsorption energies",
+  "basename": null,
+  "wiki": [
+   "userguide/Eads.md",
+   "userguide/Minissale's-Thermal-Desorption-Parameter-Values.md"
+  ]
+ },
+ "Eads_Minissale": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Minissale's-Thermal-Desorption-Parameter-Values.md"
+  ]
+ },
+ "Eads_filename": {
+  "default": "\"AdsorptionEnergies.in\"",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Eads.md"
+  ]
+ },
+ "deltaMRI": {
+  "default": 0.5,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ArmitageMRI": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "MRI": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Tback": {
+  "default": 2.7,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/UV_IR_ISRF.md",
+   "userguide/CMB-Temperature.md"
+  ]
+ },
+ "charge_chemistry_v2": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "charge_chemistry_v3": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Zmax_v2": {
+  "default": 10000.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Hall_MRI": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "alpha_law": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Hall_Lesur": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "nH_surround": {
+  "default": 100.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "NHfilter": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "mc_only": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "mc_steady_state": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "mc_thermal_balance": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "nH_mc": {
+  "default": 10000.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "Tg_mc": {
+  "default": 10.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "Td_mc": {
+  "default": 10.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "pg_mc": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Av_mc": {
+  "default": 10.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "Av_CO_mc": {
+  "default": 3.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "Av_C_mc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "Av_H2_mc": {
+  "default": 0.5,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "a1_mc": {
+  "default": 0.1,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "dust_to_gas_mc": {
+  "default": 0.01,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "rho_gr_mc": {
+  "default": 3.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "CHI1_mc": {
+  "default": "CHI_ISM",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "CHI2_mc": {
+  "default": "CHI_ISM",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "fPAH_mc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "enhanced_H2form_mc": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "vturb_mc": {
+  "default": 1.0,
+  "unit": "km",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "mc_grid": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "CRI_mc": {
+  "default": 1.36e-17,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "albedoUV_mc": {
+  "default": 0.6,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "time_chem_disk": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "solve time-dependent disk chemistry?",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/chemistry_details.md"
+  ]
+ },
+ "time_chem_disk_ifspecies": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "custom_13COrovib": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "custom_C18Orovib": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/large_number_of_CO_levels.md"
+  ]
+ },
+ "custom_C17Orovib": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "use_drift_phoenix": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/StellarSpectra.md"
+  ]
+ },
+ "Faure_H2_op": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "NTestColl": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/IR-pumping.md"
+  ]
+ },
+ "barrier_width": {
+  "default": 1e-08,
+  "unit": null,
+  "type": "float",
+  "desc": "1A in cm",
+  "basename": null,
+  "wiki": []
+ },
+ "endothermic_barrier": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "no effect on the rates for endo reations",
+  "basename": null,
+  "wiki": []
+ },
+ "half_same_species": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "diffusion_width": {
+  "default": 1e-08,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fbinding": {
+  "default": 0.5,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "unique_fbinding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "evap_fac": {
+  "default": 0.01,
+  "unit": null,
+  "type": "float",
+  "desc": "no chemidesorption",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "Minissale_evap": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "branchingFraction": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "surface_chemistry": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md",
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "Andersson2008_yield": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "H2_no_surf_Cazaux": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "hot_atom": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "DVODE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "DVODPK": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Bell_quantum_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "tunnelling": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "no surface reaction tunnelling",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "diffusion_tunnelling": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Chaabouni_stick": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "CO_sticking": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Draine_sticking": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "qsa": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "quadp_solver": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "use quadruple precision solver?",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "lapack_solver": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "STIFBS": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md",
+   "userguide/grain_surface_chemistry.md"
+  ]
+ },
+ "DVODEF90": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "env_structure": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_Rcent": {
+  "default": 100.0,
+  "unit": null,
+  "type": "float",
+  "desc": "centrifugal radius",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_Mdot": {
+  "default": 1e-06,
+  "unit": null,
+  "type": "float",
+  "desc": "mass infall rate M_sun/yr",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_Rcavity": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "\"virtual\" inner radius of the envelope the inner radius of the domain is given by Rin",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_method": {
+  "default": 3,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "env_cav_pow": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "shape of the cavity",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_cav_coef": {
+  "default": 0.9,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "env_amax": {
+  "default": -1.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": "maximum grain size in the envelope",
+  "basename": null,
+  "wiki": [
+   "userguide/envelope.md"
+  ]
+ },
+ "fake_IN_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_NN_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_AD_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_CE_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_DR_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_RR_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_RA_chemical_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fake_NN_prefactor": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CRP_low": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "CRP_high": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "CRP_a": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "CRP_s0": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "CRP_lim": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "STCRP_low": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "STCRP_high": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "STCRP_a": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "STCRP_b": {
+  "default": -1.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "STCRP_NHE": {
+  "default": 2.5e+25,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "STCRP_method": {
+  "default": -1,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_Absorption.md"
+  ]
+ },
+ "stop_after_init": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use this to just check the model setup",
+  "basename": null,
+  "wiki": [
+   "userguide/beginnersguide.md"
+  ]
+ },
+ "stop_after_contRT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "unit_testing": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "adjustRout": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/fixed_density_structure.md"
+  ]
+ },
+ "Mumma_water_op": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "check_network": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "the osu network fails the checks",
+  "basename": null,
+  "wiki": [
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+  ]
+ },
+ "hitran_min_strength": {
+  "default": 1e-05,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Line-spectra-postprocessing.md",
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "Tgas_once": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+  ]
+ },
+ "escape_sphere": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "escape_Radex_sphere": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "escape_Radex_slab": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "f70": {
+  "default": "3.16d-19",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "umist_code": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "N2_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "use N2 self-shielding",
+  "basename": null,
+  "wiki": [
+   "userguide/N2_shielding.md"
+  ]
+ },
+ "LSODE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "LSODES": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "MEBDF": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "RADAU": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "SEULEX": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "QSSA": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CHEMEQ": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "SDIRK": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "ROSEN": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "RKCK": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "GEAR": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "CHEMSODE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Npixel_continuum": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "continuum_cube_fits": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Images.md"
+  ]
+ },
+ "Eley_Rideal": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "no Eley-Rideal reactions",
+  "basename": null,
+  "wiki": []
+ },
+ "reaction_file": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "escpro_fit": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "escpro_lmin": {
+  "default": 5.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "escpro_lmax": {
+  "default": 40.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "LTEpopulation": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fast_semi_implicit": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CR_induced_UV": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "use new CR UV field implementation",
+  "basename": null,
+  "wiki": []
+ },
+ "HD_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "comp_forces": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Xray_mc": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "preconditioning": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "numerical_jacobian": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "old_wall_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "ER_tunnelling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "Eley-Rideal tunnelling",
+  "basename": null,
+  "wiki": []
+ },
+ "H2O_Meisner_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "first_order_tdesorption": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "PlanckSpec": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Eads_H_Cazaux": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "bulk_reactions": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "Eact_H2_Oueslati": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "surf_competition": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "H2_surf_chem_only": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "not only making H2",
+  "basename": null,
+  "wiki": []
+ },
+ "diffusion_limited": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "reaction barriers are account for",
+  "basename": null,
+  "wiki": []
+ },
+ "match_Cazaux2010": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "core_Nlay": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "in the silicate core",
+  "basename": null,
+  "wiki": []
+ },
+ "CO_diffusion_Lauck": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "H_diffusion_Cazaux_ice": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "surface_benchmark": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "cannot have H2OCO#; use a combination of switches instead",
+  "basename": null,
+  "wiki": []
+ },
+ "old_surface_GG_reactions": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "equil_chem": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "equil_cond": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "equil_BURCAT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "equil_elemadjust": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "computed_CR_DESORB_rates": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CR_desorption_rate.md"
+  ]
+ },
+ "escape_maser": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "photorates_version": {
+  "default": 2,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/UV_photorates.md"
+  ]
+ },
+ "noEUV": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/UV_photorates.md",
+   "userguide/Include-H-as-coolant.md"
+  ]
+ },
+ "smoothEUV": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "random_initial_population": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "Tex_subthermal": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "stateq_min_iter": {
+  "default": 3,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md"
+  ]
+ },
+ "SVD_improve": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "icepot": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "a = abare + const*abare^icepot",
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "CoreMantle": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "ice in mantle or well-mixed?",
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "NIPL": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "QIndexTotVol": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "volume of ice available can vary from place to place",
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "QPosDep": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "position dependent Q efficiency calculation",
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "write_posDep_opac": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "write position dependnet opacity output files",
+  "basename": null,
+  "wiki": []
+ },
+ "NBaregrains": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "other_reactions": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Chemical_rates.md",
+   "userguide/ChemicalDatabases.md"
+  ]
+ },
+ "duty_cycle": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": "as in the benchmark",
+  "basename": null,
+  "wiki": []
+ },
+ "sticking_coefficient": {
+  "default": 1.0,
+  "unit": null,
+  "type": "float",
+  "desc": "for all species",
+  "basename": null,
+  "wiki": []
+ },
+ "H_sticking": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "not using Hollenbach & Salpeter H sticking",
+  "basename": null,
+  "wiki": []
+ },
+ "shielding_mc": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "do not account for self-shielding in mc",
+  "basename": null,
+  "wiki": []
+ },
+ "use_Alchemic_nsite": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "ode_element_conservation": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "analyse_failed_chemistry": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "el_is_sp": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "electrons as independent species?",
+  "basename": null,
+  "wiki": []
+ },
+ "keep_iterations": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "write_zdist": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "chem_stability": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/accelerate_ProDiMo.md"
+  ]
+ },
+ "auto_charge_exchange": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+  ]
+ },
+ "auto_proton_exchange": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+  ]
+ },
+ "auto_create_barrier": {
+  "default": 5000.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+  ]
+ },
+ "auto_grain_endotherm": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+  ]
+ },
+ "BareComp": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "BarePos": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
+ "IcePowPos": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "disk_structure_damp": {
+  "default": 0.3,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/vertical_structure.md"
+  ]
+ },
+ "disk_structure_error_threshold": {
+  "default": 2.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/vertical_structure.md"
+  ]
+ },
+ "slot_keep": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "slot_ix": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "slot_iz": {
+  "default": "NZZ-1",
+  "unit": null,
+  "type": "str",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Debugging_with_slot_keep.md"
+  ]
+ },
+ "sizefit_powerindex": {
+  "default": 2.0,
+  "unit": null,
+  "type": "float",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "new_escape": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/New-escape-probabilities-for-ProDiMo.md"
+  ]
+ },
+ "new_escape_lineflux": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/New-escape-probabilities-for-ProDiMo.md"
+  ]
+ },
+ "new_shielding": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_shielding_factors.md",
+   "userguide/UV_line_shielding.md"
+  ]
+ },
+ "new_energetics": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "newUVphoto": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_shielding_factors.md",
+   "userguide/UV_line_shielding.md",
+   "userguide/mid-IR-JWST-spectrum.md"
+  ]
+ },
+ "UVphoto_highres": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_shielding_factors.md"
+  ]
+ },
+ "line_overlap": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/1D-Slab-Models.md",
+   "userguide/Slab-models.md"
+  ]
+ },
+ "hitran2020": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": [
+   "userguide/Slab-models.md",
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "OH_nonLTE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "C2H2_nonLTE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CO2_nonLTE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "HCN_nonLTE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Heat_per_PhotoDiss": {
+  "default": 2.0,
+  "unit": null,
+  "type": "float",
+  "desc": "heating by photodissociation",
+  "basename": null,
+  "wiki": []
+ },
+ "refine_zz": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "model_name": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "STAND": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/STAND2020.md",
+   "userguide/Chemical_rates.md"
+  ]
+ },
+ "STANDover": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/STAND2020.md"
+  ]
+ },
+ "STANDfilter": {
+  "default": "\" B BS BI G Q R T I A AS AI F D L U RA \"",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/STAND2020.md"
+  ]
+ },
+ "correct_endotherm": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Rph_generic_shape": {
+  "default": 2,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Leiden_photoparameters": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "DECO": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "estimate_13CO_12CO_ratio": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Location-dependent-13CO-12CO_ratio.md"
+  ]
+ },
+ "custom_hitran_cooling": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/mid_IR_lines.md"
+  ]
+ },
+ "memLimitGB": {
+  "default": "",
+  "unit": null,
+  "type": "",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Control-memory-consumption.md"
+  ]
  }
 }
