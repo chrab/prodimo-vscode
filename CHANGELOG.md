@@ -2,8 +2,8 @@
 
 All notable changes to the "prodimoparam" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.3.x] - 20.10.2025
 
-## [Unreleased]
+- Feature: added hover tooltips support for parameters.
 
-- Initial release
+    Shows the description, unit and a list of wikipages, where this parameter is documented.
