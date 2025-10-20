@@ -1441,14 +1441,6 @@
    "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
- "line_vkeppgrad": {
-  "default": "",
-  "unit": null,
-  "type": "",
-  "desc": null,
-  "basename": null,
-  "wiki": []
- },
  "line_cube_whichside": {
   "default": 0,
   "unit": null,
@@ -2318,16 +2310,6 @@
   "basename": null,
   "wiki": [
    "userguide/dust_photoelectric_from_RT.md"
-  ]
- },
- "H2O_rovibration": {
-  "default": false,
-  "unit": null,
-  "type": "bool",
-  "desc": "big ro-vib H2O models?",
-  "basename": null,
-  "wiki": [
-   "userguide/H2O_rovibrational_cooling.md"
   ]
  },
  "use_MCFOST_rgrid": {
@@ -3520,16 +3502,6 @@
   "wiki": [
    "userguide/Slab-models.md",
    "userguide/mid_IR_lines.md"
-  ]
- },
- "H2O_Daniel2011": {
-  "default": false,
-  "unit": null,
-  "type": "bool",
-  "desc": "new H2O collision rates",
-  "basename": null,
-  "wiki": [
-   "userguide/H2O_rovibrational_cooling.md"
   ]
  },
  "H2O_rovib_Lambda": {
