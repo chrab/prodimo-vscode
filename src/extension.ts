@@ -14,12 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
     // This line of code will only be executed once when your extension is activated
     //console.log('Congratulations, your extension "prodimo-vscode" is now active!');
 
+    const paramListPath = context.asAbsolutePath('paramlist.json');
+
     context.subscriptions.push(
         vscode.languages.registerDocumentSymbolProvider(
             { scheme: "file", language: "prodimoparam" },
             new ProDiMoParamDocumentSymbolProvider()
         )
     );
+
 
     context.subscriptions.push(
         vscode.languages.registerDocumentSymbolProvider(
@@ -35,6 +38,52 @@ export function activate(context: vscode.ExtensionContext) {
             new ParameterNameCompletionProvider(context),
             '!', '.' // Optional: trigger character(s)
         )
+    );
+
+    context.subscriptions.push(
+        vscode.languages.registerHoverProvider('prodimoparam', {
+             provideHover(document, position, token) {
+
+              const paramListPath = context.asAbsolutePath('paramlist.json');
+              const paramList = JSON.parse(fs.readFileSync(paramListPath, 'utf8'));
+              const wikiBaseUrl = "https://prodimowiki.readthedocs.io/en/latest/";
+
+              
+              const elements = document.lineAt(position).text.split("! ");
+              if (elements.length !== 2 ) {
+                    return;
+              }
+              // if the position of the ! is beyond the cursor, I am not on the param name
+              if (elements[0].length>position.character) {
+                  return;
+              }
+              
+
+              const paramName = elements[1].trim().split(" ")[0];
+              if (!paramName) {
+                  return;
+              }
+              // I am beyond the param name
+              if (paramName.length+elements[0].length+2 < position.character) {
+                  return;
+              }
+
+              const paramInfo = paramList[paramName];
+              if (!paramInfo) {
+                  return;
+              }
+
+              var hovertxt=paramInfo.desc+"\n\n";
+              hovertxt+="**Wiki pages:**\n\n";
+              for (const wiki of paramInfo.wiki) {
+                  hovertxt += "- [" + wiki.replace(".md","") + "](" + wikiBaseUrl+wiki.replace(".md",".html") + ")\n";
+              }
+
+              return {
+                  contents: [hovertxt]
+              };
+            }
+        })
     );
 
     // // The command has been defined in the package.json file
