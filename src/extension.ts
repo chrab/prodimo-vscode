@@ -354,7 +354,7 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
                 else if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
                     symbols.push(new DocumentSymbol("SED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                 }
-                else if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...")) {
+                else if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...") || textLine.text.startsWith(" CHEMISTRY ...")) {
                     chemistryHook = new DocumentSymbol("CHEMISTRY START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
                     symbols.push(chemistryHook);
                 }
@@ -364,6 +364,9 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
                 }
                 else if (textLine.text.startsWith(" Starting line ray-tracing...")) {
                     symbols.push(new DocumentSymbol("LINE TRANSFER", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                }
+                else if (textLine.text.startsWith("| finished disk ")) {
+                    symbols.push(new DocumentSymbol("FINISHED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                 }
             }
             resolve(symbols);
