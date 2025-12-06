@@ -305,6 +305,7 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
         return new Promise((resolve, reject) => {
             const symbols: vscode.DocumentSymbol[] = [];
 
+            let initDONE: boolean = false;
             // TODO: could probably only use one hook variable
             let heatcoolHook: DocumentSymbol | undefined = undefined;
             let chemistryHook: DocumentSymbol | undefined = undefined;
@@ -313,7 +314,7 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
             symbols.push(new DocumentSymbol("INIT", "section", vscode.SymbolKind.Class, new vscode.Range(0, 0, 0, 0), new vscode.Range(0, 0, 0, 0)));
 
             // Regex for the INIT sections
-            var regexInit = new RegExp('^ {0,1}(INIT_[a-z0-9_]*)(?::|[ ])', 'i');
+            var regexInit = new RegExp('^ {0,1}(INIT[ a-z0-9_]*)(?::|[ ])', 'i');
 
             for (let line = 0; line < document.lineCount; line++) {
                 const textLine = document.lineAt(line);
@@ -322,48 +323,74 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
                     if (textLine.text.startsWith("   max element conservation error   :")) {
                         symbols.push(new DocumentSymbol("CHEMISTRY END", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                         chemistryHook = undefined;
+                        continue; // to avoid another match below
                     }
                 }
                 else if (contRTHook) {
                     if (textLine.text.startsWith(" RT total time=")) {
                         symbols.push(new DocumentSymbol("CONTINUUM RT END", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                         contRTHook = undefined;
+                        continue; // to avoid another match below
                     }
                 }
-
-                var result = regexInit.exec(textLine.text);
-                if (result) {
-                    var sym = new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
-                    symbols[0].children.push(sym);
-                    if (result[1] === "INIT_HEATCOOL") {
-                        heatcoolHook = sym;
-                    }
-                    else {
-                        heatcoolHook = undefined;
-                    }
-                }
-                if (heatcoolHook) {
+                else if (heatcoolHook) {
                     const res = new RegExp("^ *(INIT SYS \\S*) ...").exec(textLine.text);
                     if (res) {
                         heatcoolHook.children.push(new DocumentSymbol(res[1], "", vscode.SymbolKind.Variable, textLine.range, textLine.range));
+                        continue; // to avoid another match below
+                    }
+                }
+                var result = regexInit.exec(textLine.text);
+                if (result) {
+                    // init is already done, but some INIT routines might be called again in iterative models, just add them at top level                                        
+                    if (initDONE) {
+                        var sym = new DocumentSymbol(result[1], "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                        symbols.push(sym);
+                    }
+                    else {
+                        var sym = new DocumentSymbol(result[1], "", vscode.SymbolKind.Method, textLine.range, textLine.range);
+                        symbols[0].children.push(sym);
+                        if (result[1] === "INIT_HEATCOOL") {
+                            heatcoolHook = sym;
+                        }
+                        else {
+                            heatcoolHook = undefined;
+                        }
+
                     }
                 }
                 if (textLine.text.startsWith(" total INIT CPU time")) {
                     symbols[0].children.push(new DocumentSymbol("INIT END", "", vscode.SymbolKind.Method, textLine.range, textLine.range));
+                    initDONE = true;
                 }
-                else if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
-                    symbols.push(new DocumentSymbol("SED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
-                }
-                else if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...")) {
-                    chemistryHook = new DocumentSymbol("CHEMISTRY START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
-                    symbols.push(chemistryHook);
-                }
-                else if (textLine.text.startsWith(" SOLUTION OF CONTINUUM RADIATIVE TRANSFER ...")) {
-                    contRTHook = new DocumentSymbol("CONTINUUM RT START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
-                    symbols.push(contRTHook);
-                }
-                else if (textLine.text.startsWith(" Starting line ray-tracing...")) {
-                    symbols.push(new DocumentSymbol("LINE TRANSFER", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                if (initDONE) {
+                    if (textLine.text.startsWith(" CALCULATING MONOCHROMATIC FACE-ON SED ...")) {
+                        symbols.push(new DocumentSymbol("SED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    else if (textLine.text.startsWith(" CHEMISTRY AND ENERGY BALANCE ...") || textLine.text.startsWith(" CHEMISTRY ...")) {
+                        chemistryHook = new DocumentSymbol("CHEMISTRY START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                        symbols.push(chemistryHook);
+                    }
+                    else if (textLine.text.startsWith(" SOLUTION OF CONTINUUM RADIATIVE TRANSFER ...")) {
+                        contRTHook = new DocumentSymbol("CONTINUUM RT START", "", vscode.SymbolKind.Class, textLine.range, textLine.range);
+                        symbols.push(contRTHook);
+                    }
+                    else if (textLine.text.startsWith(" Starting line ray-tracing...")) {
+                        symbols.push(new DocumentSymbol("LINE TRANSFER", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    // FIXME: check if this exists at all
+                    else if (textLine.text.startsWith(" DISK STRUCTURE: ...")) {
+                        symbols.push(new DocumentSymbol("DISK STRUCTURE", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    else if (textLine.text.startsWith(" DUST STRUCTURE: ...")) {
+                        symbols.push(new DocumentSymbol("DUST STRUCTURE", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    else if (textLine.text.startsWith(" CALC_OPAC")) {
+                        symbols.push(new DocumentSymbol("CALC OPAC", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    else if (textLine.text.startsWith("| finished disk ")) {
+                        symbols.push(new DocumentSymbol("FINISHED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
                 }
             }
             resolve(symbols);

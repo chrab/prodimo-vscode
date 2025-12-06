@@ -1,8 +1,8 @@
 {
  "Mstar": {
-  "default": "",
+  "default": 1.0,
   "unit": "Msun",
-  "type": "",
+  "type": "float",
   "desc": "stellar mass",
   "basename": null,
   "wiki": [
@@ -10,26 +10,28 @@
    "userguide/beginnersguide.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
-   "userguide/star_fit.md"
+   "userguide/star_fit.md",
+   "userguide/star.md"
   ]
  },
  "Lstar": {
-  "default": "",
+  "default": 1.0,
   "unit": "Lsun",
-  "type": "",
+  "type": "float",
   "desc": "stellar luminosity",
   "basename": null,
   "wiki": [
    "userguide/How_to_set_parameters.md",
    "userguide/beginnersguide.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md"
+   "userguide/Slab-models.md",
+   "userguide/star.md"
   ]
  },
  "Teff": {
-  "default": "",
+  "default": 4000.0,
   "unit": "K",
-  "type": "",
+  "type": "float",
   "desc": "stellar effective temperature",
   "basename": null,
   "wiki": [
@@ -37,13 +39,14 @@
    "userguide/beginnersguide.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
-   "userguide/StellarSpectra.md"
+   "userguide/StellarSpectra.md",
+   "userguide/star.md"
   ]
  },
  "Mdisk": {
-  "default": "",
+  "default": 0.01,
   "unit": "Msun",
-  "type": "",
+  "type": "float",
   "desc": "disk mass",
   "basename": "Mdisk",
   "wiki": [
@@ -70,9 +73,9 @@
   ]
  },
  "Rin": {
-  "default": "",
+  "default": 0.1,
   "unit": "AU",
-  "type": "",
+  "type": "float",
   "desc": "inner disk radius",
   "basename": "Rin",
   "wiki": [
@@ -88,9 +91,9 @@
   ]
  },
  "Rout": {
-  "default": "",
+  "default": 100.0,
   "unit": "AU",
-  "type": "",
+  "type": "float",
   "desc": "outer disk radius; outer radius of the whole structure",
   "basename": "Rout",
   "wiki": [
@@ -147,9 +150,9 @@
   ]
  },
  "dust_to_gas": {
-  "default": "",
+  "default": -1.0,
   "unit": null,
-  "type": "",
+  "type": "float",
   "desc": "the dust-to-gas mass ratio",
   "basename": "dust_to_gas",
   "wiki": [
@@ -226,7 +229,9 @@
   "type": "int",
   "desc": "",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/UV_photorates.md"
+  ]
  },
  "NUV": {
   "default": 3,
@@ -318,9 +323,9 @@
   "wiki": []
  },
  "rho_gr": {
-  "default": "",
+  "default": 3.5,
   "unit": "g/cm^3",
-  "type": "",
+  "type": "float",
   "desc": "dust grain material mass density",
   "basename": null,
   "wiki": [
@@ -330,9 +335,9 @@
   ]
  },
  "amin": {
-  "default": "",
+  "default": 0.05,
   "unit": "mic",
-  "type": "",
+  "type": "float",
   "desc": "minimum dust particle size",
   "basename": "amin",
   "wiki": [
@@ -346,9 +351,9 @@
   ]
  },
  "amax": {
-  "default": "",
+  "default": 3000.0,
   "unit": "mic",
-  "type": "",
+  "type": "float",
   "desc": "maximum dust particle size",
   "basename": "amax",
   "wiki": [
@@ -362,9 +367,9 @@
   ]
  },
  "apow": {
-  "default": "",
+  "default": 3.5,
   "unit": null,
-  "type": "",
+  "type": "float",
   "desc": "dust size distr f(a)~a^-apow",
   "basename": null,
   "wiki": [
@@ -457,6 +462,38 @@
    "userguide/multiple_zones.md"
   ]
  },
+ "adrift": {
+  "default": 0.0,
+  "unit": "mic",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "gdrift": {
+  "default": 0.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Rdrift": {
+  "default": 0.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "wdrift": {
+  "default": 1.0,
+  "unit": "AU",
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
  "dust_bins": {
   "default": 1,
   "unit": null,
@@ -466,9 +503,9 @@
   "wiki": []
  },
  "NSIZE": {
-  "default": "",
+  "default": 0,
   "unit": null,
-  "type": "",
+  "type": "int",
   "desc": "number of dust size bins",
   "basename": null,
   "wiki": [
@@ -674,7 +711,8 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
-   "userguide/ProDiMo_on_MCFOST.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/star.md"
   ]
  },
  "pUV": {
@@ -685,7 +723,8 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
-   "userguide/ProDiMo_on_MCFOST.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/star.md"
   ]
  },
  "Lacc": {
@@ -694,7 +733,9 @@
   "type": "float",
   "desc": null,
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/star.md"
+  ]
  },
  "Lalpha": {
   "default": 0.0,
@@ -794,6 +835,16 @@
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/compute_visibilities.md",
    "userguide/RATRAN.md"
+  ]
+ },
+ "write_image_out": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "tol_convergence": {
@@ -913,9 +964,9 @@
   ]
  },
  "solve_temp": {
-  "default": "",
+  "default": true,
   "unit": null,
-  "type": "",
+  "type": "bool",
   "desc": "solve the heating/cooling balance?",
   "basename": null,
   "wiki": [
@@ -927,7 +978,7 @@
   ]
  },
  "conserve_pressure": {
-  "default": true,
+  "default": false,
   "unit": null,
   "type": "bool",
   "desc": "conserve pgas instead of n<H>?",
@@ -948,9 +999,9 @@
   "wiki": []
  },
  "restart": {
-  "default": "",
+  "default": false,
   "unit": null,
-  "type": "",
+  "type": "bool",
   "desc": "run from restart?; restart from checkpoint file?",
   "basename": null,
   "wiki": [
@@ -1171,13 +1222,12 @@
   ]
  },
  "handle_UMIST": {
-  "default": "\"onlyadd\"",
+  "default": "'onlyadd'",
   "unit": null,
   "type": "str",
   "desc": "handle UMIST-data (erase/overwrite/onlyadd)",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/Slab-models.md",
    "userguide/Chemical_rates.md"
   ]
@@ -1247,7 +1297,6 @@
   "desc": "exceptions from erasing UMIST data",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/Slab-models.md"
   ]
  },
@@ -1429,7 +1478,9 @@
   "type": "bool",
   "desc": null,
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/channel_maps.md"
+  ]
  },
  "line_vkep": {
   "default": 1,
@@ -1724,7 +1775,9 @@
   "type": "bool",
   "desc": null,
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/interface2D.md"
+  ]
  },
  "hollow_sphere": {
   "default": 0.0,
@@ -1948,6 +2001,7 @@
   "wiki": [
    "userguide/beginnersguide.md",
    "userguide/molecular_clouds_models.md",
+   "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md"
   ]
  },
@@ -1957,7 +2011,10 @@
   "type": "bool",
   "desc": "",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/star.md",
+   "userguide/How_to_run_a_X-ray_model.md"
+  ]
  },
  "Xray_Emin": {
   "default": 0.1,
@@ -1966,6 +2023,7 @@
   "desc": "minimum energy considered as Xray; X-ray min. photon energy",
   "basename": null,
   "wiki": [
+   "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md",
    "userguide/Include-H-as-coolant.md"
   ]
@@ -1978,6 +2036,7 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
+   "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md"
   ]
  },
@@ -2026,6 +2085,7 @@
   "desc": "optional: maximum photon energy to be considered as Xray [keV]",
   "basename": null,
   "wiki": [
+   "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md"
   ]
  },
@@ -2884,6 +2944,56 @@
   "type": "float",
   "desc": null,
   "basename": "CtoN",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "CtoS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoS",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C1toS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoS",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C2toS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoS",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C3toS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoS",
+  "wiki": [
+   "userguide/multiple_zones.md"
+  ]
+ },
+ "C4toS": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": "CtoS",
   "wiki": [
    "userguide/multiple_zones.md"
   ]
@@ -4376,14 +4486,6 @@
    "userguide/How_to_run_a_time_dependent_chemistry_model.md"
   ]
  },
- "pg_mc": {
-  "default": "",
-  "unit": null,
-  "type": "",
-  "desc": null,
-  "basename": null,
-  "wiki": []
- },
  "Av_mc": {
   "default": 10.0,
   "unit": null,
@@ -4595,7 +4697,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/StellarSpectra.md"
+   "userguide/StellarSpectra.md",
+   "userguide/star.md"
   ]
  },
  "Faure_H2_op": {
@@ -5024,9 +5127,9 @@
   ]
  },
  "CRP_s0": {
-  "default": "",
+  "default": -1.0,
   "unit": null,
-  "type": "",
+  "type": "float",
   "desc": null,
   "basename": null,
   "wiki": [
@@ -5106,7 +5209,8 @@
   "desc": "use this to just check the model setup",
   "basename": null,
   "wiki": [
-   "userguide/beginnersguide.md"
+   "userguide/beginnersguide.md",
+   "userguide/interface2D.md"
   ]
  },
  "stop_after_contRT": {
@@ -5134,6 +5238,14 @@
   "wiki": [
    "userguide/fixed_density_structure.md"
   ]
+ },
+ "NH_Rout": {
+  "default": 1e+20,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
  },
  "Mumma_water_op": {
   "default": false,
@@ -5488,9 +5600,9 @@
   "wiki": []
  },
  "first_order_tdesorption": {
-  "default": "",
+  "default": false,
   "unit": null,
-  "type": "",
+  "type": "bool",
   "desc": "",
   "basename": null,
   "wiki": []
@@ -5667,6 +5779,7 @@
   "basename": null,
   "wiki": [
    "userguide/UV_photorates.md",
+   "userguide/star.md",
    "userguide/Include-H-as-coolant.md"
   ]
  },
@@ -6126,6 +6239,30 @@
   "basename": null,
   "wiki": []
  },
+ "CH3plus_nonLTE": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "HCN_rovib_Lambda": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "CO2_rovib_Lambda": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
  "Heat_per_PhotoDiss": {
   "default": 2.0,
   "unit": null,
@@ -6135,9 +6272,9 @@
   "wiki": []
  },
  "refine_zz": {
-  "default": "",
+  "default": false,
   "unit": null,
-  "type": "",
+  "type": "bool",
   "desc": "",
   "basename": null,
   "wiki": []
@@ -6234,13 +6371,45 @@
   ]
  },
  "memLimitGB": {
-  "default": "",
+  "default": 8,
   "unit": null,
-  "type": "",
+  "type": "int",
   "desc": null,
   "basename": null,
   "wiki": [
    "userguide/Control-memory-consumption.md"
   ]
+ },
+ "texplicit": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Tgas_from_file": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "warp_angle": {
+  "default": 0.0,
+  "unit": null,
+  "type": "float",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "fit_Tranges": {
+  "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
  }
 }
