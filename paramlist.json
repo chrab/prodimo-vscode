@@ -6,8 +6,8 @@
   "desc": "stellar mass",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/beginnersguide.md",
+   "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
    "userguide/star_fit.md",
@@ -21,8 +21,8 @@
   "desc": "stellar luminosity",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/beginnersguide.md",
+   "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
    "userguide/star.md"
@@ -35,8 +35,8 @@
   "desc": "stellar effective temperature",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/beginnersguide.md",
+   "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
    "userguide/StellarSpectra.md",
@@ -50,14 +50,14 @@
   "desc": "disk mass",
   "basename": "Mdisk",
   "wiki": [
-   "userguide/fitting.md",
-   "userguide/How_to_set_parameters.md",
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
-   "userguide/Slab-models.md",
+   "userguide/fitting.md",
+   "userguide/fixed_density_structure.md",
    "userguide/How_to_run_a_full_model.md",
-   "userguide/multiple_zones.md",
    "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/multiple_zones.md",
+   "userguide/Slab-models.md",
    "userguide/viscous_heating.md"
   ]
  },
@@ -68,8 +68,8 @@
   "desc": "dust mass",
   "basename": "Mdust",
   "wiki": [
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "Rin": {
@@ -79,15 +79,15 @@
   "desc": "inner disk radius",
   "basename": "Rin",
   "wiki": [
-   "userguide/Images.md",
-   "userguide/How_to_set_parameters.md",
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
+   "userguide/fixed_density_structure.md",
    "userguide/H2O_rovibrational_cooling.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/Images.md",
    "userguide/input_and_output_files.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "Rout": {
@@ -97,17 +97,17 @@
   "desc": "outer disk radius; outer radius of the whole structure",
   "basename": "Rout",
   "wiki": [
-   "userguide/Images.md",
-   "userguide/How_to_set_parameters.md",
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
+   "userguide/channel_maps.md",
    "userguide/envelope.md",
+   "userguide/fixed_density_structure.md",
    "userguide/H2O_rovibrational_cooling.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/Images.md",
    "userguide/input_and_output_files.md",
    "userguide/multiple_zones.md",
-   "userguide/channel_maps.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "Rtaper": {
@@ -117,9 +117,9 @@
   "desc": "tapering-off radius",
   "basename": null,
   "wiki": [
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
    "userguide/envelope.md",
+   "userguide/fixed_density_structure.md",
    "userguide/multiple_zones.md"
   ]
  },
@@ -127,14 +127,14 @@
   "default": 1.5,
   "unit": null,
   "type": "float",
-  "desc": "column density exponent; power index of vert. col.dens.",
+  "desc": "column density exponent; power index of vert. col.dens. as func of x",
   "basename": "epsilon",
   "wiki": [
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
+   "userguide/fixed_density_structure.md",
    "userguide/multiple_zones.md",
-   "userguide/viscous_heating.md",
-   "userguide/RTparameter.md"
+   "userguide/RTparameter.md",
+   "userguide/viscous_heating.md"
   ]
  },
  "beta_max": {
@@ -144,9 +144,9 @@
   "desc": "maximum half opening angle of resolved disk; defines the cavity opening angle (here 20 degree)",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/envelope.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "dust_to_gas": {
@@ -156,11 +156,11 @@
   "desc": "the dust-to-gas mass ratio",
   "basename": "dust_to_gas",
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/Slab-models.md",
-   "userguide/multiple_zones.md"
+   "userguide/molecular_clouds_models.md",
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "d2ust_to_gas": {
@@ -170,8 +170,8 @@
   "desc": "the dust-to-gas mass ratio",
   "basename": "dust_to_gas",
   "wiki": [
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "d3ust_to_gas": {
@@ -194,17 +194,27 @@
    "userguide/multiple_zones.md"
   ]
  },
+ "NMANTLE": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": "number of ice species in dust",
+  "basename": null,
+  "wiki": [
+   "userguide/Position_dependent_opacities.md"
+  ]
+ },
  "NDUST": {
   "default": 1,
   "unit": null,
   "type": "int",
-  "desc": "number of selected dust species",
+  "desc": "... these settings reproduce the DECO small opacities; number of selected dust species",
   "basename": null,
   "wiki": [
    "userguide/molecular_clouds_models.md",
-   "userguide/Position_dependent_opacities.md",
+   "userguide/multiple_zones.md",
    "userguide/Porous_and_hollow_grains.md",
-   "userguide/multiple_zones.md"
+   "userguide/Position_dependent_opacities.md"
   ]
  },
  "NLAM": {
@@ -214,13 +224,13 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_SED.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md",
-   "userguide/UV_photorates.md",
-   "userguide/RTparameter.md",
+   "devguide/Parallel_ProDiMo.md",
    "devguide/RTbenchmark.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/compute_visibilities.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/ProDiMo_SED.md",
+   "userguide/RTparameter.md",
+   "userguide/UV_photorates.md"
   ]
  },
  "N1UV": {
@@ -244,6 +254,22 @@
    "userguide/UV_photorates.md"
   ]
  },
+ "NLAMmax": {
+  "default": 1000,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "NLAMmaxExtra": {
+  "default": 0,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
  "NXray": {
   "default": 20,
   "unit": null,
@@ -261,8 +287,8 @@
   "desc": "do Xray radiative transfer?",
   "basename": null,
   "wiki": [
-   "userguide/XrayRadiativeTransfer.md",
-   "devguide/Parallel_ProDiMo.md"
+   "devguide/Parallel_ProDiMo.md",
+   "userguide/XrayRadiativeTransfer.md"
   ]
  },
  "XrayRT_chem": {
@@ -272,8 +298,8 @@
   "desc": "couple Xray_RT to chemistry",
   "basename": null,
   "wiki": [
-   "userguide/XrayRadiativeTransfer.md",
-   "devguide/Parallel_ProDiMo.md"
+   "devguide/Parallel_ProDiMo.md",
+   "userguide/XrayRadiativeTransfer.md"
   ]
  },
  "XrayRT_chem_effion": {
@@ -329,9 +355,9 @@
   "desc": "dust grain material mass density",
   "basename": null,
   "wiki": [
+   "userguide/grain_surface_chemistry.md",
    "userguide/molecular_clouds_models.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "amin": {
@@ -341,13 +367,13 @@
   "desc": "minimum dust particle size",
   "basename": "amin",
   "wiki": [
+   "devguide/RTbenchmark.md",
    "userguide/How_to_set_parameters.md",
    "userguide/molecular_clouds_models.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
+   "userguide/multiple_zones.md",
    "userguide/Porous_and_hollow_grains.md",
-   "devguide/RTbenchmark.md",
-   "userguide/multiple_zones.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "amax": {
@@ -357,13 +383,13 @@
   "desc": "maximum dust particle size",
   "basename": "amax",
   "wiki": [
+   "devguide/RTbenchmark.md",
    "userguide/How_to_set_parameters.md",
    "userguide/molecular_clouds_models.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
+   "userguide/multiple_zones.md",
    "userguide/Porous_and_hollow_grains.md",
-   "devguide/RTbenchmark.md",
-   "userguide/multiple_zones.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "apow": {
@@ -373,13 +399,13 @@
   "desc": "dust size distr f(a)~a^-apow",
   "basename": null,
   "wiki": [
+   "devguide/RTbenchmark.md",
    "userguide/How_to_set_parameters.md",
    "userguide/molecular_clouds_models.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
-   "userguide/Porous_and_hollow_grains.md",
    "userguide/multiple_zones.md",
-   "devguide/RTbenchmark.md"
+   "userguide/Porous_and_hollow_grains.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "a1min": {
@@ -520,8 +546,8 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/CR_Absorption.md"
+   "userguide/CR_Absorption.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
   ]
  },
  "ABS_CRI": {
@@ -596,9 +622,9 @@
   "desc": "accretion rate",
   "basename": "Mdot",
   "wiki": [
-   "userguide/viscous_heating.md",
+   "userguide/multiple_zones.md",
    "userguide/RTparameter.md",
-   "userguide/multiple_zones.md"
+   "userguide/viscous_heating.md"
   ]
  },
  "M2dot": {
@@ -643,12 +669,12 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "dust in non-radiative equilibrium",
+  "desc": "dust not in radiative equilibrium",
   "basename": null,
   "wiki": [
    "userguide/How_to_set_parameters.md",
-   "userguide/viscous_heating.md",
-   "userguide/RTparameter.md"
+   "userguide/RTparameter.md",
+   "userguide/viscous_heating.md"
   ]
  },
  "QvisSplit": {
@@ -666,10 +692,10 @@
   "desc": "PAH abundance with respect to ISM",
   "basename": "fPAH",
   "wiki": [
-   "userguide/PAH_size.md",
-   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/multiple_zones.md",
    "userguide/PAH_heating_and_chemistry.md",
-   "userguide/multiple_zones.md"
+   "userguide/PAH_size.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "f2PAH": {
@@ -679,8 +705,8 @@
   "desc": "PAH abundance relative to ISM",
   "basename": "fPAH",
   "wiki": [
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "f3PAH": {
@@ -752,12 +778,12 @@
   "desc": "calculate SED and images?",
   "basename": null,
   "wiki": [
-   "userguide/Images.md",
    "userguide/beginnersguide.md",
+   "userguide/compute_visibilities.md",
+   "userguide/Images.md",
    "userguide/mixing.md",
-   "userguide/ProDiMo_SED.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md"
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "monoSED": {
@@ -767,9 +793,9 @@
   "desc": "use monochromatic mode?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_SED.md",
+   "userguide/compute_visibilities.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md"
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "NlamSED": {
@@ -779,9 +805,9 @@
   "desc": "number of lambda gridpoints",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_SED.md",
+   "userguide/compute_visibilities.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md"
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "lminSED": {
@@ -791,9 +817,9 @@
   "desc": "minimum lambda[mic]",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_SED.md",
+   "userguide/compute_visibilities.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md"
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "lmaxSED": {
@@ -803,9 +829,9 @@
   "desc": "minimum lambda[mic]",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_SED.md",
+   "userguide/compute_visibilities.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md"
+   "userguide/ProDiMo_SED.md"
   ]
  },
  "dist": {
@@ -815,10 +841,10 @@
   "desc": "distance",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/ProDiMo_SED.md",
-   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/compute_visibilities.md",
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/ProDiMo_SED.md",
    "userguide/star_fit.md"
   ]
  },
@@ -829,11 +855,11 @@
   "desc": "inclination (0=face-on)",
   "basename": null,
   "wiki": [
+   "userguide/compute_visibilities.md",
    "userguide/Look_at_the_results.md",
    "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/ProDiMo_SED.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/compute_visibilities.md",
+   "userguide/ProDiMo_SED.md",
    "userguide/RATRAN.md"
   ]
  },
@@ -879,7 +905,7 @@
   "default": 1e-08,
   "unit": null,
   "type": "float",
-  "desc": "precision in solve_chemistry 1.0E-9",
+  "desc": "precision in solve_chemistry",
   "basename": null,
   "wiki": [
    "userguide/accelerate_ProDiMo.md"
@@ -908,8 +934,8 @@
   "desc": "max. CPU time for advance_chemistry",
   "basename": null,
   "wiki": [
-   "userguide/accelerate_ProDiMo.md",
-   "devguide/Parallel_ProDiMo.md"
+   "devguide/Parallel_ProDiMo.md",
+   "userguide/accelerate_ProDiMo.md"
   ]
  },
  "maxtime": {
@@ -926,12 +952,12 @@
   "default": 9999999,
   "unit": null,
   "type": "int",
-  "desc": "maximum number of global iterations",
+  "desc": "max number of global iterations",
   "basename": null,
   "wiki": [
+   "userguide/accelerate_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/mixing.md",
-   "userguide/accelerate_ProDiMo.md"
+   "userguide/mixing.md"
   ]
  },
  "verbose_level": {
@@ -941,11 +967,11 @@
   "desc": "how much output? (-1...4); minimal output",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md",
+   "userguide/chemistry_details.md",
    "userguide/Debugging_with_slot_keep.md",
+   "userguide/grain_surface_chemistry.md",
    "userguide/How_do_I.md",
-   "userguide/chemistry_details.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "solve_diskstruc": {
@@ -955,12 +981,12 @@
   "desc": "solve the vertical hydrostatic eq.?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
+   "userguide/fixed_density_structure.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/multiple_zones.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/vertical_structure.md",
-   "userguide/multiple_zones.md"
+   "userguide/vertical_structure.md"
   ]
  },
  "solve_temp": {
@@ -970,11 +996,11 @@
   "desc": "solve the heating/cooling balance?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
    "userguide/IR-pumping.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Slab-models.md"
   ]
  },
  "conserve_pressure": {
@@ -984,8 +1010,8 @@
   "desc": "conserve pgas instead of n<H>?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/fixed_density_structure.md",
+   "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/vertical_structure.md"
   ]
@@ -1005,20 +1031,20 @@
   "desc": "run from restart?; restart from checkpoint file?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/How_to_set_parameters.md",
-   "userguide/mixing.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/Slab-models.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/How_to_run_a_full_model.md",
-   "userguide/Debugging_with_slot_keep.md",
-   "userguide/Run_ProDiMo.md",
-   "userguide/XrayRadiativeTransfer.md",
-   "userguide/IR-pumping.md",
-   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "devguide/Parallel_ProDiMo.md",
    "userguide/channel_maps.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/IR-pumping.md",
+   "userguide/mixing.md",
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Run_ProDiMo.md",
+   "userguide/Slab-models.md",
+   "userguide/XrayRadiativeTransfer.md"
   ]
  },
  "radtrans": {
@@ -1028,11 +1054,11 @@
   "desc": "continuum radiative transfer?; calculate dust continuum RT?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/RATRAN.md",
-   "userguide/XrayRadiativeTransfer.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/XrayRadiativeTransfer.md"
   ]
  },
  "chi_from_RT": {
@@ -1042,9 +1068,9 @@
   "desc": "calculate chi from UV rad. transfer?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "Td_from_RT": {
@@ -1065,9 +1091,9 @@
   "desc": "calculate background Jnu from rad. transfer?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "Rphoto_from_RT": {
@@ -1077,10 +1103,10 @@
   "desc": "calculate photorates from rad. transfer?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/UV_photorates.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/UV_photorates.md"
   ]
  },
  "Rphoto_bandint": {
@@ -1090,11 +1116,11 @@
   "desc": "use band-integrated photo-rates?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/XrayRadiativeTransfer.md",
    "userguide/UV_photorates.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/XrayRadiativeTransfer.md"
   ]
  },
  "Textrapolate": {
@@ -1114,9 +1140,9 @@
   "desc": "new initial abund. from down-right scan?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
+   "devguide/Parallel_ProDiMo.md",
    "userguide/accelerate_ProDiMo.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/How_to_set_parameters.md"
   ]
  },
  "freeze_RT": {
@@ -1126,12 +1152,12 @@
   "desc": "freeze radiative transfer results Td/Jv?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/How_to_set_parameters.md",
-   "userguide/mixing.md",
    "userguide/How_to_run_a_full_model.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_set_parameters.md",
    "userguide/IR-pumping.md",
-   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md"
+   "userguide/mixing.md",
+   "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
  "freeze_diskstruc": {
@@ -1141,9 +1167,9 @@
   "desc": "freeze density/pressure structure?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/IR-pumping.md"
+   "userguide/IR-pumping.md",
+   "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
  "freeze_Tgas": {
@@ -1153,10 +1179,10 @@
   "desc": "freeze gas temperature?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/How_to_set_parameters.md",
    "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/IR-pumping.md"
+   "userguide/How_to_set_parameters.md",
+   "userguide/IR-pumping.md",
+   "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
  "freeze_chemistry": {
@@ -1166,8 +1192,8 @@
   "desc": "freeze chemical concentrations?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/IR-pumping.md"
+   "userguide/IR-pumping.md",
+   "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
  "reinit_RT": {
@@ -1203,9 +1229,9 @@
   "desc": "use long integration time for ices?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
    "userguide/How_to_run_a_full_model.md",
-   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md"
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_set_parameters.md"
   ]
  },
  "write_pop": {
@@ -1215,8 +1241,8 @@
   "desc": "write output for immediate line transfer?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
    "userguide/How_to_set_parameters.md",
+   "userguide/ProDiMo_Line_Transfer.md",
    "userguide/RATRAN.md",
    "userguide/Run_ProDiMo.md"
   ]
@@ -1250,8 +1276,8 @@
   "desc": "initial concentrations from mol.cloud.?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/Debugging_with_slot_keep.md",
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
   ]
  },
  "time_dependent": {
@@ -1271,23 +1297,23 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
+   "userguide/Debugging_with_slot_keep.md",
    "userguide/grain_surface_chemistry.md",
    "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "N_age": {
   "default": 1,
   "unit": null,
   "type": "int",
-  "desc": "no of successive output ages; for more detailed models more steps might be required",
+  "desc": "for more detailed models more steps might be required; no of successive output ages",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
+   "userguide/Debugging_with_slot_keep.md",
    "userguide/grain_surface_chemistry.md",
    "userguide/How_to_run_a_time_dependent_chemistry_model.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "num_noerase": {
@@ -1327,10 +1353,10 @@
   "desc": "PAH heating from cross-sections?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/PAH_heating_and_chemistry.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "PAH_in_RT": {
@@ -1432,13 +1458,13 @@
   "desc": "calculate line transfer?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
    "userguide/beginnersguide.md",
-   "userguide/mixing.md",
-   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/channel_maps.md",
    "userguide/input_and_output_files.md",
-   "userguide/spatial_grid_resolution.md",
-   "userguide/channel_maps.md"
+   "userguide/mixing.md",
+   "userguide/ProDiMo_Line_Transfer.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/spatial_grid_resolution.md"
   ]
  },
  "immediate_lines": {
@@ -1448,8 +1474,8 @@
   "desc": "line RT directly after init?",
   "basename": null,
   "wiki": [
-   "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/large_number_of_CO_levels.md"
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/ProDiMo_Line_Transfer.md"
   ]
  },
  "line_cube": {
@@ -1637,10 +1663,10 @@
   "desc": "parametric disk structure like in MCFOST?; use Tdust and mu=2.3amu for cT?",
   "basename": null,
   "wiki": [
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
-   "userguide/vertical_structure.md",
-   "userguide/multiple_zones.md"
+   "userguide/fixed_density_structure.md",
+   "userguide/multiple_zones.md",
+   "userguide/vertical_structure.md"
   ]
  },
  "MCMAX_LIKE": {
@@ -1650,8 +1676,8 @@
   "desc": "p = n k Tgas for hydro-structure",
   "basename": null,
   "wiki": [
-   "userguide/vertical_structure.md",
    "userguide/multiple_zones.md",
+   "userguide/vertical_structure.md",
    "userguide/viscous_heating.md"
   ]
  },
@@ -1659,7 +1685,7 @@
   "default": true,
   "unit": null,
   "type": "bool",
-  "desc": "viscous heat into dust",
+  "desc": "put heat into the dust",
   "basename": null,
   "wiki": [
    "userguide/RTparameter.md"
@@ -1672,9 +1698,9 @@
   "desc": "scale height ...",
   "basename": "MCFOST_H0",
   "wiki": [
+   "userguide/beginnersguide.md",
    "userguide/fitting.md",
    "userguide/fixed_density_structure.md",
-   "userguide/beginnersguide.md",
    "userguide/multiple_zones.md"
   ]
  },
@@ -1685,8 +1711,8 @@
   "desc": "... belonging to reference radius; ref.radius",
   "basename": "MCFOST_RREF",
   "wiki": [
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
+   "userguide/fixed_density_structure.md",
    "userguide/multiple_zones.md"
   ]
  },
@@ -1697,9 +1723,9 @@
   "desc": "flaring power",
   "basename": "MCFOST_BETA",
   "wiki": [
-   "userguide/fixed_density_structure.md",
    "userguide/beginnersguide.md",
    "userguide/dust_settling.md",
+   "userguide/fixed_density_structure.md",
    "userguide/multiple_zones.md"
   ]
  },
@@ -1793,7 +1819,7 @@
   "default": 0.0,
   "unit": null,
   "type": "float",
-  "desc": "... switched off",
+  "desc": "scale height reduction; ... switched off",
   "basename": "dust_settle",
   "wiki": [
    "userguide/dust_settling.md",
@@ -1834,7 +1860,7 @@
   "default": 1.0,
   "unit": null,
   "type": "float",
-  "desc": "turbulence alpha",
+  "desc": "mass fraction of unsettled small grains; turbulence alpha",
   "basename": "a_settle",
   "wiki": [
    "userguide/dust_settling.md",
@@ -1887,10 +1913,10 @@
   "desc": "use large model atoms?",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/ProDiMo_on_MCFOST.md",
+   "devguide/Parallel_ProDiMo.md",
    "userguide/optical-and-UV-levels.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "LLL": {
@@ -1956,8 +1982,8 @@
   "desc": "electronic levels for H2?",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/H2_UV_fluorescence.md"
+   "userguide/H2_UV_fluorescence.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "sparse_Nlev": {
@@ -1967,15 +1993,15 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/H2O_rovibrational_cooling.md",
-   "userguide/H2_UV_fluorescence.md"
+   "userguide/H2_UV_fluorescence.md",
+   "userguide/H2O_rovibrational_cooling.md"
   ]
  },
  "threeReactants": {
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "3 educts in Reactions.in?",
+  "desc": "3-column format for Reactions.in?",
   "basename": null,
   "wiki": []
  },
@@ -1983,13 +2009,13 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "use Xray chemistry and heating?; switch on X-rays?",
+  "desc": "use Xray chemistry and heating?; want Xrays?",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/beginnersguide.md",
-   "userguide/Slab-models.md",
    "userguide/How_to_run_a_X-ray_model.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/Slab-models.md"
   ]
  },
  "Xray_Lum": {
@@ -2000,6 +2026,7 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
+   "userguide/How_to_run_a_X-ray_model.md",
    "userguide/molecular_clouds_models.md",
    "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md"
@@ -2020,12 +2047,13 @@
   "default": 0.1,
   "unit": "keV",
   "type": "float",
-  "desc": "minimum energy considered as Xray; X-ray min. photon energy",
+  "desc": "X-ray min. photon energy; minimum energy considered as Xray",
   "basename": null,
   "wiki": [
    "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md",
-   "userguide/Include-H-as-coolant.md"
+   "userguide/Include-H-as-coolant.md",
+   "userguide/star.md"
   ]
  },
  "Xray_Temp": {
@@ -2198,15 +2226,15 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/How_to_run_a_full_model.md",
-   "userguide/multiple_zones.md",
-   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
-   "userguide/spatial_grid_resolution.md",
-   "userguide/RTparameter.md",
+   "devguide/Parallel_ProDiMo.md",
    "devguide/RTbenchmark.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/RTparameter.md",
+   "userguide/spatial_grid_resolution.md"
   ]
  },
  "NZZ": {
@@ -2216,15 +2244,15 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/How_to_set_parameters.md",
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/How_to_run_a_full_model.md",
-   "userguide/multiple_zones.md",
-   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
-   "userguide/spatial_grid_resolution.md",
-   "userguide/RTparameter.md",
+   "devguide/Parallel_ProDiMo.md",
    "devguide/RTbenchmark.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/How_to_run_a_full_model.md",
+   "userguide/How_to_run_a_fully_converged_hydrostatic_model.md",
+   "userguide/How_to_set_parameters.md",
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md",
+   "userguide/RTparameter.md",
+   "userguide/spatial_grid_resolution.md"
   ]
  },
  "Ntheta": {
@@ -2234,9 +2262,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "devguide/RTbenchmark.md",
    "userguide/ProDiMo_Line_Transfer.md",
-   "userguide/RTparameter.md",
-   "devguide/RTbenchmark.md"
+   "userguide/RTparameter.md"
   ]
  },
  "Nphi": {
@@ -2246,8 +2274,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/RTparameter.md",
-   "devguide/RTbenchmark.md"
+   "devguide/RTbenchmark.md",
+   "userguide/RTparameter.md"
   ]
  },
  "H2_Jura": {
@@ -2390,6 +2418,14 @@
   "basename": null,
   "wiki": []
  },
+ "CG97": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
  "C_H2_shielding_Bertoldi": {
   "default": true,
   "unit": null,
@@ -2476,8 +2512,8 @@
   "basename": null,
   "wiki": [
    "userguide/Look_at_the_results.md",
-   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md",
    "userguide/spatial_grid_resolution.md"
   ]
  },
@@ -2518,8 +2554,8 @@
   "desc": "outer disk radius",
   "basename": "Rout",
   "wiki": [
-   "userguide/ProDiMo_on_MCFOST.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/ProDiMo_on_MCFOST.md"
   ]
  },
  "R3out": {
@@ -2546,7 +2582,7 @@
   "default": "",
   "unit": null,
   "type": "",
-  "desc": "col.dens. exponent",
+  "desc": "column density exponent",
   "basename": "epsilon",
   "wiki": [
    "userguide/multiple_zones.md"
@@ -2636,7 +2672,7 @@
   "default": "MCFOST_H0",
   "unit": "AU",
   "type": "str",
-  "desc": "scale height",
+  "desc": "scale height ...",
   "basename": "MCFOST_H0",
   "wiki": [
    "userguide/multiple_zones.md"
@@ -2666,7 +2702,7 @@
   "default": "MCFOST_BETA",
   "unit": null,
   "type": "str",
-  "desc": "flaring exponent",
+  "desc": "flaring power",
   "basename": "MCFOST_BETA",
   "wiki": [
    "userguide/multiple_zones.md"
@@ -2696,7 +2732,7 @@
   "default": -1.0,
   "unit": "AU",
   "type": "float",
-  "desc": "ref.radius; ... belonging to reference radius",
+  "desc": "... belonging to reference radius; ref.radius",
   "basename": "MCFOST_RREF",
   "wiki": [
    "userguide/multiple_zones.md"
@@ -2729,8 +2765,8 @@
   "desc": "inner rim increase of col.dens.",
   "basename": "reduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r1educ": {
@@ -2740,8 +2776,8 @@
   "desc": null,
   "basename": "reduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r2educ": {
@@ -2751,8 +2787,8 @@
   "desc": "",
   "basename": "reduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r3educ": {
@@ -2762,8 +2798,8 @@
   "desc": null,
   "basename": "reduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r4educ": {
@@ -2773,8 +2809,8 @@
   "desc": null,
   "basename": "reduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "raduc": {
@@ -2784,8 +2820,8 @@
   "desc": "radius-fac up to where col.dens. increases",
   "basename": "raduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r1aduc": {
@@ -2795,8 +2831,8 @@
   "desc": null,
   "basename": "raduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r2aduc": {
@@ -2806,8 +2842,8 @@
   "desc": null,
   "basename": "raduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r3aduc": {
@@ -2817,8 +2853,8 @@
   "desc": null,
   "basename": "raduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "r4aduc": {
@@ -2828,8 +2864,8 @@
   "desc": null,
   "basename": "raduc",
   "wiki": [
-   "userguide/rounded_inner_walls.md",
-   "userguide/multiple_zones.md"
+   "userguide/multiple_zones.md",
+   "userguide/rounded_inner_walls.md"
   ]
  },
  "deduc": {
@@ -3015,9 +3051,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/accelerate_ProDiMo.md",
-   "userguide/Include-H-as-coolant.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/Include-H-as-coolant.md"
   ]
  },
  "Hatom_bf": {
@@ -3027,9 +3063,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "devguide/Parallel_ProDiMo.md",
    "userguide/accelerate_ProDiMo.md",
-   "userguide/Include-H-as-coolant.md",
-   "devguide/Parallel_ProDiMo.md"
+   "userguide/Include-H-as-coolant.md"
   ]
  },
  "custom_COrovib": {
@@ -3039,8 +3075,8 @@
   "desc": "big ro-vibronic CO model?",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/large_number_of_CO_levels.md"
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "COX_Nrot": {
@@ -3050,8 +3086,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/large_number_of_CO_levels.md"
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "COX_Nvib": {
@@ -3061,8 +3097,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/large_number_of_CO_levels.md"
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "COA_Nvib": {
@@ -3072,8 +3108,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
-   "userguide/large_number_of_CO_levels.md"
+   "userguide/large_number_of_CO_levels.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "CO_Emax": {
@@ -3105,6 +3141,16 @@
   ]
  },
  "precomputed_CO_selfshielding": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/CO_selfshielding_from_RT.md"
+  ]
+ },
+ "precomputed_H2_CO_selfshielding": {
   "default": false,
   "unit": null,
   "type": "bool",
@@ -3147,9 +3193,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/Voigt_profile_escape_probability.md",
    "userguide/large_number_of_CO_levels.md",
-   "userguide/optical-and-UV-levels.md"
+   "userguide/optical-and-UV-levels.md",
+   "userguide/Voigt_profile_escape_probability.md"
   ]
  },
  "tau_cutoff": {
@@ -3159,9 +3205,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "devguide/RTbenchmark.md",
    "userguide/Look_at_the_results.md",
-   "userguide/RTparameter.md",
-   "devguide/RTbenchmark.md"
+   "userguide/RTparameter.md"
   ]
  },
  "pseudo_aniso_scat": {
@@ -3171,8 +3217,8 @@
   "desc": "ignore forward scattering",
   "basename": null,
   "wiki": [
-   "userguide/Porous_and_hollow_grains.md",
-   "devguide/RTbenchmark.md"
+   "devguide/RTbenchmark.md",
+   "userguide/Porous_and_hollow_grains.md"
   ]
  },
  "RTitmax": {
@@ -3182,8 +3228,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/RTparameter.md",
-   "devguide/RTbenchmark.md"
+   "devguide/RTbenchmark.md",
+   "userguide/RTparameter.md"
   ]
  },
  "gbar": {
@@ -3277,13 +3323,25 @@
   "basename": null,
   "wiki": []
  },
+ "mean_dust_photoelectric_from_RT": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/dust_photoelectric_from_RT.md"
+  ]
+ },
  "dust_charge_chemistry": {
   "default": false,
   "unit": null,
   "type": "bool",
   "desc": "",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/dust_charge_chemistry.md"
+  ]
  },
  "compute_visibilities": {
   "default": false,
@@ -3544,8 +3602,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C2H2_LTE_cooling": {
@@ -3555,8 +3613,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "HCNrovib_LTE_cooling": {
@@ -3566,8 +3624,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "CH4_LTE_cooling": {
@@ -3577,8 +3635,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "OHrovib_LTE_cooling": {
@@ -3588,15 +3646,16 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/OH-cooling.md",
+   "userguide/Slab-models.md"
   ]
  },
  "OH_ExoMol": {
   "default": true,
   "unit": null,
   "type": "bool",
-  "desc": "non-LTE OH model",
+  "desc": "non-LTE OH ro-vib",
   "basename": null,
   "wiki": [
    "userguide/mid_IR_lines.md",
@@ -3610,19 +3669,19 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "H2O_rovib_Lambda": {
   "default": true,
   "unit": null,
   "type": "bool",
-  "desc": "big ro-vib H2O models?",
+  "desc": "use Leiden LAMBDA database file; big ro-vib H2O models?",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/H2O_rovibrational_cooling.md"
+   "userguide/H2O_rovibrational_cooling.md",
+   "userguide/Slab-models.md"
   ]
  },
  "H2O_addHITRANlines": {
@@ -3648,8 +3707,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "O2rovib_LTE_cooling": {
@@ -3659,8 +3718,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "H2COrovib_LTE_cooling": {
@@ -3670,8 +3729,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "CH3OHrovib_LTE_cooling": {
@@ -3681,8 +3740,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "CSrovib_LTE_cooling": {
@@ -3692,8 +3751,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "SO2rovib_LTE_cooling": {
@@ -3703,8 +3762,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "NOrovib_LTE_cooling": {
@@ -3714,8 +3773,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "H2Srovib_LTE_cooling": {
@@ -3725,8 +3784,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "CH3_LTE_cooling": {
@@ -3736,8 +3795,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C2H4_LTE_cooling": {
@@ -3747,8 +3806,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C2H6_LTE_cooling": {
@@ -3758,8 +3817,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C3H4_LTE_cooling": {
@@ -3769,8 +3828,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C4H2_LTE_cooling": {
@@ -3780,8 +3839,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "C6H6_LTE_cooling": {
@@ -3791,8 +3850,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "no_background_pumping": {
@@ -3831,17 +3890,17 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "devguide/AutomaticTests.md",
    "userguide/rounded_inner_walls.md",
-   "userguide/spatial_grid_resolution.md",
    "userguide/RTparameter.md",
-   "devguide/AutomaticTests.md"
+   "userguide/spatial_grid_resolution.md"
   ]
  },
  "Nouter": {
   "default": 3,
   "unit": null,
   "type": "int",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
@@ -3852,16 +3911,16 @@
   "desc": "",
   "basename": null,
   "wiki": [
+   "userguide/How-to-rerun-an-old-model.md",
    "userguide/rounded_inner_walls.md",
-   "userguide/spatial_grid_resolution.md",
-   "userguide/How-to-rerun-an-old-model.md"
+   "userguide/spatial_grid_resolution.md"
   ]
  },
  "vert_pot": {
   "default": 0.0,
   "unit": null,
   "type": "float",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
@@ -3902,12 +3961,12 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "output for rate network analysis; output",
+  "desc": "output; output for rate network analysis",
   "basename": null,
   "wiki": [
-   "userguide/grain_surface_chemistry.md",
+   "userguide/chemistry_details.md",
    "userguide/Debugging_with_slot_keep.md",
-   "userguide/chemistry_details.md"
+   "userguide/grain_surface_chemistry.md"
   ]
  },
  "chemanalysis_fits": {
@@ -3954,8 +4013,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/accelerate_ProDiMo.md",
-   "devguide/Parallel_ProDiMo.md"
+   "devguide/Parallel_ProDiMo.md",
+   "userguide/accelerate_ProDiMo.md"
   ]
  },
  "parallel_debug": {
@@ -3965,8 +4024,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/accelerate_ProDiMo.md",
-   "devguide/Parallel_ProDiMo.md"
+   "devguide/Parallel_ProDiMo.md",
+   "userguide/accelerate_ProDiMo.md"
   ]
  },
  "IR_ISRF": {
@@ -3983,7 +4042,7 @@
   "default": 1,
   "unit": null,
   "type": "int",
-  "desc": "no dust settling; dust settling (Dubrulle et al. 1995)",
+  "desc": "DALI dust settling; dust settling (Dubrulle et al. 1995)",
   "basename": null,
   "wiki": [
    "userguide/dust_settling.md",
@@ -4190,8 +4249,8 @@
   "desc": "want to run FLiTs afterwards?",
   "basename": null,
   "wiki": [
-   "userguide/Line-spectra-postprocessing.md",
    "userguide/FLiTs.md",
+   "userguide/Line-spectra-postprocessing.md",
    "userguide/mid-IR-JWST-spectrum.md"
   ]
  },
@@ -4245,7 +4304,7 @@
   "default": true,
   "unit": null,
   "type": "bool",
-  "desc": "using UMIST2012 rates?",
+  "desc": "use UMIST2012 chemical database",
   "basename": null,
   "wiki": [
    "userguide/Chemical_rates.md",
@@ -4288,7 +4347,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "use UMIST2012/Garrod adsorption energies",
+  "desc": "from AdsorptionEnergies.in",
   "basename": null,
   "wiki": [
    "userguide/Eads.md",
@@ -4346,17 +4405,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/UV_IR_ISRF.md",
-   "userguide/CMB-Temperature.md"
+   "userguide/CMB-Temperature.md",
+   "userguide/UV_IR_ISRF.md"
   ]
- },
- "charge_chemistry_v2": {
-  "default": false,
-  "unit": null,
-  "type": "bool",
-  "desc": null,
-  "basename": null,
-  "wiki": []
  },
  "charge_chemistry_v3": {
   "default": false,
@@ -4364,7 +4415,10 @@
   "type": "bool",
   "desc": "",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/dust_charge_chemistry.md",
+   "userguide/dust_photoelectric_from_RT.md"
+  ]
  },
  "Zmax_v2": {
   "default": 10000.0,
@@ -4372,7 +4426,9 @@
   "type": "float",
   "desc": "",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/dust_charge_chemistry.md"
+  ]
  },
  "Hall_MRI": {
   "default": false,
@@ -4421,9 +4477,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
+   "userguide/Debugging_with_slot_keep.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "mc_steady_state": {
@@ -4433,9 +4489,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
+   "userguide/Debugging_with_slot_keep.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "mc_thermal_balance": {
@@ -4445,9 +4501,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
+   "userguide/Debugging_with_slot_keep.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/Debugging_with_slot_keep.md"
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "nH_mc": {
@@ -4457,9 +4513,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "Tg_mc": {
@@ -4469,9 +4525,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "Td_mc": {
@@ -4481,7 +4537,6 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
    "userguide/How_to_run_a_time_dependent_chemistry_model.md"
   ]
@@ -4493,9 +4548,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "Av_CO_mc": {
@@ -4535,9 +4590,9 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "dust_to_gas_mc": {
@@ -4547,8 +4602,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "rho_gr_mc": {
@@ -4558,8 +4613,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "CHI1_mc": {
@@ -4569,8 +4624,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "CHI2_mc": {
@@ -4580,8 +4635,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "fPAH_mc": {
@@ -4607,8 +4662,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "mc_grid": {
@@ -4618,8 +4673,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "CRI_mc": {
@@ -4647,9 +4702,9 @@
   "desc": "solve time-dependent disk chemistry?",
   "basename": null,
   "wiki": [
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/chemistry_details.md",
    "userguide/Debugging_with_slot_keep.md",
-   "userguide/chemistry_details.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
   ]
  },
  "time_chem_disk_ifspecies": {
@@ -4806,9 +4861,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/grain_surface_chemistry.md",
    "userguide/Chemical_rates.md",
-   "userguide/ChemicalDatabases.md"
+   "userguide/ChemicalDatabases.md",
+   "userguide/grain_surface_chemistry.md"
   ]
  },
  "Andersson2008_yield": {
@@ -4842,9 +4897,9 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "DVODPK": {
@@ -4878,6 +4933,14 @@
   "unit": null,
   "type": "bool",
   "desc": "",
+  "basename": null,
+  "wiki": []
+ },
+ "thermal_diffusion_only": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": "only thermal diffusion",
   "basename": null,
   "wiki": []
  },
@@ -4940,8 +5003,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/molecular_clouds_models.md",
-   "userguide/grain_surface_chemistry.md"
+   "userguide/grain_surface_chemistry.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "DVODEF90": {
@@ -5233,7 +5296,7 @@
   "default": true,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": [
    "userguide/fixed_density_structure.md"
@@ -5262,7 +5325,8 @@
   "desc": "the osu network fails the checks",
   "basename": null,
   "wiki": [
-   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
+   "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md",
+   "userguide/dust_charge_chemistry.md"
   ]
  },
  "hitran_min_strength": {
@@ -5272,8 +5336,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
+   "userguide/custom_lines.md",
    "userguide/Line-spectra-postprocessing.md",
-   "userguide/Slab-models.md",
    "userguide/mid_IR_lines.md"
   ]
  },
@@ -5529,7 +5593,9 @@
   "type": "bool",
   "desc": "use new CR UV field implementation",
   "basename": null,
-  "wiki": []
+  "wiki": [
+   "userguide/molecular_shielding_factors.md"
+  ]
  },
  "HD_shielding": {
   "default": true,
@@ -5680,6 +5746,14 @@
   "wiki": []
  },
  "CO_diffusion_Lauck": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "O_diffusion_Congiu": {
   "default": false,
   "unit": null,
   "type": "bool",
@@ -6038,6 +6112,26 @@
    "userguide/Automatic-generation-of-charge-exchange-and-proton-exchange-reactions.md"
   ]
  },
+ "start_from_previous_mc_model": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
+ "previous_mc_model_filename": {
+  "default": "",
+  "unit": null,
+  "type": "str",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/molecular_clouds_models.md"
+  ]
+ },
  "BareComp": {
   "default": "",
   "unit": null,
@@ -6167,12 +6261,12 @@
   "default": 0,
   "unit": null,
   "type": "int",
-  "desc": "",
+  "desc": "use Leiden + self-comp. shieldig factors",
   "basename": null,
   "wiki": [
+   "userguide/mid-IR-JWST-spectrum.md",
    "userguide/molecular_shielding_factors.md",
-   "userguide/UV_line_shielding.md",
-   "userguide/mid-IR-JWST-spectrum.md"
+   "userguide/UV_line_shielding.md"
   ]
  },
  "UVphoto_highres": {
@@ -6203,8 +6297,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/mid_IR_lines.md"
+   "userguide/mid_IR_lines.md",
+   "userguide/Slab-models.md"
   ]
  },
  "OH_nonLTE": {
@@ -6219,7 +6313,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
@@ -6227,7 +6321,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
@@ -6294,8 +6388,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/STAND2020.md",
-   "userguide/Chemical_rates.md"
+   "userguide/Chemical_rates.md",
+   "userguide/STAND2020.md"
   ]
  },
  "STANDover": {
@@ -6346,7 +6440,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
