@@ -313,8 +313,8 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
             symbols.push(new DocumentSymbol("INIT", "section", vscode.SymbolKind.Class, new vscode.Range(0, 0, 0, 0), new vscode.Range(0, 0, 0, 0)));
 
-            // Regex for the INIT sections
-            var regexInit = new RegExp('^ {0,1}(INIT[ a-z0-9_]*)(?::|[ ])', 'i');
+            // Regex for the INIT sections (INIT INIT_ etc. Init_ Init  , but not Initial)
+            var regexInit = new RegExp('^ {0,1}(INIT(?!ial)[ a-z0-9_]*)(?::|[ ])', 'i');
 
             for (let line = 0; line < document.lineCount; line++) {
                 const textLine = document.lineAt(line);
@@ -387,6 +387,10 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
                     }
                     else if (textLine.text.startsWith(" CALC_OPAC")) {
                         symbols.push(new DocumentSymbol("CALC OPAC", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+                    else if (textLine.text.startsWith(" Molecular cloud model")) {
+                        const sym = textLine.text.trim().replace(/\s+/g, ' '); // collapse and sequence of whitespaces
+                        symbols.push(new DocumentSymbol(sym, "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                     }
                     else if (textLine.text.startsWith("| finished disk ")) {
                         symbols.push(new DocumentSymbol("FINISHED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
