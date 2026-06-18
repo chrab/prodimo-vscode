@@ -102,7 +102,7 @@
     "diff": "^9.0.0",
     "serialize-javascript": "^7.0.5"
   },
-  "version": "0.3.3",
+  "version": "0.3.4",
   "allowScripts": {
     "esbuild@0.25.12": true
   }
