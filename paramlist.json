@@ -3981,7 +3981,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": [
    "userguide/chemistry_details.md"
