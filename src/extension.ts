@@ -392,6 +392,10 @@ class LogDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
                         const sym = textLine.text.trim().replace(/\s+/g, ' '); // collapse and sequence of whitespaces
                         symbols.push(new DocumentSymbol(sym, "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                     }
+                    else if (textLine.text.startsWith(" Computing molecular cloud abundances")) {                        
+                        symbols.push(new DocumentSymbol("MC ABDUNDANCES", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
+                    }
+
                     else if (textLine.text.startsWith("| finished disk ")) {
                         symbols.push(new DocumentSymbol("FINISHED", "", vscode.SymbolKind.Class, textLine.range, textLine.range));
                     }
