@@ -10,8 +10,8 @@
    "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
-   "userguide/star_fit.md",
-   "userguide/star.md"
+   "userguide/star.md",
+   "userguide/star_fit.md"
   ]
  },
  "Lstar": {
@@ -39,8 +39,8 @@
    "userguide/How_to_set_parameters.md",
    "userguide/ProDiMo_on_MCFOST.md",
    "userguide/Slab-models.md",
-   "userguide/StellarSpectra.md",
-   "userguide/star.md"
+   "userguide/star.md",
+   "userguide/StellarSpectra.md"
   ]
  },
  "Mdisk": {
@@ -396,7 +396,7 @@
   "default": 3.5,
   "unit": null,
   "type": "float",
-  "desc": "dust size distr f(a)~a^-apow",
+  "desc": "dust size distr power index f(a)~a^-apow",
   "basename": null,
   "wiki": [
    "devguide/RTbenchmark.md",
@@ -486,6 +486,16 @@
   "basename": "amax",
   "wiki": [
    "userguide/multiple_zones.md"
+  ]
+ },
+ "dust_size_distribution": {
+  "default": 1,
+  "unit": null,
+  "type": "int",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Porous_and_hollow_grains.md"
   ]
  },
  "adrift": {
@@ -1028,7 +1038,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": "run from restart?; restart from checkpoint file?",
+  "desc": "restart from checkpoint file?; run from restart?",
   "basename": null,
   "wiki": [
    "devguide/Parallel_ProDiMo.md",
@@ -1254,8 +1264,8 @@
   "desc": "handle UMIST-data (erase/overwrite/onlyadd)",
   "basename": null,
   "wiki": [
-   "userguide/Slab-models.md",
-   "userguide/Chemical_rates.md"
+   "userguide/Chemical_rates.md",
+   "userguide/Slab-models.md"
   ]
  },
  "read_reactions_in_csv": {
@@ -2028,8 +2038,7 @@
    "userguide/beginnersguide.md",
    "userguide/How_to_run_a_X-ray_model.md",
    "userguide/molecular_clouds_models.md",
-   "userguide/star.md",
-   "userguide/How_to_run_a_X-ray_model.md"
+   "userguide/star.md"
   ]
  },
  "Xray_norm": {
@@ -2039,8 +2048,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/star.md",
-   "userguide/How_to_run_a_X-ray_model.md"
+   "userguide/How_to_run_a_X-ray_model.md",
+   "userguide/star.md"
   ]
  },
  "Xray_Emin": {
@@ -2050,7 +2059,6 @@
   "desc": "X-ray min. photon energy; minimum energy considered as Xray",
   "basename": null,
   "wiki": [
-   "userguide/star.md",
    "userguide/How_to_run_a_X-ray_model.md",
    "userguide/Include-H-as-coolant.md",
    "userguide/star.md"
@@ -2064,8 +2072,8 @@
   "basename": null,
   "wiki": [
    "userguide/beginnersguide.md",
-   "userguide/star.md",
-   "userguide/How_to_run_a_X-ray_model.md"
+   "userguide/How_to_run_a_X-ray_model.md",
+   "userguide/star.md"
   ]
  },
  "Xray_Bg_Flux": {
@@ -2113,8 +2121,8 @@
   "desc": "optional: maximum photon energy to be considered as Xray [keV]",
   "basename": null,
   "wiki": [
-   "userguide/star.md",
-   "userguide/How_to_run_a_X-ray_model.md"
+   "userguide/How_to_run_a_X-ray_model.md",
+   "userguide/star.md"
   ]
  },
  "Xray_FUVumist": {
@@ -4538,7 +4546,8 @@
   "basename": null,
   "wiki": [
    "userguide/grain_surface_chemistry.md",
-   "userguide/How_to_run_a_time_dependent_chemistry_model.md"
+   "userguide/How_to_run_a_time_dependent_chemistry_model.md",
+   "userguide/molecular_clouds_models.md"
   ]
  },
  "Av_mc": {
@@ -4752,8 +4761,8 @@
   "desc": null,
   "basename": null,
   "wiki": [
-   "userguide/StellarSpectra.md",
-   "userguide/star.md"
+   "userguide/star.md",
+   "userguide/StellarSpectra.md"
   ]
  },
  "Faure_H2_op": {
@@ -5852,9 +5861,8 @@
   "desc": "",
   "basename": null,
   "wiki": [
-   "userguide/UV_photorates.md",
    "userguide/star.md",
-   "userguide/Include-H-as-coolant.md"
+   "userguide/UV_photorates.md"
   ]
  },
  "smoothEUV": {
@@ -6329,7 +6337,7 @@
   "default": false,
   "unit": null,
   "type": "bool",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": []
  },
@@ -6468,7 +6476,7 @@
   "default": 8,
   "unit": null,
   "type": "int",
-  "desc": null,
+  "desc": "",
   "basename": null,
   "wiki": [
    "userguide/Control-memory-consumption.md"
@@ -6500,6 +6508,24 @@
  },
  "fit_Tranges": {
   "default": true,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": []
+ },
+ "Lyalpha_perfect_escape": {
+  "default": false,
+  "unit": null,
+  "type": "bool",
+  "desc": null,
+  "basename": null,
+  "wiki": [
+   "userguide/Include-H-as-coolant.md"
+  ]
+ },
+ "LySeriesShielding": {
+  "default": false,
   "unit": null,
   "type": "bool",
   "desc": null,
