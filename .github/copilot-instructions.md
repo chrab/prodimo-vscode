@@ -1,0 +1,55 @@
+# Copilot Instructions
+
+## Build, Lint & Test
+
+```bash
+npm run compile        # type-check + lint + esbuild bundle (dev, with sourcemaps)
+npm run package        # type-check + lint + esbuild bundle (production, minified)
+npm run check-types    # TypeScript type-check only
+npm run lint           # ESLint only (src/)
+npm test               # compile + lint + run vscode-test suite
+npm run watch          # parallel esbuild watch + tsc --noEmit watch
+```
+
+Tests run via `@vscode/test-cli` / mocha against compiled output in `out/test/**/*.test.js`. To run a single test, compile first (`npm run compile-tests`) then invoke mocha directly with `--grep`:
+
+```bash
+npm run compile-tests && npx mocha --grep "test name" out/test/extension.test.js
+```
+
+## Architecture
+
+This is a VS Code extension (`src/extension.ts` is the sole source file) that adds language support for two ProDiMo file types:
+
+| Language ID | File match | Features |
+|---|---|---|
+| `prodimoparam` | `*.in` | Syntax highlighting, outline view, completion, hover |
+| `prodimolog` | `*prodimo*.log` | Outline view only |
+
+**Bundling:** esbuild bundles `src/extension.ts` → `dist/extension.js` (CJS, `vscode` externalized). TypeScript is compiled only for type-checking; esbuild handles the actual transpile.
+
+**Parameter database:** `paramlist.json` (root of repo) is the source of truth for all ProDiMo parameters. Schema per entry:
+```json
+"ParamName": { "default": ..., "unit": "...", "type": "float|int|...", "desc": "...", "basename": null, "wiki": ["userguide/...md"] }
+```
+Both `ParameterNameCompletionProvider` and `ParameterHoverProvider` load this file synchronously in their constructors via `context.asAbsolutePath('paramlist.json')`.
+
+**Provider classes (all in `extension.ts`):**
+- `ParameterDocumentSymbolProvider` — parses `--- Section name ---` lines in `.in` files for outline view
+- `ParameterNameCompletionProvider` — triggers on `!` or `.` (or Ctrl+Space); `!` suggests parameter names, `.` suggests `.true.`/`.false.`
+- `ParameterHoverProvider` — hovering over a parameter name after `! ` shows desc, unit, and wiki links
+- `LogDocumentSymbolProvider` — parses ProDiMo log structure (INIT_*, CHEMISTRY, CONTINUUM RT, SED, LINE TRANSFER phases) for outline view
+
+## Key Conventions
+
+**`Parameter.in` file format:**
+```
+<value>    ! <paramname>    [<unit>]   : description text
+```
+The TextMate grammar (`syntaxes/prodimoparam.tmLanguage.json`) uses this exact structure. Outline sections require dashes on **both** sides: `--- Section name ---` (the regex requires `----*` prefix and suffix with non-empty text in between).
+
+**Completion trigger logic:** `triggerKind === 1` means `!` was pressed; `triggerKind === 0` means Ctrl+Space. When Ctrl+Space is used but a `!` is already present on the line with nothing after it, the provider simulates a `!`-triggered completion. The `!` is included in the `insertText` for Ctrl+Space (`! paramname`) but not for `!`-triggered (`  paramname`).
+
+**Wiki base URL:** `https://prodimowiki.readthedocs.io/en/latest/` — hover cards build links by replacing `.md` with `.html` from `paramlist.json`'s `wiki` array.
+
+**Log outline:** Uses exact string prefix matching (`textLine.text.startsWith(...)`) for most phases; uses a regex for `INIT_*` section names. The `INIT` top-level symbol is always pushed first and INIT sub-sections are added as its children.
